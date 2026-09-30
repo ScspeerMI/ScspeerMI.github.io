@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.venv/
+# fetched source data is regenerable
+data/raw/
