@@ -20,10 +20,9 @@ PUBLIC = ROOT / "docs"
 
 PROFILE = {
     "name": "Sean Speer",
-    "tagline": "Canadian public policy, economics, and the politics of both.",
-    "bio": "Editor-at-large and co-founder of The Hub. Senior fellow at the Manhattan "
-           "Institute, the Munk School of Global Affairs and Public Policy, and the "
-           "Public Policy Forum. Former senior economic adviser to the prime minister.",
+    "tagline": "The political economy of Canada and the United States.",
+    "bio": "Co-founder and editor-at-large at The Hub. Writer at the Manhattan "
+           "Institute. Former senior economic adviser to the prime minister.",
 
     # Leave any of these empty and the page simply omits them.
     "photo": "",                    # e.g. "portrait.jpg", placed in public/
@@ -49,21 +48,31 @@ TEMPLATE = """<title>__NAME__</title>
 <style>
   /* Layout: a masthead and roles above a filterable, year-banded archive */
   :root {
-    --paper:#f6f7f8; --card:#ffffff; --ink:#15181c; --ink-soft:#5a626c;
-    --ink-faint:#8a929c; --rule:#dde2e7; --accent:#1c3d5a; --accent-bg:#e9eff5;
+    --paper:#f7f6f4; --card:#ffffff; --ink:#15181c; --ink-soft:#575f68;
+    --ink-faint:#8a8f96; --rule:#e0ddd8; --accent:#1c3d5a; --accent-bg:#e7edf3;
+    /* one hue per kind of work, so the archive reads at a glance */
+    --c-write:#1c3d5a; --c-write-bg:#e7edf3;
+    --c-pod:#0c5b52;   --c-pod-bg:#dfeeea;
+    --c-talk:#8a5310;  --c-talk-bg:#f6ecd9;
     --font-display:"Newsreader", Georgia, "Times New Roman", serif;
     --font-ui:"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --paper:#0e1115; --card:#151a20; --ink:#e7eaee; --ink-soft:#98a1ac;
-      --ink-faint:#6d7681; --rule:#232a32; --accent:#8bb6dd; --accent-bg:#18242f;
+      --paper:#101215; --card:#171a1f; --ink:#e8e9ea; --ink-soft:#9aa0a8;
+      --ink-faint:#6e747c; --rule:#262a30; --accent:#8bb6dd; --accent-bg:#18242f;
+      --c-write:#8bb6dd; --c-write-bg:#18242f;
+      --c-pod:#6ec7b9;   --c-pod-bg:#132724;
+      --c-talk:#dca95c;  --c-talk-bg:#2a2317;
       color-scheme: dark;
     }
   }
   :root[data-theme="dark"] {
-    --paper:#0e1115; --card:#151a20; --ink:#e7eaee; --ink-soft:#98a1ac;
-    --ink-faint:#6d7681; --rule:#232a32; --accent:#8bb6dd; --accent-bg:#18242f;
+    --paper:#101215; --card:#171a1f; --ink:#e8e9ea; --ink-soft:#9aa0a8;
+    --ink-faint:#6e747c; --rule:#262a30; --accent:#8bb6dd; --accent-bg:#18242f;
+    --c-write:#8bb6dd; --c-write-bg:#18242f;
+    --c-pod:#6ec7b9;   --c-pod-bg:#132724;
+    --c-talk:#dca95c;  --c-talk-bg:#2a2317;
     color-scheme: dark;
   }
 
@@ -105,7 +114,9 @@ TEMPLATE = """<title>__NAME__</title>
            background:var(--rule); border:1px solid var(--rule); border-radius:10px; overflow:hidden; }
   .role { background:var(--card); padding:15px 17px; }
   .role .n { font-family:var(--font-display); font-size:27px; font-weight:600; line-height:1;
-             font-variant-numeric:tabular-nums; }
+             font-variant-numeric:tabular-nums; color:var(--c-write); }
+  .role.t-podcast .n { color:var(--c-pod); }
+  .role.t-video .n   { color:var(--c-talk); }
   .role .t { margin-top:5px; font-size:14.5px; font-weight:500; }
   .role .s { margin-top:2px; font-size:12.5px; color:var(--ink-faint);
              font-variant-numeric:tabular-nums; }
@@ -152,6 +163,9 @@ TEMPLATE = """<title>__NAME__</title>
           display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
   .tag { font-size:11px; letter-spacing:.06em; text-transform:uppercase; padding:2px 7px;
          border-radius:4px; background:var(--accent-bg); color:var(--accent); white-space:nowrap; }
+  .tag.t-article { background:var(--c-write-bg); color:var(--c-write); }
+  .tag.t-podcast { background:var(--c-pod-bg);   color:var(--c-pod); }
+  .tag.t-video   { background:var(--c-talk-bg);  color:var(--c-talk); }
   .with { color:var(--ink-faint); font-style:italic; }
   .empty { padding:44px 0; text-align:center; color:var(--ink-faint); }
   footer { margin-top:46px; padding-top:18px; border-top:1px solid var(--rule);
@@ -266,7 +280,8 @@ TEMPLATE = """<title>__NAME__</title>
                 (it.url ? '<a class="title" href="' + esc(it.url) + '" target="_blank" rel="noopener">' +
                             esc(it.title) + '</a>'
                         : '<span class="title nolink">' + esc(it.title) + '</span>') +
-                '<div class="meta"><span class="tag">' + (LABEL[it.type] || 'Item') + '</span>' +
+                '<div class="meta"><span class="tag t-' + esc(it.type) + '">' +
+                    (LABEL[it.type] || 'Item') + '</span>' +
                   '<span>' + esc(it.outlet) + '</span>' + withWhom + '</div>' +
               '</div></li>';
     });
@@ -339,9 +354,10 @@ def build_roles(series):
         if s["last"][:7] != s["first"][:7]:
             span += " – " + fmt_month(s["last"])
         cards.append(
-            '<div class="role"><div class="n">{}</div>'
+            '<div class="role t-{}"><div class="n">{}</div>'
             '<div class="t">{}, {}</div><div class="s">{}</div></div>'.format(
-                s["count"], esc(s["role"]), esc(s["name"]), esc(span)))
+                esc(s.get("type", "article")), s["count"],
+                esc(s["role"]), esc(s["name"]), esc(span)))
     return '<h2>Recurring work</h2><div class="roles">' + "".join(cards) + "</div>"
 
 

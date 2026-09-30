@@ -20,7 +20,9 @@
     "date": "2026-09-24",
     "url": "https://www.city-journal.org/article/whos-reviving-industrial-unions-graduate-students",
     "byline": "Sean Speer",
-    "coauthored": false
+    "coauthored": false,
+    "series": "City Journal Substack",
+    "role": "Columnist"
   },
   {
     "type": "article",
@@ -56,7 +58,9 @@
     "date": "2026-09-08",
     "url": "https://www.city-journal.org/article/the-labor-movements-ai-split",
     "byline": "Sean Speer",
-    "coauthored": false
+    "coauthored": false,
+    "series": "City Journal Substack",
+    "role": "Columnist"
   },
   {
     "type": "article",
@@ -101,7 +105,9 @@
     "date": "2026-07-24",
     "url": "https://www.city-journal.org/article/here-are-the-cities-making-ai-easier-and-harder",
     "byline": "Sean Speer",
-    "coauthored": false
+    "coauthored": false,
+    "series": "City Journal Substack",
+    "role": "Columnist"
   },
   {
     "type": "article",
@@ -128,7 +134,9 @@
     "date": "2026-07-15",
     "url": "https://www.city-journal.org/article/new-yorks-data-center-moratorium-is-a-huge-mistake",
     "byline": "Sean Speer",
-    "coauthored": false
+    "coauthored": false,
+    "series": "City Journal Substack",
+    "role": "Columnist"
   },
   {
     "type": "article",
@@ -146,7 +154,9 @@
     "date": "2026-07-02",
     "url": "https://www.city-journal.org/article/how-the-west-should-rearm",
     "byline": "Sean Speer",
-    "coauthored": false
+    "coauthored": false,
+    "series": "City Journal Substack",
+    "role": "Columnist"
   },
   {
     "type": "article",
@@ -173,7 +183,9 @@
     "date": "2026-06-25",
     "url": "https://www.city-journal.org/article/keep-the-mission-expand-the-resources",
     "byline": "Sean Speer",
-    "coauthored": false
+    "coauthored": false,
+    "series": "City Journal Substack",
+    "role": "Columnist"
   },
   {
     "type": "article",
@@ -182,7 +194,9 @@
     "date": "2026-06-09",
     "url": "https://www.city-journal.org/article/pikettys-plan-to-cap-prosperity",
     "byline": "Sean Speer",
-    "coauthored": false
+    "coauthored": false,
+    "series": "City Journal Substack",
+    "role": "Columnist"
   },
   {
     "type": "article",
@@ -191,7 +205,9 @@
     "date": "2026-05-29",
     "url": "https://www.city-journal.org/article/elizabeth-warrens-ai-tax-mistake",
     "byline": "Sean Speer",
-    "coauthored": false
+    "coauthored": false,
+    "series": "City Journal Substack",
+    "role": "Columnist"
   },
   {
     "type": "article",
@@ -200,7 +216,9 @@
     "date": "2026-05-21",
     "url": "https://www.city-journal.org/article/ai-policy-should-focus-on-diffusion-not-redistribution",
     "byline": "Sean Speer",
-    "coauthored": false
+    "coauthored": false,
+    "series": "City Journal Substack",
+    "role": "Columnist"
   },
   {
     "type": "article",
@@ -209,7 +227,9 @@
     "date": "2026-05-14",
     "url": "https://www.city-journal.org/article/america-has-reached-a-turning-point-for-ai-policy",
     "byline": "Sean Speer",
-    "coauthored": false
+    "coauthored": false,
+    "series": "City Journal Substack",
+    "role": "Columnist"
   },
   {
     "type": "article",
@@ -218,7 +238,9 @@
     "date": "2026-04-30",
     "url": "https://www.city-journal.org/article/new-yorks-high-tax-trap",
     "byline": "Sean Speer",
-    "coauthored": false
+    "coauthored": false,
+    "series": "City Journal Substack",
+    "role": "Columnist"
   },
   {
     "type": "article",
@@ -227,6 +249,8 @@
     "date": "2026-04-16",
     "url": "https://www.city-journal.org/article/why-are-americans-working-less-thank-generous-government-benefits",
     "byline": "Sean Speer",
-    "coauthored": false
+    "coauthored": false,
+    "series": "City Journal Substack",
+    "role": "Columnist"
   }
 ]

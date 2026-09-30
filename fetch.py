@@ -138,6 +138,8 @@ def fetch_substack(host="cityjournal.substack.com", name="speer", outlet="City J
             items.append({
                 "type": "article",
                 "outlet": outlet,
+                "series": outlet + " Substack",
+                "role": "Columnist",
                 "title": clean(p.get("title")),
                 "date": d_,
                 "url": p.get("canonical_url"),
@@ -233,7 +235,7 @@ HUB_FEED = "https://feeds.acast.com/public/shows/69cc1a3992d007a7658eee4e"
 # one, and otherwise by the series boilerplate Acast appends to the description.
 HUB_SERIES = [
     ("Hub Dialogues", "Host", ["hub dialogues"], ["dialogues"]),
-    ("Hub Roundtable", "Panellist", ["hub roundtable"], ["roundtable"]),
+    ("Hub Roundtable", "Co-host", ["hub roundtable"], ["roundtable"]),
     ("Hub Hits", "Contributor", ["hub hits"], ["hub hits"]),
 ]
 
