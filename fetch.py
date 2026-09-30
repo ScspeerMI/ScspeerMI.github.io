@@ -398,36 +398,39 @@ def main():
             seen_titles.add(title_key)
         deduped.append(it)
 
-    # The Weekly Wrap is a named column, not a one-off, so tag it as a series
-    # while leaving each instalment in the archive - it is writing, after all.
-    for it in deduped:
-        if re.search(r"the weekly wrap", it.get("title") or "", re.I):
-            it["series"] = "The Weekly Wrap"
-            it["role"] = "Author"
-
     # The Hub prefixes many headlines with the author's name, which is useful
     # on a masthead full of writers and redundant on his own site.
     for it in deduped:
         it["title"] = re.sub(r"^Sean Speer:\s*", "", it.get("title") or "")
 
-    # Everything else written for The Hub is a body of work in its own right.
-    # Without this the written output shows up as the Weekly Wrap alone, which
-    # reads as a few dozen pieces beside several hundred podcast episodes.
+    # Group recurring work the way a reader thinks about it - where it was
+    # published - rather than by internal series names. "Hub Dialogues" versus
+    # "Hub Hits" is a distinction that means something inside The Hub and
+    # nothing to anyone else, and chasing it through podcast descriptions was
+    # both unreliable and pointless.
+    def bucket(it):
+        if it.get("type") == "podcast":
+            return "Podcast appearances", "Host, co-host, and guest"
+        if it.get("type") == "article":
+            if it.get("outlet") == "The Hub":
+                return "The Hub", "Columnist"
+            if it.get("outlet") in ("City Journal", "Manhattan Institute"):
+                return "Manhattan Institute", "Writer"
+        return None, None
+
     for it in deduped:
-        if (it.get("type") == "article" and it.get("outlet") == "The Hub"
-                and not it.get("series")):
-            it["series"] = "Hub commentary"
-            it["role"] = "Columnist"
+        name, role = bucket(it)
+        if name:
+            it["series"], it["role"] = name, role
+        else:
+            it.pop("series", None)
+            it.pop("role", None)
 
     # Summarise anything recurring: a role and a count read better than
     # hundreds of near-identical rows.
-    # The uncategorised Hub episodes are Dialogues in all but the boilerplate,
-    # so they are counted there rather than as a vague second podcast card.
-    MERGE_INTO = {"Hub Podcasts": "Hub Dialogues"}
-
     groups = {}
     for it in deduped:
-        s = MERGE_INTO.get(it.get("series"), it.get("series"))
+        s = it.get("series")
         if not s:
             continue
         g = groups.setdefault(s, {"name": s, "role": it.get("role", ""),

@@ -33,7 +33,7 @@ PROFILE = {
         {"label": "Manhattan Institute", "address": "sspeer@manhattan.institute"},
     ],
     "email_note": "Editors and speaking enquiries",
-    "socials": [{"label": "X", "url": "https://x.com/sean_speer"}],
+    "socials": [{"label": "@sean_speer", "url": "https://x.com/sean_speer"}],
 
     "links": [
         {"label": "The Hub", "url": "https://thehub.ca/"},
