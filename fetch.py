@@ -42,10 +42,28 @@ YEARS = 7
 CUTOFF = datetime.now(timezone.utc).year - YEARS
 
 
-def get(url, timeout=40):
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read(), r.headers
+def get(url, timeout=40, attempts=3):
+    """Fetch a URL, retrying transient failures.
+
+    Without the retry a single blip ends a paginated scan early, and the
+    partial result then overwrites good data. See merge_previous below for the
+    second half of that defence.
+    """
+    last = None
+    for n in range(attempts):
+        try:
+            req = urllib.request.Request(url, headers=UA)
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read(), r.headers
+        except urllib.error.HTTPError as e:
+            if e.code in (400, 401, 403, 404):   # not going to improve on retry
+                raise
+            last = e
+        except Exception as e:
+            last = e
+        if n < attempts - 1:
+            time.sleep(1.5 * (n + 1))
+    raise last
 
 
 def get_json(url, timeout=40):
@@ -346,6 +364,35 @@ def fetch_manual():
 
 # ---------------------------------------------------------------------------
 
+def item_key(it):
+    """Identity of a piece: its URL if it has one, else outlet plus title."""
+    u = (it.get("url") or "").split("?")[0].rstrip("/")
+    if u:
+        return "u:" + u
+    return "t:{}|{}".format(it.get("outlet", ""),
+                            re.sub(r"[^a-z0-9]+", " ", (it.get("title") or "").lower()).strip())
+
+
+def merge_previous(fresh):
+    """Add back anything the previous run found that this one did not.
+
+    Returns (merged, carried). Note the trade-off: a piece genuinely retracted
+    by a publisher would linger, and deliberately excluding something now means
+    removing it from data/items.json as well as changing the code.
+    """
+    path = DATA / "items.json"
+    if not path.exists():
+        return fresh, []
+    try:
+        old = json.loads(path.read_text(encoding="utf-8")).get("items", [])
+    except Exception:
+        return fresh, []
+
+    have = {item_key(it) for it in fresh}
+    carried = [it for it in old if item_key(it) not in have]
+    return fresh + carried, carried
+
+
 def main():
     DATA.mkdir(parents=True, exist_ok=True)
     # Manual entries go first: when the same piece also arrives from a feed,
@@ -397,6 +444,16 @@ def main():
         if title_key:
             seen_titles.add(title_key)
         deduped.append(it)
+
+    # A published piece does not become unpublished. If a source is briefly
+    # unreachable and returns less than it did yesterday, carry the missing
+    # items over rather than deleting them - otherwise every transient failure
+    # permanently erodes the archive, silently, one item at a time.
+    deduped, carried = merge_previous(deduped)
+    if carried:
+        print("\nCarried over {} item(s) a source did not return this run:".format(len(carried)))
+        for it in carried[:8]:
+            print("  {} | {} | {}".format(it.get("date"), it.get("outlet"), (it.get("title") or "")[:52]))
 
     # The Hub prefixes many headlines with the author's name, which is useful
     # on a masthead full of writers and redundant on his own site.

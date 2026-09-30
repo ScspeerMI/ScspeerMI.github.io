@@ -24,7 +24,7 @@
       "name": "Manhattan Institute",
       "role": "Writer",
       "outlet": "City Journal",
-      "count": 22,
+      "count": 23,
       "first": "2026-04-16",
       "last": "2026-09-24",
       "type": "article"
@@ -168,6 +168,17 @@
       "coauthored": false,
       "series": "The Hub",
       "role": "Columnist"
+    },
+    {
+      "type": "article",
+      "outlet": "City Journal",
+      "series": "Manhattan Institute",
+      "role": "Writer",
+      "title": "AI Safety Doesn\u2019t Have to Start from Scratch",
+      "date": "2026-09-18",
+      "url": "https://cityjournal.substack.com/p/ai-safety-doesnt-have-to-start-from",
+      "byline": "Sean Speer",
+      "coauthored": false
     },
     {
       "type": "podcast",
