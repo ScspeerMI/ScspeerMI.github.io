@@ -128,7 +128,15 @@ looks on a bio line, not whether the site functions.
 
 ---
 
-## Four things worth knowing before you start
+## Five things worth knowing before you start
+
+**A refresh must never be able to delete.** The example site's very first
+automated run dropped an article: one request failed part-way through a
+paginated scan, the scan returned what it had, and that partial result
+overwrote the good data. Nothing announced it. Left alone it would have
+removed a few items a month, for years. So: make the update carry over
+anything the previous run found, and print what it carried. A published piece
+does not become unpublished, and your site should encode that.
 
 **Check the feed, not the search index.** An outlet's own feed is usually
 complete; a search index over it usually isn't. One search returned 34
