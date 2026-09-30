@@ -40,9 +40,14 @@ PROFILE = {
         {"label": "Manhattan Institute", "url": "https://manhattan.institute/person/sean-speer"},
     ],
 
-    # URLs of the pieces to feature. Empty means "most recent from each outlet",
-    # which is a placeholder, not a curation.
-    "featured": [],
+    # URLs of the pieces to feature, in the order they should appear.
+    "featured": [
+        "https://www.city-journal.org/article/uaw-union-universities-politics",
+        "https://thehub.ca/2025/10/23/in-defence-of-ronald-reagan/",
+        "https://www.city-journal.org/article/messy-jobs-work-ai-cannot-reach",
+        "https://thehub.ca/2026/06/26/the-politics-of-transgression-versus-the-politics-of-normalcy/",
+        "https://thehub.ca/2025/08/09/sean-speer-two-cheers-for-neoliberalism-and-none-for-economic-nationalism/",
+    ],
 }
 
 # Recurring work is shown as a role, and its individual episodes are kept out of

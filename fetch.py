@@ -405,6 +405,11 @@ def main():
             it["series"] = "The Weekly Wrap"
             it["role"] = "Author"
 
+    # The Hub prefixes many headlines with the author's name, which is useful
+    # on a masthead full of writers and redundant on his own site.
+    for it in deduped:
+        it["title"] = re.sub(r"^Sean Speer:\s*", "", it.get("title") or "")
+
     # Everything else written for The Hub is a body of work in its own right.
     # Without this the written output shows up as the Weekly Wrap alone, which
     # reads as a few dozen pieces beside several hundred podcast episodes.
