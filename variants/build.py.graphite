@@ -60,24 +60,24 @@ TEMPLATE = """<title>__NAME__</title>
   /* Layout: a masthead and roles above a filterable, year-banded archive */
   :root {
     --paper:#fbfbfb; --card:#ffffff; --ink:#14171b; --ink-soft:#525a64;
-    --ink-faint:#868d96; --rule:#e4e4e6; --accent:#1d3357; --accent-bg:#e9ecf3;
+    --ink-faint:#868d96; --rule:#e4e4e6; --accent:#2f3338; --accent-bg:#ebebec;
     /* the masthead is a block of colour, not a tinted page */
-    --mast:#101c38; --mast-fg:#f1f3f8; --mast-soft:#9aa5bd; --mast-rule:#2b3659;
+    --mast:#1f2124; --mast-fg:#f4f4f4; --mast-soft:#a9abaf; --mast-rule:#3a3d42;
     --font-display:"Newsreader", Georgia, "Times New Roman", serif;
     --font-ui:"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       --paper:#101215; --card:#171a1f; --ink:#e8e9ea; --ink-soft:#9aa0a8;
-      --ink-faint:#6e747c; --rule:#262a30; --accent:#93aacd; --accent-bg:#1a2136;
---mast:#0c1630; --mast-fg:#eef1f7; --mast-soft:#93a0b8; --mast-rule:#232e50;
+      --ink-faint:#6e747c; --rule:#262a30; --accent:#b9bcc0; --accent-bg:#232528;
+--mast:#1a1c1f; --mast-fg:#f0f0f0; --mast-soft:#9fa1a5; --mast-rule:#343739;
       color-scheme: dark;
     }
   }
   :root[data-theme="dark"] {
     --paper:#101215; --card:#171a1f; --ink:#e8e9ea; --ink-soft:#9aa0a8;
-    --ink-faint:#6e747c; --rule:#262a30; --accent:#93aacd; --accent-bg:#1a2136;
---mast:#0c1630; --mast-fg:#eef1f7; --mast-soft:#93a0b8; --mast-rule:#232e50;
+    --ink-faint:#6e747c; --rule:#262a30; --accent:#b9bcc0; --accent-bg:#232528;
+--mast:#1a1c1f; --mast-fg:#f0f0f0; --mast-soft:#9fa1a5; --mast-rule:#343739;
     color-scheme: dark;
   }
 

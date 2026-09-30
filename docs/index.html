@@ -2,31 +2,25 @@
 <style>
   /* Layout: a masthead and roles above a filterable, year-banded archive */
   :root {
-    --paper:#f7f6f4; --card:#ffffff; --ink:#15181c; --ink-soft:#575f68;
-    --ink-faint:#8a8f96; --rule:#e0ddd8; --accent:#1c3d5a; --accent-bg:#e7edf3;
-    /* one hue per kind of work, so the archive reads at a glance */
-    --c-write:#1c3d5a; --c-write-bg:#e7edf3;
-    --c-pod:#0c5b52;   --c-pod-bg:#dfeeea;
-    --c-talk:#8a5310;  --c-talk-bg:#f6ecd9;
+    --paper:#fbfbfb; --card:#ffffff; --ink:#14171b; --ink-soft:#525a64;
+    --ink-faint:#868d96; --rule:#e4e4e6; --accent:#1d3357; --accent-bg:#e9ecf3;
+    /* the masthead is a block of colour, not a tinted page */
+    --mast:#101c38; --mast-fg:#f1f3f8; --mast-soft:#9aa5bd; --mast-rule:#2b3659;
     --font-display:"Newsreader", Georgia, "Times New Roman", serif;
     --font-ui:"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       --paper:#101215; --card:#171a1f; --ink:#e8e9ea; --ink-soft:#9aa0a8;
-      --ink-faint:#6e747c; --rule:#262a30; --accent:#8bb6dd; --accent-bg:#18242f;
-      --c-write:#8bb6dd; --c-write-bg:#18242f;
-      --c-pod:#6ec7b9;   --c-pod-bg:#132724;
-      --c-talk:#dca95c;  --c-talk-bg:#2a2317;
+      --ink-faint:#6e747c; --rule:#262a30; --accent:#93aacd; --accent-bg:#1a2136;
+--mast:#0c1630; --mast-fg:#eef1f7; --mast-soft:#93a0b8; --mast-rule:#232e50;
       color-scheme: dark;
     }
   }
   :root[data-theme="dark"] {
     --paper:#101215; --card:#171a1f; --ink:#e8e9ea; --ink-soft:#9aa0a8;
-    --ink-faint:#6e747c; --rule:#262a30; --accent:#8bb6dd; --accent-bg:#18242f;
-    --c-write:#8bb6dd; --c-write-bg:#18242f;
-    --c-pod:#6ec7b9;   --c-pod-bg:#132724;
-    --c-talk:#dca95c;  --c-talk-bg:#2a2317;
+    --ink-faint:#6e747c; --rule:#262a30; --accent:#93aacd; --accent-bg:#1a2136;
+--mast:#0c1630; --mast-fg:#eef1f7; --mast-soft:#93a0b8; --mast-rule:#232e50;
     color-scheme: dark;
   }
 
@@ -34,36 +28,38 @@
   body { margin:0; background:var(--paper); color:var(--ink);
          font-family:var(--font-ui); font-size:16px; line-height:1.55;
          -webkit-font-smoothing:antialiased; }
-  .wrap { max-width:880px; margin:0 auto; padding-inline:20px; padding-block:56px 80px; }
+  .wrap { max-width:880px; margin:0 auto; padding-inline:20px; padding-block:38px 80px; }
   a { color:var(--accent); }
 
   /* masthead */
-  .mast { display:flex; gap:28px; align-items:flex-start; flex-wrap:wrap;
-          border-bottom:2px solid var(--ink); padding-bottom:30px; }
+  .mast { display:flex; gap:30px; align-items:flex-start; flex-wrap:wrap;
+          background:var(--mast); color:var(--mast-fg); border-radius:14px;
+          padding:34px 32px; }
   /* a 3:4 crop of the portrait, so the face reads at this size */
-  .portrait { width:156px; aspect-ratio:3/4; border-radius:10px; object-fit:cover;
+  .portrait { width:150px; aspect-ratio:3/4; border-radius:10px; object-fit:cover;
               flex:0 0 auto; background:var(--accent-bg); max-width:100%; }
   .mast-body { flex:1 1 320px; min-width:0; }
   h1 { font-family:var(--font-display); font-weight:600; font-size:clamp(34px,6vw,52px);
        letter-spacing:-0.02em; line-height:1.04; margin:0 0 10px; text-wrap:balance; }
-  .tagline { font-family:var(--font-display); font-size:19px; color:var(--ink-soft);
+  .tagline { font-family:var(--font-display); font-size:19px; color:var(--mast-soft);
              margin:0 0 14px; text-wrap:balance; }
-  .bio { color:var(--ink-soft); max-width:62ch; font-size:15.5px; margin:0 0 16px; }
+  .bio { color:var(--mast-soft); max-width:62ch; font-size:15.5px; margin:0 0 16px; }
   .chips { display:flex; flex-wrap:wrap; gap:8px 18px; font-size:14px; align-items:center; }
-  .chips a { text-decoration:none; border-bottom:1px solid transparent; }
-  .chips a:hover, .chips a:focus-visible { border-bottom-color:var(--accent); }
+  .chips a { color:var(--mast-fg); text-decoration:none; border-bottom:1px solid rgba(255,255,255,.35); }
+  .chips a:hover, .chips a:focus-visible { border-bottom-color:var(--mast-fg); }
   .contact { margin-top:16px; }
+  .contact { border-top:1px solid var(--mast-rule); padding-top:14px; }
   .contact .note { font-size:12px; letter-spacing:.07em; text-transform:uppercase;
-                   color:var(--ink-faint); margin-bottom:7px; }
+                   color:var(--mast-soft); margin-bottom:8px; }
   .mailrow { display:flex; align-items:center; gap:8px; flex-wrap:wrap;
-             margin-bottom:6px; font-size:14px; color:var(--ink-soft); }
+             margin-bottom:6px; font-size:14px; color:var(--mast-soft); }
   .mailrow > span:first-child { min-width:132px; }
-  .mailrow code { font-family:var(--font-ui); background:var(--accent-bg);
-                  color:var(--accent); padding:3px 9px; border-radius:5px; user-select:all; }
+  .mailrow code { font-family:var(--font-ui); background:rgba(255,255,255,.10);
+                  color:var(--mast-fg); padding:3px 9px; border-radius:5px; user-select:all; }
   .mailrow button { font:inherit; font-size:12.5px; padding:4px 10px; border-radius:6px;
-                    border:1px solid var(--rule); background:var(--card);
-                    color:var(--ink-soft); cursor:pointer; }
-  .ok { color:#15803d; font-size:12px; }
+                    border:1px solid var(--mast-rule); background:transparent;
+                    color:var(--mast-soft); cursor:pointer; }
+  .ok { color:#7fd6a4; font-size:12px; }
 
   h2 { font-family:var(--font-display); font-size:13px; font-weight:600; letter-spacing:.14em;
        text-transform:uppercase; color:var(--ink-faint); margin:42px 0 12px; }
@@ -73,9 +69,7 @@
            background:var(--rule); border:1px solid var(--rule); border-radius:10px; overflow:hidden; }
   .role { background:var(--card); padding:15px 17px; }
   .role .n { font-family:var(--font-display); font-size:27px; font-weight:600; line-height:1;
-             font-variant-numeric:tabular-nums; color:var(--c-write); }
-  .role.t-podcast .n { color:var(--c-pod); }
-  .role.t-video .n   { color:var(--c-talk); }
+             font-variant-numeric:tabular-nums; color:var(--accent); }
   .role .t { margin-top:5px; font-size:14.5px; font-weight:500; }
   .role .s { margin-top:2px; font-size:12.5px; color:var(--ink-faint);
              font-variant-numeric:tabular-nums; }
@@ -122,9 +116,6 @@
           display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
   .tag { font-size:11px; letter-spacing:.06em; text-transform:uppercase; padding:2px 7px;
          border-radius:4px; background:var(--accent-bg); color:var(--accent); white-space:nowrap; }
-  .tag.t-article { background:var(--c-write-bg); color:var(--c-write); }
-  .tag.t-podcast { background:var(--c-pod-bg);   color:var(--c-pod); }
-  .tag.t-video   { background:var(--c-talk-bg);  color:var(--c-talk); }
   .with { color:var(--ink-faint); font-style:italic; }
   .empty { padding:44px 0; text-align:center; color:var(--ink-faint); }
   footer { margin-top:46px; padding-top:18px; border-top:1px solid var(--rule);
