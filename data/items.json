@@ -6,19 +6,19 @@
       "name": "Hub Dialogues",
       "role": "Host",
       "outlet": "The Hub",
-      "count": 520,
+      "count": 772,
       "first": "2022-01-17",
       "last": "2026-09-29",
       "type": "podcast"
     },
     {
-      "name": "Hub Podcasts",
-      "role": "Contributor",
+      "name": "Hub commentary",
+      "role": "Columnist",
       "outlet": "The Hub",
-      "count": 252,
-      "first": "2025-01-09",
+      "count": 297,
+      "first": "2021-04-16",
       "last": "2026-09-29",
-      "type": "podcast"
+      "type": "article"
     },
     {
       "name": "Hub Roundtable",
@@ -65,7 +65,9 @@
       "date": "2026-09-29",
       "url": "https://thehub.ca/2026/09/29/eby-wants-an-election-about-trump-it-should-be-about-his-disastrous-record/",
       "byline": "Sean Speer and Taylor Jackson",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -122,7 +124,9 @@
       "date": "2026-09-25",
       "url": "https://thehub.ca/2026/09/25/carneys-moves-on-building-and-labour-are-an-outright-rejection-of-trudeau-economics/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -184,7 +188,9 @@
       "date": "2026-09-18",
       "url": "https://thehub.ca/2026/09/18/parliament-returns-whats-next-for-the-carney-government/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -237,7 +243,9 @@
       "date": "2026-09-16",
       "url": "https://thehub.ca/2026/09/16/more-of-this-please-mr-carney/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -279,7 +287,9 @@
       "date": "2026-09-11",
       "url": "https://thehub.ca/2026/09/11/will-carneys-state-centric-investment-summit-be-a-success-im-skeptical/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -321,7 +331,9 @@
       "date": "2026-09-09",
       "url": "https://thehub.ca/2026/09/09/trumps-trade-war-is-stupid-and-sinister-that-doesnt-excuse-an-unhelpful-response/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -377,7 +389,9 @@
       "date": "2026-09-07",
       "url": "https://thehub.ca/2026/09/07/trump-is-to-blame-for-this-trade-war-but-canada-shouldnt-hurt-itself-just-to-spite-him/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -386,7 +400,9 @@
       "date": "2026-09-04",
       "url": "https://thehub.ca/2026/09/04/the-cracks-are-showing-in-carneys-economic-agenda/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -419,7 +435,9 @@
       "date": "2026-09-01",
       "url": "https://thehub.ca/2026/09/01/why-we-support-the-now-dead-canada-u-s-deal/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -440,7 +458,9 @@
       "date": "2026-08-28",
       "url": "https://thehub.ca/2026/08/28/dont-let-politics-get-in-the-way-its-time-to-finalize-the-canada-u-s-trade-deal/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -485,7 +505,9 @@
       "date": "2026-08-26",
       "url": "https://thehub.ca/2026/08/26/free-trade-is-over-and-canada-needs-a-competitiveness-agenda-fast/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -494,7 +516,9 @@
       "date": "2026-08-24",
       "url": "https://thehub.ca/2026/08/24/carney-walked-away-but-was-it-really-a-bad-deal-on-balance/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -515,7 +539,9 @@
       "date": "2026-08-21",
       "url": "https://thehub.ca/2026/08/21/conservatives-are-losing-more-than-elections/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -593,7 +619,9 @@
       "date": "2026-08-14",
       "url": "https://thehub.ca/2026/08/14/i-was-wrong-about-danielle-smith/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -635,7 +663,9 @@
       "date": "2026-08-07",
       "url": "https://thehub.ca/2026/08/07/canadas-hidden-political-centre-is-more-normal-than-you-think/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -668,7 +698,9 @@
       "date": "2026-08-05",
       "url": "https://thehub.ca/2026/08/05/7-historical-realities-proving-canada-has-always-been-a-classically-liberal-country/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -710,7 +742,9 @@
       "date": "2026-07-31",
       "url": "https://thehub.ca/2026/07/31/carney-minus-an-abundance-agenda-is-just-trudeau-in-a-bankers-suit/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -740,7 +774,9 @@
       "date": "2026-07-27",
       "url": "https://thehub.ca/2026/07/27/in-search-of-a-normal-politician/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -760,7 +796,9 @@
       "date": "2026-07-24",
       "url": "https://thehub.ca/2026/07/24/are-canadians-actually-obsessed-with-socialism-not-so-fast/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -769,7 +807,9 @@
       "date": "2026-07-24",
       "url": "https://thehub.ca/2026/07/24/the-false-promise-of-sovereignty-economics/",
       "byline": "Sean Speer and Charles Lammam",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -832,7 +872,9 @@
       "date": "2026-07-17",
       "url": "https://thehub.ca/2026/07/17/canada-should-become-the-data-centre-capital-of-the-world/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -918,7 +960,9 @@
       "date": "2026-07-10",
       "url": "https://thehub.ca/2026/07/10/35-billion-for-12-megatonnes-of-carbon-canadas-indulgence-economy-is-a-terrible-deal-for-taxpayers/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -927,7 +971,9 @@
       "date": "2026-07-10",
       "url": "https://thehub.ca/2026/07/10/the-liberal-party-has-proven-durable-trudeauism-has-not/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -960,7 +1006,9 @@
       "date": "2026-07-08",
       "url": "https://thehub.ca/2026/07/08/alberta-is-right-to-want-a-better-deal/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -969,7 +1017,9 @@
       "date": "2026-07-07",
       "url": "https://thehub.ca/2026/07/07/beware-of-governments-bearing-pipelines/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1014,7 +1064,9 @@
       "date": "2026-07-03",
       "url": "https://thehub.ca/2026/07/03/get-over-your-anti-americanism-canada/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1112,7 +1164,9 @@
       "date": "2026-06-26",
       "url": "https://thehub.ca/2026/06/26/the-politics-of-transgression-versus-the-politics-of-normalcy/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1156,7 +1210,9 @@
       "date": "2026-06-24",
       "url": "https://thehub.ca/2026/06/24/the-billion-dollar-plus-condo-bailout-that-socializes-losses-and-privatizes-profits/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1177,7 +1233,9 @@
       "date": "2026-06-19",
       "url": "https://thehub.ca/2026/06/19/why-hockey-night-in-canada-is-ending-and-what-this-says-about-the-cbc/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1222,7 +1280,9 @@
       "date": "2026-06-12",
       "url": "https://thehub.ca/2026/06/12/the-rest-of-canada-has-a-lot-to-learn-from-alberta/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1278,7 +1338,9 @@
       "date": "2026-06-09",
       "url": "https://thehub.ca/2026/06/09/canadas-economic-problems-are-bigger-than-a-technical-recession/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1311,7 +1373,9 @@
       "date": "2026-06-05",
       "url": "https://thehub.ca/2026/06/05/the-carney-government-gets-it-wrong-on-ai/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1356,7 +1420,9 @@
       "date": "2026-06-03",
       "url": "https://thehub.ca/2026/06/03/a-57-decline-the-hunter-prize-for-public-policy-takes-on-the-curious-case-of-canadas-missing-entrepreneurs/",
       "byline": "Sean Speer and Taylor Jackson",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1400,7 +1466,9 @@
       "date": "2026-05-29",
       "url": "https://thehub.ca/2026/05/29/why-first-nations-should-be-all-in-on-ai-data-centres/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1469,7 +1537,9 @@
       "date": "2026-05-22",
       "url": "https://thehub.ca/2026/05/22/its-time-to-scrap-the-crtc/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1513,7 +1583,9 @@
       "date": "2026-05-15",
       "url": "https://thehub.ca/2026/05/15/indigenous-rights-laws-deserve-more-scrutiny-than-theyre-getting/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1581,7 +1653,9 @@
       "date": "2026-05-08",
       "url": "https://thehub.ca/2026/05/08/europe-is-falling-behind-canada-should-emulate-more-productive-countries/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1602,7 +1676,9 @@
       "date": "2026-05-01",
       "url": "https://thehub.ca/2026/05/01/mark-carney-needs-to-get-over-his-obsession-with-europe/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1646,7 +1722,9 @@
       "date": "2026-04-28",
       "url": "https://thehub.ca/2026/04/28/the-canada-growth-fund-is-not-a-sovereign-wealth-fund-its-a-deficit-financed-subsidy-in-patriotic-clothing/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1679,7 +1757,9 @@
       "date": "2026-04-24",
       "url": "https://thehub.ca/2026/04/24/the-big-problem-with-the-governments-ai-supercomputer-plan/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1712,7 +1792,9 @@
       "date": "2026-04-21",
       "url": "https://thehub.ca/2026/04/21/ais-economic-impact-is-going-to-be-massive/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1733,7 +1815,9 @@
       "date": "2026-04-17",
       "url": "https://thehub.ca/2026/04/17/how-poilievres-biggest-strength-became-his-biggest-weakness/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1777,7 +1861,9 @@
       "date": "2026-04-14",
       "url": "https://thehub.ca/2026/04/14/what-is-government-for-what-the-legacy-of-mike-harris-fiscal-reforms-in-ontario-can-teach-conservatives-today/",
       "byline": "Sean Speer and Taylor Jackson",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1810,7 +1896,9 @@
       "date": "2026-04-10",
       "url": "https://thehub.ca/2026/04/10/the-hub-turns-5-and-is-only-getting-stronger/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1831,7 +1919,9 @@
       "date": "2026-04-08",
       "url": "https://thehub.ca/2026/04/08/what-the-strait-of-hormuz-could-mean-for-the-future-of-pax-americana/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1852,7 +1942,9 @@
       "date": "2026-04-03",
       "url": "https://thehub.ca/2026/04/03/why-the-liberals-are-cheering-for-a-weak-but-enduring-ndp-and-why-the-cpc-should-be-paying-attention/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -1921,7 +2013,9 @@
       "date": "2026-03-30",
       "url": "https://thehub.ca/2026/03/30/what-to-do-about-the-waning-of-canadian-dynamism/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -2071,7 +2165,9 @@
       "date": "2026-03-12",
       "url": "https://thehub.ca/2026/03/12/toward-a-theory-of-political-efficiency-in-campaign-platforms/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -2127,7 +2223,9 @@
       "date": "2026-03-06",
       "url": "https://thehub.ca/2026/03/06/the-number-of-federal-public-servants-per-canadian-hits-a-30-year-high/",
       "byline": "Sean Speer and Taylor Jackson",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -2220,7 +2318,9 @@
       "date": "2026-02-27",
       "url": "https://thehub.ca/2026/02/27/can-we-survive-the-journey-to-ai-abundance/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -2229,7 +2329,9 @@
       "date": "2026-02-27",
       "url": "https://thehub.ca/2026/02/27/pierre-poilievre-stays-the-course-but-is-that-enough/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -2369,7 +2471,9 @@
       "date": "2026-02-16",
       "url": "https://thehub.ca/2026/02/16/diverse-and-fragile-breaking-down-the-state-of-the-canadian-family-in-5-charts/",
       "byline": "Sean Speer and Taylor Jackson",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -2378,7 +2482,9 @@
       "date": "2026-02-16",
       "url": "https://thehub.ca/2026/02/16/the-new-left-and-the-new-right-are-remaking-america-canada-should-be-paying-attention/",
       "byline": "Sean Speer, Carlo Dade, and Alex Giordano",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -2600,7 +2706,9 @@
       "date": "2026-01-28",
       "url": "https://thehub.ca/2026/01/28/why-we-are-launching-newsbox-for-the-hubs-paid-subscribers/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -2656,7 +2764,9 @@
       "date": "2026-01-21",
       "url": "https://thehub.ca/2026/01/21/the-world-economic-forum-is-a-failed-institution/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -2665,7 +2775,9 @@
       "date": "2026-01-21",
       "url": "https://thehub.ca/2026/01/21/carney-defines-his-doctrine/",
       "byline": "Sean Speer and Taylor Jackson",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -2828,7 +2940,9 @@
       "date": "2026-01-08",
       "url": "https://thehub.ca/2026/01/08/the-global-policeman-is-becoming-the-global-rent-seeker/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -2873,7 +2987,9 @@
       "date": "2026-01-06",
       "url": "https://thehub.ca/2026/01/06/the-maple-leafs-and-toronto-share-the-same-problems/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -2906,7 +3022,9 @@
       "date": "2026-01-03",
       "url": "https://thehub.ca/2026/01/03/trump-the-rise-of-china-and-the-birth-of-ai-what-stories-from-the-last-25-years-will-stand-the-test-of-time/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -2963,7 +3081,9 @@
       "date": "2025-12-24",
       "url": "https://thehub.ca/2025/12/24/poilievre-will-win-his-leadership-review-and-canada-will-win-olympic-gold-in-mens-hockey-the-hub-predicts-2026/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -3055,7 +3175,9 @@
       "date": "2025-12-14",
       "url": "https://thehub.ca/2025/12/14/a-warning-written-in-blood/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -3266,7 +3388,9 @@
       "date": "2025-11-24",
       "url": "https://thehub.ca/2025/11/24/albertas-health-care-reforms-are-the-disruption-our-single-payer-system-needs/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -3275,7 +3399,9 @@
       "date": "2025-11-24",
       "url": "https://thehub.ca/2025/11/24/conservatives-should-fight-the-culture-war-but-on-a-battlefield-we-can-win/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -3307,7 +3433,9 @@
       "date": "2025-11-21",
       "url": "https://thehub.ca/2025/11/21/six-reasons-why-a-state-imposed-conservative-culture-is-a-terrible-idea/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -3364,7 +3492,9 @@
       "date": "2025-11-17",
       "url": "https://thehub.ca/2025/11/17/quebec-understands-the-health-care-status-quo-is-failing-when-will-the-rest-of-canada/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -3384,7 +3514,9 @@
       "date": "2025-11-14",
       "url": "https://thehub.ca/2025/11/14/canada-has-already-tried-economic-nationalism-and-it-only-left-us-poorer/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -3488,7 +3620,9 @@
       "date": "2025-11-04",
       "url": "https://thehub.ca/2025/11/04/mark-carneys-budget-misses-mark/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -3613,7 +3747,9 @@
       "date": "2025-10-23",
       "url": "https://thehub.ca/2025/10/23/in-defence-of-ronald-reagan/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -3824,7 +3960,9 @@
       "date": "2025-10-07",
       "url": "https://thehub.ca/2025/10/07/rudyard-griffiths-and-sean-speer-alberta-may-gain-a-pipeline-but-what-would-it-lose/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -3833,7 +3971,9 @@
       "date": "2025-10-07",
       "url": "https://thehub.ca/2025/10/07/sean-speer-mark-carneys-cosmetic-budget-reforms-cant-cover-up-canadas-ugly-deficit-problem/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4008,7 +4148,9 @@
       "date": "2025-09-22",
       "url": "https://thehub.ca/2025/09/22/deepdive-canadian-society-has-high-social-trust-but-can-that-survive-our-unprecedented-immigration-increases/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4076,7 +4218,9 @@
       "date": "2025-09-17",
       "url": "https://thehub.ca/2025/09/17/rudyard-griffiths-and-sean-speer-the-far-left-has-a-problem-with-violence-its-elites-need-to-speak-up/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4109,7 +4253,9 @@
       "date": "2025-09-16",
       "url": "https://thehub.ca/2025/09/16/sean-speer-mark-carneys-build-canada-homes-agency-wont-solve-canadas-housing-crisis/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4213,7 +4359,9 @@
       "date": "2025-09-10",
       "url": "https://thehub.ca/2025/09/10/rudyard-griffiths-and-sean-speer-another-bullet-pierces-the-american-idea/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4258,7 +4406,9 @@
       "date": "2025-09-08",
       "url": "https://thehub.ca/2025/09/08/sean-speer-conservatives-should-be-pro-worker-but-not-pro-union/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4291,7 +4441,9 @@
       "date": "2025-09-06",
       "url": "https://thehub.ca/2025/09/06/rudyard-griffiths-and-sean-speer-canadas-immigration-consensus-is-shattering-heres-why/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -4311,7 +4463,9 @@
       "date": "2025-09-05",
       "url": "https://thehub.ca/2025/09/05/rudyard-griffiths-and-sean-speer-what-carney-really-means-when-he-says-austerity/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4344,7 +4498,9 @@
       "date": "2025-09-04",
       "url": "https://thehub.ca/2025/09/04/sean-speer-the-digital-sovereignty-open-letter-is-nothing-more-than-a-weak-attempt-at-a-protectionist-cash-grab/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4436,7 +4592,9 @@
       "date": "2025-08-29",
       "url": "https://thehub.ca/2025/08/29/rudyard-griffiths-and-sean-speer-as-canadas-economy-falters-a-political-crisis-looms-for-mark-carney/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4469,7 +4627,9 @@
       "date": "2025-08-26",
       "url": "https://thehub.ca/2025/08/26/rudyard-griffiths-and-sean-speer-carneys-kyiv-statement-was-pure-fantasy-given-the-state-of-canadas-military/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4490,7 +4650,9 @@
       "date": "2025-08-25",
       "url": "https://thehub.ca/2025/08/25/sean-speer-carneys-steady-hand-is-starting-to-shake/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -4499,7 +4661,9 @@
       "date": "2025-08-25",
       "url": "https://thehub.ca/2025/08/25/sean-speer-conservatives-should-stop-lamenting-the-loss-of-a-canada-that-never-was/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4591,7 +4755,9 @@
       "date": "2025-08-20",
       "url": "https://thehub.ca/2025/08/20/sean-speer-are-the-conservatives-stuck-no-matter-what-they-do/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4612,7 +4778,9 @@
       "date": "2025-08-18",
       "url": "https://thehub.ca/2025/08/18/sean-speer-the-conservatives-are-wrong-to-support-the-air-canada-flight-attendants/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4692,7 +4860,9 @@
       "date": "2025-08-13",
       "url": "https://thehub.ca/2025/08/13/sean-speer-been-there-done-that-economic-nationalism-is-a-dead-end/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4737,7 +4907,9 @@
       "date": "2025-08-09",
       "url": "https://thehub.ca/2025/08/09/sean-speer-two-cheers-for-neoliberalism-and-none-for-economic-nationalism/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4817,7 +4989,9 @@
       "date": "2025-08-01",
       "url": "https://thehub.ca/2025/08/01/rudyard-griffiths-and-sean-speer-trumps-universal-tariff-regime-looms-large-and-canada-should-be-prepared/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4862,7 +5036,9 @@
       "date": "2025-07-30",
       "url": "https://thehub.ca/2025/07/30/sean-speer-walking-back-the-liberals-pharmacare-plans-would-be-a-major-broken-promise-and-the-right-thing-for-carney-to-do/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -4871,7 +5047,9 @@
       "date": "2025-07-29",
       "url": "https://thehub.ca/2025/07/29/rudyard-griffiths-in-a-world-wide-web-reshaped-by-ai-the-influence-game-has-changed/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -4939,7 +5117,9 @@
       "date": "2025-07-23",
       "url": "https://thehub.ca/2025/07/23/rudyard-griffiths-and-sean-speer-the-ai-revolution-is-changing-the-internet-forever-are-we-ready-canada/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5019,7 +5199,9 @@
       "date": "2025-07-16",
       "url": "https://thehub.ca/2025/07/16/rudyard-griffiths-and-sean-speer-canada-u-s-free-trade-is-dead/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5064,7 +5246,9 @@
       "date": "2025-07-14",
       "url": "https://thehub.ca/2025/07/14/sean-speer-maybe-ron-maclean-is-the-one-who-needs-to-go/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5096,7 +5280,9 @@
       "date": "2025-07-11",
       "url": "https://thehub.ca/2025/07/11/rudyard-griffiths-and-sean-speer-canadas-high-stakes-standoff-with-trump/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5153,7 +5339,9 @@
       "date": "2025-07-07",
       "url": "https://thehub.ca/2025/07/07/sean-speer-pierre-poilievre-is-right-to-favour-pro-worker-policies-over-increasing-immigration/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -5162,7 +5350,9 @@
       "date": "2025-07-04",
       "url": "https://thehub.ca/2025/07/04/rudyard-griffiths-and-sean-speer-the-fiscal-hangover-from-the-one-big-beautiful-bill-hits-canada/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5195,7 +5385,9 @@
       "date": "2025-07-03",
       "url": "https://thehub.ca/2025/07/03/rudyard-griffiths-and-sean-speer-the-future-of-news-in-canada-a-call-for-rethinking-public-subsidies/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -5204,7 +5396,9 @@
       "date": "2025-07-03",
       "url": "https://thehub.ca/2025/07/03/sean-speer-investing-in-critical-minerals-isnt-just-good-business-its-a-national-security-non-negotiable/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5237,7 +5431,9 @@
       "date": "2025-06-30",
       "url": "https://thehub.ca/2025/06/30/sean-speer-don-cherry-deserves-the-order-of-canada/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -5281,7 +5477,9 @@
       "date": "2025-06-24",
       "url": "https://thehub.ca/2025/06/24/rudyard-griffiths-and-sean-speer-the-case-for-a-nobel-peace-prize-for-donald-trump/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5349,7 +5547,9 @@
       "date": "2025-06-18",
       "url": "https://thehub.ca/2025/06/18/sean-speer-why-canadas-tax-system-is-losing-the-stanley-cup/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5370,7 +5570,9 @@
       "date": "2025-06-17",
       "url": "https://thehub.ca/2025/06/17/rudyard-griffiths-and-sean-speer-the-dangerous-seduction-of-de-escalation-in-western-foreign-policy/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5391,7 +5593,9 @@
       "date": "2025-06-13",
       "url": "https://thehub.ca/2025/06/13/rudyard-griffiths-and-sean-speer-canadas-troubling-moral-equivalence-on-israel-and-iran/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5459,7 +5663,9 @@
       "date": "2025-06-02",
       "url": "https://thehub.ca/2025/06/02/sean-speer-and-taylor-jackson-slow-economic-growth-is-the-biggest-challenge-facing-canada-the-hunter-prize-for-public-policy-is-here-to-solve-it/",
       "byline": "Sean Speer and Taylor Jackson",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -5479,7 +5685,9 @@
       "date": "2025-05-30",
       "url": "https://thehub.ca/2025/05/30/paige-saunders-and-sean-speer-the-contrarian-case-for-why-conservatives-should-embrace-electoral-reform/",
       "byline": "Paige Saunders and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5512,7 +5720,9 @@
       "date": "2025-05-29",
       "url": "https://thehub.ca/2025/05/29/rudyard-griffiths-and-sean-speer-carney-has-his-ambitions-but-he-must-face-the-economic-realities/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -5521,7 +5731,9 @@
       "date": "2025-05-29",
       "url": "https://thehub.ca/2025/05/29/deepdive-as-parliament-returns-strengthening-canadians-financial-resilience-should-be-on-the-agenda/",
       "byline": "Tashia Batstone and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5542,7 +5754,9 @@
       "date": "2025-05-27",
       "url": "https://thehub.ca/2025/05/27/sean-speer-the-government-sets-expectations-high-with-lofty-speech-from-the-throne-the-risk-is-in-not-following-through/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5622,7 +5836,9 @@
       "date": "2025-05-21",
       "url": "https://thehub.ca/2025/05/21/rudyard-griffiths-and-sean-speer-mark-carneys-crisis-that-wasnt/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5678,7 +5894,9 @@
       "date": "2025-05-15",
       "url": "https://thehub.ca/2025/05/15/sean-speer-the-maple-leafs-playoff-woes-are-a-microcosm-of-a-bigger-set-of-canadian-problems/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5699,7 +5917,9 @@
       "date": "2025-05-13",
       "url": "https://thehub.ca/2025/05/13/rudyard-griffiths-and-sean-speer-mark-carneys-old-is-new-cabinet-puts-blue-liberals-on-their-back-foot/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5731,7 +5951,9 @@
       "date": "2025-05-09",
       "url": "https://thehub.ca/2025/05/09/sean-speer-greater-economic-sovereignty-is-good-for-indigenous-peoples-in-canada-and-good-for-canada-too/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5811,7 +6033,9 @@
       "date": "2025-05-01",
       "url": "https://thehub.ca/2025/05/01/sean-speer-and-taylor-jackson-mark-carney-has-his-work-cut-out-for-him/",
       "byline": "Sean Speer and Taylor Jackson",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5832,7 +6056,9 @@
       "date": "2025-04-29",
       "url": "https://thehub.ca/2025/04/29/sean-speer-mark-carney-gets-his-mandate/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -5888,7 +6114,9 @@
       "date": "2025-04-22",
       "url": "https://thehub.ca/2025/04/22/sean-speer-the-good-and-the-bad-in-the-conservative-party-platform/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -5944,7 +6172,9 @@
       "date": "2025-04-16",
       "url": "https://thehub.ca/2025/04/16/sean-speer-will-mark-carney-champion-canadas-oil-and-gas-sector-or-continue-his-anti-development-ways-he-owes-voters-a-clear-answer/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -5976,7 +6206,9 @@
       "date": "2025-04-10",
       "url": "https://thehub.ca/2025/04/10/deepdive-enshrining-the-right-to-repair-making-life-affordable-for-consumers-at-no-cost-to-government/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -6020,7 +6252,9 @@
       "date": "2025-04-01",
       "url": "https://thehub.ca/2025/04/01/rudyard-griffiths-and-sean-speer-mainstream-media-cant-have-their-cake-and-eat-it-too-when-it-comes-to-public-subsidies/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -6040,7 +6274,9 @@
       "date": "2025-03-28",
       "url": "https://thehub.ca/2025/03/28/rudyard-griffiths-and-sean-speer-the-hub-is-receiving-over-60000-from-the-government-and-donating-it-all-to-charity-will-the-rest-of-canadas-subsidized-media-disclose-what-theyre-gettin/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -6049,7 +6285,9 @@
       "date": "2025-03-28",
       "url": "https://thehub.ca/2025/03/28/sean-speer-trumps-tariffs-are-set-to-upend-canadas-anti-climactic-election-campaign/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -6082,7 +6320,9 @@
       "date": "2025-03-22",
       "url": "https://thehub.ca/2025/03/22/sean-speer-donald-trump-isnt-the-biggest-threat-to-canada-the-looming-national-unity-crisis-is/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -6103,7 +6343,9 @@
       "date": "2025-03-20",
       "url": "https://thehub.ca/2025/03/20/sean-speer-canada-cant-let-excessive-caution-keep-it-from-embracing-the-ai-revolution/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -6124,7 +6366,9 @@
       "date": "2025-03-19",
       "url": "https://thehub.ca/2025/03/19/riaz-kara-and-sean-speer-canada-is-hosting-the-g7-this-summer-it-should-make-the-most-of-it/",
       "byline": "Riaz Kara and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -6216,7 +6460,9 @@
       "date": "2025-03-08",
       "url": "https://thehub.ca/2025/03/08/canada-needs-its-own-version-of-doge-heres-how-to-implement-the-good-aspects-and-avoid-the-downsides/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -6261,7 +6507,9 @@
       "date": "2025-03-04",
       "url": "https://thehub.ca/2025/03/04/rudyard-griffiths-and-sean-speer-unfortunately-we-were-right-north-american-free-trade-is-dead-and-tariffs-are-the-new-norm/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -6400,7 +6648,9 @@
       "date": "2025-02-20",
       "url": "https://thehub.ca/2025/02/20/sean-speer-the-return-of-the-bibas-familys-bodies-is-a-cruel-reminder-of-what-israel-is-fighting-for/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -6444,7 +6694,9 @@
       "date": "2025-02-15",
       "url": "https://thehub.ca/2025/02/15/sean-speer-and-taylor-jackson-with-america-actively-choosing-decline-its-time-for-canada-to-adapt-to-a-changing-world-order/",
       "byline": "Sean Speer and Taylor Jackson",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -6595,7 +6847,9 @@
       "date": "2025-01-29",
       "url": "https://thehub.ca/2025/01/29/sean-speer-ai-can-free-us-from-our-great-stagnation-if-only-we-let-it/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -6663,7 +6917,9 @@
       "date": "2025-01-23",
       "url": "https://thehub.ca/2025/01/23/sean-speer-trudeaus-tariff-response-cannot-be-a-backdoor-plan-to-fix-his-deficit/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -6743,7 +6999,9 @@
       "date": "2025-01-15",
       "url": "https://thehub.ca/2025/01/15/sean-speer-everyone-is-assuming-an-election-is-imminent-what-if-thats-wrong/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -6823,7 +7081,9 @@
       "date": "2025-01-06",
       "url": "https://thehub.ca/2025/01/06/sean-speer-the-rise-and-fall-of-justin-trudeau-global-progressivisms-heir-apparent/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -6927,7 +7187,9 @@
       "date": "2024-12-20",
       "url": "https://thehub.ca/2024/12/20/sean-speer-canada-needs-to-kickstart-its-cultural-policy/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -6984,7 +7246,9 @@
       "date": "2024-12-16",
       "url": "https://thehub.ca/2024/12/16/sean-speer-freeland-and-trudeau-have-no-one-to-blame-but-themselves/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -7040,7 +7304,9 @@
       "date": "2024-12-07",
       "url": "https://thehub.ca/2024/12/07/rudyard-griffiths-and-sean-speer-the-only-way-canada-can-win-is-to-become-more-competitive-than-america/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -7061,7 +7327,9 @@
       "date": "2024-12-05",
       "url": "https://thehub.ca/2024/12/05/sean-speer-if-pierre-poilievre-wants-to-square-the-circle-between-modern-populism-and-traditional-conservatism-liberalizing-canadas-telecoms-is-a-perfect-place-to-start/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -7118,7 +7386,9 @@
       "date": "2024-11-30",
       "url": "https://thehub.ca/2024/11/30/rudyard-griffiths-and-sean-speer-dont-be-delusional-canada-trumps-tariffs-are-here-to-stay/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -7127,7 +7397,9 @@
       "date": "2024-11-30",
       "url": "https://thehub.ca/2024/11/30/sean-speer-where-would-conservatism-be-without-george-will/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -7267,7 +7539,9 @@
       "date": "2024-11-20",
       "url": "https://thehub.ca/2024/11/20/sean-speer-pierre-poilievre-should-follow-elon-musks-lead-and-bring-his-own-department-of-government-efficiency-to-ottawa/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -7335,7 +7609,9 @@
       "date": "2024-11-15",
       "url": "https://thehub.ca/2024/11/15/renze-nauta-and-sean-speer-canadas-over-credentialed-working-class-cant-get-ahead/",
       "byline": "Renze Nauta and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -7344,7 +7620,9 @@
       "date": "2024-11-14",
       "url": "https://thehub.ca/2024/11/14/sean-speer-in-a-world-of-scarce-government-resources-providing-more-support-for-disabled-canadians-should-be-a-top-priority/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -7400,7 +7678,9 @@
       "date": "2024-11-08",
       "url": "https://thehub.ca/2024/11/08/sean-speer-trumps-election-win-and-trudeaus-emissions-cap-are-interlinked-heres-how/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -7528,7 +7808,9 @@
       "date": "2024-10-28",
       "url": "https://thehub.ca/2024/10/28/sean-speer-the-case-against-the-online-streaming-act-grows-stronger-by-the-day/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -7631,7 +7913,9 @@
       "date": "2024-10-18",
       "url": "https://thehub.ca/2024/10/18/free-the-market-to-come-and-find-the-answer-five-takeaways-from-the-conservatives-on-climate-series-so-far/",
       "byline": "Benjamin Dachis and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -7711,7 +7995,9 @@
       "date": "2024-10-10",
       "url": "https://thehub.ca/2024/10/10/sean-speer-artificial-competition-in-telecoms-has-been-a-cross-party-failure-its-time-to-actually-unleash-the-market/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -7827,7 +8113,9 @@
       "date": "2024-10-01",
       "url": "https://thehub.ca/2024/10/01/deepdive-its-time-for-the-government-to-trust-the-market-and-stop-micromanaging-canadas-telecoms-sector/",
       "byline": "Sean Speer and Taylor Jackson",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -7930,7 +8218,9 @@
       "date": "2024-09-18",
       "url": "https://thehub.ca/2024/09/18/sean-speer-with-the-liberals-reduced-to-a-regional-rump-party-is-canadas-long-laurentian-reign-finally-over/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -7951,7 +8241,9 @@
       "date": "2024-09-16",
       "url": "https://thehub.ca/2024/09/16/sean-speer-canadian-conservatives-are-well-placed-to-lead-on-climate-change/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -7960,7 +8252,9 @@
       "date": "2024-09-16",
       "url": "https://thehub.ca/2024/09/16/deep-dive-four-key-policy-priorities-for-parliaments-return/",
       "byline": "Sean Speer and Taylor Jackson",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -7992,7 +8286,9 @@
       "date": "2024-09-13",
       "url": "https://thehub.ca/2024/09/13/sean-speer-government-should-get-out-of-the-cbc-business/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -8213,7 +8509,9 @@
       "date": "2024-08-15",
       "url": "https://thehub.ca/2024/08/15/sean-speer-the-case-for-imposing-tariffs-on-chinese-evs-is-weak-the-case-for-decoupling-completely-is-much-stronger/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -8422,7 +8720,9 @@
       "date": "2024-07-18",
       "url": "https://thehub.ca/2024/07/18/sean-speer-the-federal-government-needs-to-back-off-and-the-provinces-need-to-step-up/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -8455,7 +8755,9 @@
       "date": "2024-07-16",
       "url": "https://thehub.ca/2024/07/16/sean-speer-and-taylor-jackson-canadas-cities-are-sucking-up-all-the-wealth-heres-what-we-can-do-about-it/",
       "byline": "Sean Speer and Taylor Jackson",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -8464,7 +8766,9 @@
       "date": "2024-07-15",
       "url": "https://thehub.ca/2024/07/15/sean-speer-what-elite-commentary-gets-wrong-about-j-d-vance-repost/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -8520,7 +8824,9 @@
       "date": "2024-07-09",
       "url": "https://thehub.ca/2024/07/09/sean-speer-young-canadians-are-stuck-heres-a-simple-way-to-kickstart-their-lives/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -8576,7 +8882,9 @@
       "date": "2024-07-03",
       "url": "https://thehub.ca/2024/07/03/taylor-jackson-sean-speer-and-stephen-staley-its-time-to-kickstart-canada/",
       "byline": "Taylor Jackson, Sean Speer, and Stephen Staley",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -8632,7 +8940,9 @@
       "date": "2024-06-27",
       "url": "https://thehub.ca/2024/06/27/sean-speer-neoliberalism-is-dead-long-live-neoliberalism/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -8712,7 +9022,9 @@
       "date": "2024-06-19",
       "url": "https://thehub.ca/2024/06/19/sean-speer-a-single-payer-pharmacare-model-would-be-costly-and-even-worse-ineffective-and-unnecessary/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -8792,7 +9104,9 @@
       "date": "2024-06-10",
       "url": "https://thehub.ca/2024/06/10/andrew-evans-and-sean-speer-federal-public-servants-need-to-get-back-to-the-office-and-out-of-ottawa/",
       "byline": "Andrew Evans and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -9060,7 +9374,9 @@
       "date": "2024-05-07",
       "url": "https://thehub.ca/2024/05/07/sean-speer-what-canadian-conservatism/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -9116,7 +9432,9 @@
       "date": "2024-04-29",
       "url": "https://thehub.ca/2024/04/29/deepdive-just-how-bad-is-canadas-defence-spending-problem/",
       "byline": "Sean Speer and Taylor Jackson",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -9207,7 +9525,9 @@
       "date": "2024-04-18",
       "url": "https://thehub.ca/2024/04/18/sean-speer-expanding-the-pmo/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -9216,7 +9536,9 @@
       "date": "2024-04-17",
       "url": "https://thehub.ca/2024/04/17/sean-speer-the-liberals-big-government-budget-ups-the-spending-ups-the-taxes-and-drops-the-pretences/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -9237,7 +9559,9 @@
       "date": "2024-04-15",
       "url": "https://thehub.ca/2024/04/15/deepdive-how-happy-are-you/",
       "byline": "Sean Speer and Taylor Jackson",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -9269,7 +9593,9 @@
       "date": "2024-04-12",
       "url": "https://thehub.ca/2024/04/12/sean-speer-the-hubs-third-year/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -9302,7 +9628,9 @@
       "date": "2024-04-08",
       "url": "https://thehub.ca/2024/04/08/andrew-evans-and-sean-speer-how-to-get-better-not-bigger-government/",
       "byline": "Andrew Evans and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -9346,7 +9674,9 @@
       "date": "2024-04-04",
       "url": "https://thehub.ca/2024/04/04/robert-asselin-and-sean-speer-north-star/",
       "byline": "Robert Asselin and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -9367,7 +9697,9 @@
       "date": "2024-04-01",
       "url": "https://thehub.ca/2024/04/01/sean-speerhousing-affordability-crisis/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -9458,7 +9790,9 @@
       "date": "2024-03-20",
       "url": "https://thehub.ca/2024/03/20/renze-nauta-and-sean-speer-poilievres-working-class-conservatism/",
       "byline": "Renze Nauta and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -9526,7 +9860,9 @@
       "date": "2024-03-11",
       "url": "https://thehub.ca/2024/03/11/sean-speer-and-taylor-jackson-canadas-lost-decade/",
       "byline": "Sean Speer and Taylor Jackson",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -9664,7 +10000,9 @@
       "date": "2024-02-21",
       "url": "https://thehub.ca/2024/02/21/sean-speer-the-news-industry-wont-be-fixed-by-a-committee/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -9744,7 +10082,9 @@
       "date": "2024-02-10",
       "url": "https://thehub.ca/2024/02/10/sean-speer-we-need-neoliberalism-now-more-than-ever/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -9777,7 +10117,9 @@
       "date": "2024-02-08",
       "url": "https://thehub.ca/2024/02/08/sean-speer-the-immeasurable-consequences-of-canadas-housing-based-inequality/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -9846,7 +10188,9 @@
       "date": "2024-01-30",
       "url": "https://thehub.ca/2024/01/30/sean-speer-canada-really-is-broken-right-now/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -9855,7 +10199,9 @@
       "date": "2024-01-29",
       "url": "https://thehub.ca/2024/01/29/sean-speer-six-charts-that-set-the-stage-for-parliaments-return/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -9876,7 +10222,9 @@
       "date": "2024-01-27",
       "url": "https://thehub.ca/2024/01/27/sean-speer-academic-historians-won-the-history-wars-and-then-forgot-how-to-fight/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -9957,7 +10305,9 @@
       "date": "2024-01-18",
       "url": "https://thehub.ca/2024/01/18/sean-speer-trudeaus-empty-calorie-economic-agenda-is-failing-canada/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -9966,7 +10316,9 @@
       "date": "2024-01-17",
       "url": "https://thehub.ca/2024/01/17/sean-speer-the-best-mandate-for-the-cbc-may-be-no-mandate-at-all/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -10023,7 +10375,9 @@
       "date": "2024-01-10",
       "url": "https://thehub.ca/2024/01/10/sean-speer-trudeaus-progressive-agenda-has-been-tried-and-found-wanting/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -10128,7 +10482,9 @@
       "date": "2023-12-22",
       "url": "https://thehub.ca/2023/12/22/sean-speer-we-all-lost-the-history-wars/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -10221,7 +10577,9 @@
       "date": "2023-12-11",
       "url": "https://thehub.ca/2023/12/11/sean-speer-reform-is-coming-for-entitled-universities-one-way-or-another/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -10242,7 +10600,9 @@
       "date": "2023-12-08",
       "url": "https://thehub.ca/2023/12/08/sean-speer-a-disrupted-legacy-media-model-isnt-a-market-failure-its-a-market-correction/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -10299,7 +10659,9 @@
       "date": "2023-12-02",
       "url": "https://thehub.ca/2023/12/02/sean-speer-its-time-to-end-tuition-subsidies/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -10392,7 +10754,9 @@
       "date": "2023-11-21",
       "url": "https://thehub.ca/2023/11/21/sean-speer-a-fiscal-reckoning-is-coming-for-canada/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -10473,7 +10837,9 @@
       "date": "2023-11-10",
       "url": "https://thehub.ca/2023/11/10/sean-speer-a-week-of-important-anniversaries-highlights-a-pivotal-truth-we-shape-history-we-are-not-bound-by-it/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -10518,7 +10884,9 @@
       "date": "2023-11-03",
       "url": "https://thehub.ca/2023/11/03/sean-speer-canadian-universities-have-lost-their-social-licence-they-shouldnt-be-surprised-if-they-lose-their-funding-too/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -10563,7 +10931,9 @@
       "date": "2023-10-27",
       "url": "https://thehub.ca/2023/10/27/sean-speer-the-left-has-a-self-policing-problem/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -10608,7 +10978,9 @@
       "date": "2023-10-21",
       "url": "https://thehub.ca/2023/10/21/the-decision-about-where-to-stand-on-the-israel-hamas-war-is-an-obvious-one/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -10701,7 +11073,9 @@
       "date": "2023-10-09",
       "url": "https://thehub.ca/2023/10/09/sean-speer-shocking-pro-hamas-anti-israel-rallies-lay-bare-the-limits-of-canadian-pluralism/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -10818,7 +11192,9 @@
       "date": "2023-09-28",
       "url": "https://thehub.ca/2023/09/28/sean-speer-we-no-longer-need-the-cbc/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -10887,7 +11263,9 @@
       "date": "2023-09-18",
       "url": "https://thehub.ca/2023/09/18/sean-speer-canadians-are-right-to-despair-over-a-dysfunctional-canada/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -10956,7 +11334,9 @@
       "date": "2023-09-09",
       "url": "https://thehub.ca/2023/09/09/sean-speer-we-may-have-underestimated-pierre-poilievre/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -10989,7 +11369,9 @@
       "date": "2023-09-04",
       "url": "https://thehub.ca/2023/09/04/opinion-the-governments-online-news-bill-cant-overcome-its-own-flawed-assumptions/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11034,7 +11416,9 @@
       "date": "2023-08-31",
       "url": "https://thehub.ca/2023/08/31/sean-speer-what-the-trudeau-government-can-learn-from-stephen-harper-about-how-to-control-spending/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11103,7 +11487,9 @@
       "date": "2023-08-19",
       "url": "https://thehub.ca/2023/08/19/sean-speer-the-rise-of-barstool-conservatism/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11148,7 +11534,9 @@
       "date": "2023-08-15",
       "url": "https://thehub.ca/2023/08/15/sean-speer-you-can-disagree-with-quebecs-cultural-conservatism-but-you-cant-afford-to-ignore-it/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -11157,7 +11545,9 @@
       "date": "2023-08-12",
       "url": "https://thehub.ca/2023/08/12/sean-speer-welcome-to-the-age-of-overeducated-underachievers/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11190,7 +11580,9 @@
       "date": "2023-08-09",
       "url": "https://thehub.ca/2023/08/09/sean-speer-why-wont-the-liberals-own-their-big-spending-record/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11235,7 +11627,9 @@
       "date": "2023-08-03",
       "url": "https://thehub.ca/2023/08/03/opinion-more-than-a-political-opportunist-canadas-most-important-prime-minister-was-a-distinctly-canadian-conservative/",
       "byline": "Ben Woodfinden and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -11244,7 +11638,9 @@
       "date": "2023-08-02",
       "url": "https://thehub.ca/2023/08/02/opinion-the-news-industry-is-in-crisis/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11265,7 +11661,9 @@
       "date": "2023-07-29",
       "url": "https://thehub.ca/2023/07/29/sean-speer-the-conservative-consensus-is-over-the-consequences-for-the-canadian-right-will-be-profound/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11334,7 +11732,9 @@
       "date": "2023-07-19",
       "url": "https://thehub.ca/2023/07/19/sean-speer-cynicism-seems-sophisticated-but-that-doesnt-mean-our-politics-needs-more-of-it/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11379,7 +11779,9 @@
       "date": "2023-07-13",
       "url": "https://thehub.ca/2023/07/13/sean-speer-after-the-bud-light-backlash-companies-should-consider-being-apolitical/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11412,7 +11814,9 @@
       "date": "2023-07-08",
       "url": "https://thehub.ca/2023/07/08/sean-speer-not-all-population-growth-is-created-equal/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11505,7 +11909,9 @@
       "date": "2023-06-27",
       "url": "https://thehub.ca/2023/06/27/sean-speer-far-from-weaponizing-gender-identity-issues-premier-higgs-reforms-are-good-faith-policy-proposals/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11526,7 +11932,9 @@
       "date": "2023-06-24",
       "url": "https://thehub.ca/2023/06/24/sean-speer-when-it-comes-to-federalism-the-provinces-are-fighting-the-wrong-battles/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11571,7 +11979,9 @@
       "date": "2023-06-19",
       "url": "https://thehub.ca/2023/06/19/sean-speer-whatever-the-short-term-gains-the-long-term-costs-of-the-online-news-act-are-far-too-steep/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11616,7 +12026,9 @@
       "date": "2023-06-14",
       "url": "https://thehub.ca/2023/06/14/sean-speer-overused-accusations-of-extremism-are-diminishing-our-political-debate/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11673,7 +12085,9 @@
       "date": "2023-06-08",
       "url": "https://thehub.ca/2023/06/08/sean-speer-canadas-rural-areas-are-falling-behind-heres-how-to-help-them-thrive/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11730,7 +12144,9 @@
       "date": "2023-05-31",
       "url": "https://thehub.ca/2023/05/31/sean-speer-support-for-albertas-charter-schools-is-the-biggest-reason-to-cheer-the-ucp-victory/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11751,7 +12167,9 @@
       "date": "2023-05-29",
       "url": "https://thehub.ca/2023/05/29/sean-speer-canadas-climate-activists-want-to-be-taken-seriously-but-not-literally/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11796,7 +12214,9 @@
       "date": "2023-05-25",
       "url": "https://thehub.ca/2023/05/25/sean-speer-the-canadian-establishments-china-consensus-has-been-wrong-from-the-start/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -11805,7 +12225,9 @@
       "date": "2023-05-24",
       "url": "https://thehub.ca/2023/05/24/sean-speer-the-unavoidable-implication-of-the-johnston-report-canada-truly-is-broken/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11922,7 +12344,9 @@
       "date": "2023-05-09",
       "url": "https://thehub.ca/2023/05/09/sean-speer-another-china-test-another-abject-failure-for-our-flip-flopping-government/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -11955,7 +12379,9 @@
       "date": "2023-05-05",
       "url": "https://thehub.ca/2023/05/05/sean-speer-premier-justin-trudeau-canadas-most-powerful-provincial-politician/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -12012,7 +12438,9 @@
       "date": "2023-04-28",
       "url": "https://thehub.ca/2023/04/28/sean-speer-the-future-will-be-forged-in-north-america/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -12081,7 +12509,9 @@
       "date": "2023-04-20",
       "url": "https://thehub.ca/2023/04/20/sean-speer-canadas-big-sort-is-breaking-down-and-the-political-consequences-could-be-monumental/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -12150,7 +12580,9 @@
       "date": "2023-04-10",
       "url": "https://thehub.ca/2023/04/10/sean-speer-a-new-definition-of-fiscal-restraint-and-ten-more-things-we-learned-in-year-two-of-the-hub/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -12171,7 +12603,9 @@
       "date": "2023-04-07",
       "url": "https://thehub.ca/2023/04/07/sean-speer-meritocracy-matters-even-if-its-imperfectly-practiced/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -12240,7 +12674,9 @@
       "date": "2023-03-29",
       "url": "https://thehub.ca/2023/03/29/sean-speer-the-most-vibrant-youth-movement-in-canada-isconservatism/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -12297,7 +12733,9 @@
       "date": "2023-03-20",
       "url": "https://thehub.ca/2023/03/20/sean-speer-chinese-interference-in-our-elections-is-a-political-scandal-and-must-have-political-consequences/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -12330,7 +12768,9 @@
       "date": "2023-03-16",
       "url": "https://thehub.ca/2023/03/16/sean-speer-bill-c-11-is-a-vote-of-no-confidence-in-canadas-content-creators/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -12423,7 +12863,9 @@
       "date": "2023-03-01",
       "url": "https://thehub.ca/2023/03/01/opinion-canadas-crisis-in-waiting-we-need-health-care-solutions-not-wait-lists/",
       "byline": "Sean Speer and Taylor Jackson",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -12540,7 +12982,9 @@
       "date": "2023-02-14",
       "url": "https://thehub.ca/2023/02/14/sean-speer-its-time-to-move-on-from-the-cbc/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -12573,7 +13017,9 @@
       "date": "2023-02-09",
       "url": "https://thehub.ca/2023/02/09/sean-speer-despite-all-the-attention-the-health-care-funding-plan-is-not-a-big-deal-and-thats-a-good-thing/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -12630,7 +13076,9 @@
       "date": "2023-02-02",
       "url": "https://thehub.ca/2023/02/02/sean-speer-the-worst-outcome-of-a-just-transition-is-increasing-jobs-polarization-and-a-gutted-middle-class/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -12735,7 +13183,9 @@
       "date": "2023-01-17",
       "url": "https://thehub.ca/2023/01/17/sean-speer-ontarios-health-care-reforms-are-a-sign-of-left-right-policy-convergence/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -12744,7 +13194,9 @@
       "date": "2023-01-16",
       "url": "https://thehub.ca/2023/01/16/sean-speer-ontario-desperately-needs-to-get-back-to-growth/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -12789,7 +13241,9 @@
       "date": "2023-01-10",
       "url": "https://thehub.ca/2023/01/10/sean-speer-intergenerational-conflict-is-now-the-defining-dynamic-of-canadian-politics/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -12906,7 +13360,9 @@
       "date": "2022-12-21",
       "url": "https://thehub.ca/2022/12/21/sean-speer-canadas-shifting-stance-on-china-was-the-most-important-public-policy-development-of-2022/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -12951,7 +13407,9 @@
       "date": "2022-12-15",
       "url": "https://thehub.ca/2022/12/15/sean-speer-chatgpts-emergence-offers-the-hope-of-a-more-productive-future/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -12960,7 +13418,9 @@
       "date": "2022-12-14",
       "url": "https://thehub.ca/2022/12/14/sean-speer-poilievre-is-building-a-coalition-of-strivers-who-still-believe-in-the-meritocratic-dream/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -13053,7 +13513,9 @@
       "date": "2022-11-30",
       "url": "https://thehub.ca/2022/11/30/sean-speer-canada-finally-picks-a-side-between-the-u-s-and-china/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -13110,7 +13572,9 @@
       "date": "2022-11-24",
       "url": "https://thehub.ca/2022/11/24/sean-speer-national-security-matters-too-why-we-must-reshore-our-critical-industries/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -13155,7 +13619,9 @@
       "date": "2022-11-16",
       "url": "https://thehub.ca/2022/11/16/edward-greenspon-and-sean-speer-canadas-renewal-will-begin-when-we-start-to-build-again/",
       "byline": "Edward Greenspon and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -13176,7 +13642,9 @@
       "date": "2022-11-15",
       "url": "https://thehub.ca/2022/11/15/sean-speer-as-global-tensions-rise-canada-cannot-afford-an-uncertain-china-strategy/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -13257,7 +13725,9 @@
       "date": "2022-11-02",
       "url": "https://thehub.ca/2022/11/02/sean-speer-no-the-government-is-not-running-a-tight-fiscal-policy/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -13350,7 +13820,9 @@
       "date": "2022-10-20",
       "url": "https://thehub.ca/2022/10/20/sean-speer-central-bankers-need-a-lesson-in-humility/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -13467,7 +13939,9 @@
       "date": "2022-10-03",
       "url": "https://thehub.ca/2022/10/03/sean-speer-dont-learn-the-wrong-lesson-from-the-u-k-governments-tax-cut-reversal/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -13500,7 +13974,9 @@
       "date": "2022-09-29",
       "url": "https://thehub.ca/2022/09/29/sean-speer-the-working-class-isnt-who-you-think-it-is/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -13509,7 +13985,9 @@
       "date": "2022-09-28",
       "url": "https://thehub.ca/2022/09/28/sean-speer-jason-kenney-makes-his-exit/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -13566,7 +14044,9 @@
       "date": "2022-09-22",
       "url": "https://thehub.ca/2022/09/22/sean-speer-concerned-about-economic-inequality-forget-taxing-the-rich-we-need-to-create-more-middle-class-jobs/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -13623,7 +14103,9 @@
       "date": "2022-09-12",
       "url": "https://thehub.ca/2022/09/12/sean-speer-poilievre-is-the-new-cpc-leader-what-should-his-agenda-look-like-now/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -13800,7 +14282,9 @@
       "date": "2022-08-16",
       "url": "https://thehub.ca/2022/08/16/sean-speer-some-of-the-best-moments-from-100-episodes-of-hub-dialogues/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -13821,7 +14305,9 @@
       "date": "2022-08-12",
       "url": "https://thehub.ca/2022/08/12/sean-speer-canadian-conservatism-is-powered-by-fusion/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -13890,7 +14376,9 @@
       "date": "2022-08-04",
       "url": "https://thehub.ca/2022/08/04/sean-speer-i-was-wrong-about-canadas-state-capacity/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -13935,7 +14423,9 @@
       "date": "2022-07-27",
       "url": "https://thehub.ca/2022/07/27/sean-speer-pope-francis-sincere-words-of-atonement-are-an-important-step/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -13968,7 +14458,9 @@
       "date": "2022-07-22",
       "url": "https://thehub.ca/2022/07/22/sean-speer-a-tale-of-two-recoveries/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14061,7 +14553,9 @@
       "date": "2022-07-08",
       "url": "https://thehub.ca/2022/07/08/sean-speer-canadas-roaring-recovery-is-not-as-robust-as-it-seems/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14094,7 +14588,9 @@
       "date": "2022-07-05",
       "url": "https://thehub.ca/2022/07/05/sean-speer-on-the-importance-of-not-losing-your-head/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14163,7 +14659,9 @@
       "date": "2022-06-24",
       "url": "https://thehub.ca/2022/06/24/sean-speer-doug-fords-cabinet-choices-could-define-his-second-term/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14241,7 +14739,9 @@
       "date": "2022-06-16",
       "url": "https://thehub.ca/2022/06/16/the-online-streaming-act-threatens-one-of-the-most-important-legacies-of-the-chretien-government/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14298,7 +14798,9 @@
       "date": "2022-06-07",
       "url": "https://thehub.ca/2022/06/07/if-doug-ford-needs-a-governing-agenda-improving-ontarians-quality-of-life-is-a-good-start/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14331,7 +14833,9 @@
       "date": "2022-06-01",
       "url": "https://thehub.ca/2022/06/01/canadas-embattled-conservatives-should-remember-that-the-winds-of-change-originate-in-ideas/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14352,7 +14856,9 @@
       "date": "2022-05-30",
       "url": "https://thehub.ca/2022/05/30/radical-activists-are-a-problem-on-the-left-too/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14433,7 +14939,9 @@
       "date": "2022-05-19",
       "url": "https://thehub.ca/2022/05/19/a-lament-for-conservatism/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14490,7 +14998,9 @@
       "date": "2022-05-12",
       "url": "https://thehub.ca/2022/05/12/canada-strong-and-free-conference-highlights-the-intellectual-renewal-in-canadas-conservative-movement/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14592,7 +15102,9 @@
       "date": "2022-04-27",
       "url": "https://thehub.ca/2022/04/27/the-conservative-case-for-federal-intervention-in-housing/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14625,7 +15137,9 @@
       "date": "2022-04-22",
       "url": "https://thehub.ca/2022/04/22/the-hundred-year-reinvention-of-canadian-conservatism/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14706,7 +15220,9 @@
       "date": "2022-04-12",
       "url": "https://thehub.ca/2022/04/12/ten-things-we-learned-over-the-hubs-first-year/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14727,7 +15243,9 @@
       "date": "2022-04-08",
       "url": "https://thehub.ca/2022/04/08/sean-speer-be-wary-of-the-governments-sudden-conversion-to-fiscal-restraint/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14772,7 +15290,9 @@
       "date": "2022-04-01",
       "url": "https://thehub.ca/2022/04/01/want-to-resonate-with-voters-focus-on-improving-social-mobility/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14841,7 +15361,9 @@
       "date": "2022-03-23",
       "url": "https://thehub.ca/2022/03/23/the-ndp-are-fulfilling-their-purpose-as-a-compact-minority/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -14871,7 +15393,9 @@
       "date": "2022-03-22",
       "url": "https://thehub.ca/2022/03/22/can-pierre-poilievre-kickstart-the-abundance-agenda-canada-desperately-needs/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14928,7 +15452,9 @@
       "date": "2022-03-14",
       "url": "https://thehub.ca/2022/03/14/why-conservatives-are-so-keen-on-cryptocurrencies/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -14949,7 +15475,9 @@
       "date": "2022-03-11",
       "url": "https://thehub.ca/2022/03/11/sean-speer-the-post-soviet-struggle-for-russias-soul-is-far-from-over/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -15030,7 +15558,9 @@
       "date": "2022-02-28",
       "url": "https://thehub.ca/2022/02/28/sean-speer-the-brave-resistance-of-ordinary-ukrainians-should-rouse-the-privileged-west/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -15051,7 +15581,9 @@
       "date": "2022-02-25",
       "url": "https://thehub.ca/2022/02/25/will-putins-invasion-of-ukraine-be-enough-to-wake-up-the-decadent-west/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -15144,7 +15676,9 @@
       "date": "2022-02-08",
       "url": "https://thehub.ca/2022/02/08/unions-need-renewal-if-they-want-to-make-it-in-the-modern-economy/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -15165,7 +15699,9 @@
       "date": "2022-02-04",
       "url": "https://thehub.ca/2022/02/04/where-does-canadian-conservatism-go-from-here/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -15210,7 +15746,9 @@
       "date": "2022-01-28",
       "url": "https://thehub.ca/2022/01/28/creeping-politicization-strengthens-the-need-for-pbo-reform/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -15255,7 +15793,9 @@
       "date": "2022-01-20",
       "url": "https://thehub.ca/2022/01/20/lets-not-prolong-this-pandemic-for-the-sake-of-the-expert-class/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "podcast",
@@ -15297,7 +15837,9 @@
       "date": "2022-01-05",
       "url": "https://thehub.ca/2022/01/05/can-we-finally-be-honest-about-our-health-care-systems-failures/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15324,7 +15866,9 @@
       "date": "2021-12-10",
       "url": "https://thehub.ca/2021/12/10/want-to-combat-populism-innovation-and-positive-sum-politics-are-key/",
       "byline": "Robert Asselin and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15333,7 +15877,9 @@
       "date": "2021-12-03",
       "url": "https://thehub.ca/2021/12/03/sean-speer-boycott-the-olympics-or-not-our-relationship-with-china-must-change/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15342,7 +15888,9 @@
       "date": "2021-11-24",
       "url": "https://thehub.ca/2021/11/24/sean-speer-the-next-political-divide/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15360,7 +15908,9 @@
       "date": "2021-11-10",
       "url": "https://thehub.ca/2021/11/10/sean-speer-what-elite-commentary-gets-wrong-about-vance/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15369,7 +15919,9 @@
       "date": "2021-11-03",
       "url": "https://thehub.ca/2021/11/03/sean-speer-climate-policy-needs-growth-and-innovation-less-red-tape-and-self-righteousness/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15378,7 +15930,9 @@
       "date": "2021-10-05",
       "url": "https://thehub.ca/2021/10/05/sean-speer-the-federal-public-health-agency-needs-to-get-back-to-its-core-functions/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15396,7 +15950,9 @@
       "date": "2021-09-22",
       "url": "https://thehub.ca/2021/09/22/sean-speer-the-first-job-for-finance-should-be-boosting-worker-pay/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15405,7 +15961,9 @@
       "date": "2021-09-21",
       "url": "https://thehub.ca/2021/09/21/sean-speer-now-its-time-to-replace-anger-and-frustration-with-aspiration-and-purpose/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15414,7 +15972,9 @@
       "date": "2021-09-09",
       "url": "https://thehub.ca/2021/09/09/opinion-its-no-coincidence-we-have-shortages-in-the-most-regulated-sectors-of-our-economy/",
       "byline": "Sean Speer, Brian Dijkema and Aaron Wudrick",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15432,7 +15992,9 @@
       "date": "2021-08-13",
       "url": "https://thehub.ca/2021/08/13/in-this-election-campaign-series-issues-are-welcome-introducing-policy-pulse/",
       "byline": "Rudyard Griffiths and Sean Speer",
-      "coauthored": true
+      "coauthored": true,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15441,7 +16003,9 @@
       "date": "2021-08-02",
       "url": "https://thehub.ca/2021/08/02/sean-speer-the-olympics-can-be-a-modern-redemption-story-for-canadian-nationalism/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15450,7 +16014,9 @@
       "date": "2021-07-30",
       "url": "https://thehub.ca/2021/07/30/sean-speer-watch-out-for-the-growing-fault-line-between-public-and-private-workers/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15459,7 +16025,9 @@
       "date": "2021-07-20",
       "url": "https://thehub.ca/2021/07/20/sean-speer-look-beyond-liberalism-to-define-our-national-identity/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15468,7 +16036,9 @@
       "date": "2021-07-12",
       "url": "https://thehub.ca/2021/07/12/sean-speer-a-retreat-from-greatness/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15477,7 +16047,9 @@
       "date": "2021-07-06",
       "url": "https://thehub.ca/2021/07/06/sean-speer-against-peer-reviewers/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15495,7 +16067,9 @@
       "date": "2021-06-24",
       "url": "https://thehub.ca/2021/06/24/sean-speer-centre-blocks-massive-price-tag-shows-canadian-life-is-mired-in-red-tape/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15504,7 +16078,9 @@
       "date": "2021-06-17",
       "url": "https://thehub.ca/2021/06/17/sean-speer-canadas-next-frontier-should-be-oceanic-discovery/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15513,7 +16089,9 @@
       "date": "2021-06-10",
       "url": "https://thehub.ca/2021/06/10/sean-speer-its-time-for-canada-to-get-serious-about-china/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15522,7 +16100,9 @@
       "date": "2021-05-31",
       "url": "https://thehub.ca/2021/05/31/sean-speer-there-is-no-room-for-nuance-in-the-horrors-of-residential-schools/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15531,7 +16111,9 @@
       "date": "2021-05-24",
       "url": "https://thehub.ca/2021/05/24/sean-speer-the-idea-that-were-alone-in-the-universe-is-a-true-leap-of-faith/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15558,7 +16140,9 @@
       "date": "2021-05-11",
       "url": "https://thehub.ca/2021/05/11/sean-speer-canadian-creators-dont-need-protection-theyre-already-winning/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15576,7 +16160,9 @@
       "date": "2021-05-03",
       "url": "https://thehub.ca/2021/05/03/sean-speer-the-ten-year-anniversary-of-a-crazy-24-hours/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15594,7 +16180,9 @@
       "date": "2021-04-30",
       "url": "https://thehub.ca/2021/04/30/sean-speer-we-need-a-long-telegram-on-the-growing-competition-with-china/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15612,7 +16200,9 @@
       "date": "2021-04-20",
       "url": "https://thehub.ca/2021/04/20/sean-speer-the-budget-is-a-sobering-sign-that-progressives-are-winning-the-battle-of-ideas/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15621,7 +16211,9 @@
       "date": "2021-04-19",
       "url": "https://thehub.ca/2021/04/19/sean-speer-what-is-all-this-spending-going-to-get-us/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",
@@ -15630,7 +16222,9 @@
       "date": "2021-04-16",
       "url": "https://thehub.ca/2021/04/16/sean-speer-the-four-spectacular-elite-failures-shaping-modern-politics/",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Hub commentary",
+      "role": "Columnist"
     },
     {
       "type": "article",

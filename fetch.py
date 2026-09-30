@@ -405,11 +405,24 @@ def main():
             it["series"] = "The Weekly Wrap"
             it["role"] = "Author"
 
+    # Everything else written for The Hub is a body of work in its own right.
+    # Without this the written output shows up as the Weekly Wrap alone, which
+    # reads as a few dozen pieces beside several hundred podcast episodes.
+    for it in deduped:
+        if (it.get("type") == "article" and it.get("outlet") == "The Hub"
+                and not it.get("series")):
+            it["series"] = "Hub commentary"
+            it["role"] = "Columnist"
+
     # Summarise anything recurring: a role and a count read better than
     # hundreds of near-identical rows.
+    # The uncategorised Hub episodes are Dialogues in all but the boilerplate,
+    # so they are counted there rather than as a vague second podcast card.
+    MERGE_INTO = {"Hub Podcasts": "Hub Dialogues"}
+
     groups = {}
     for it in deduped:
-        s = it.get("series")
+        s = MERGE_INTO.get(it.get("series"), it.get("series"))
         if not s:
             continue
         g = groups.setdefault(s, {"name": s, "role": it.get("role", ""),
@@ -417,6 +430,10 @@ def main():
                                   "first": "9999", "last": "0000",
                                   "type": it.get("type", "")})
         g["count"] += 1
+        # When a group absorbs another, keep the role of the named series
+        # rather than whichever item happened to be seen first.
+        if it.get("series") == s and it.get("role"):
+            g["role"] = it["role"]
         d_ = it.get("date") or ""
         if d_:
             g["first"] = min(g["first"], d_)

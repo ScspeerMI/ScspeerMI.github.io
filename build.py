@@ -91,8 +91,8 @@ TEMPLATE = """<title>__NAME__</title>
   /* masthead */
   .mast { display:flex; gap:28px; align-items:flex-start; flex-wrap:wrap;
           border-bottom:2px solid var(--ink); padding-bottom:30px; }
-  /* a portrait crop, so a rectangle rather than a circle */
-  .portrait { width:148px; aspect-ratio:600/805; border-radius:10px; object-fit:cover;
+  /* a square source image, shown square with softened corners */
+  .portrait { width:148px; aspect-ratio:1/1; border-radius:10px; object-fit:cover;
               flex:0 0 auto; background:var(--accent-bg); max-width:100%; }
   .mast-body { flex:1 1 320px; min-width:0; }
   h1 { font-family:var(--font-display); font-weight:600; font-size:clamp(34px,6vw,52px);
