@@ -25,10 +25,15 @@ PROFILE = {
            "Institute. Former senior economic adviser to the prime minister.",
 
     # Leave any of these empty and the page simply omits them.
-    "photo": "",                    # e.g. "portrait.jpg", placed in public/
-    "email": "",                    # shown as copyable text, not a mailto link
-    "email_note": "For editors and speaking enquiries",
-    "socials": [],                  # e.g. [{"label": "X", "url": "https://x.com/..."}]
+    "photo": "portrait.jpg",        # sits next to index.html in docs/
+    # Addresses are shown as selectable text with a copy button rather than
+    # mailto: links, which are unreliable and hand the address to scrapers.
+    "emails": [
+        {"label": "The Hub", "address": "sean@thehub.ca"},
+        {"label": "Manhattan Institute", "address": "sspeer@manhattan.institute"},
+    ],
+    "email_note": "Editors and speaking enquiries",
+    "socials": [{"label": "X", "url": "https://x.com/sean_speer"}],
 
     "links": [
         {"label": "The Hub", "url": "https://thehub.ca/"},
@@ -86,8 +91,9 @@ TEMPLATE = """<title>__NAME__</title>
   /* masthead */
   .mast { display:flex; gap:28px; align-items:flex-start; flex-wrap:wrap;
           border-bottom:2px solid var(--ink); padding-bottom:30px; }
-  .portrait { width:116px; height:116px; border-radius:50%; object-fit:cover;
-              flex:0 0 auto; background:var(--accent-bg); }
+  /* a standing figure wants a rectangle, not a circle */
+  .portrait { width:148px; aspect-ratio:600/946; border-radius:10px; object-fit:cover;
+              flex:0 0 auto; background:var(--accent-bg); max-width:100%; }
   .mast-body { flex:1 1 320px; min-width:0; }
   h1 { font-family:var(--font-display); font-weight:600; font-size:clamp(34px,6vw,52px);
        letter-spacing:-0.02em; line-height:1.04; margin:0 0 10px; text-wrap:balance; }
@@ -97,8 +103,12 @@ TEMPLATE = """<title>__NAME__</title>
   .chips { display:flex; flex-wrap:wrap; gap:8px 18px; font-size:14px; align-items:center; }
   .chips a { text-decoration:none; border-bottom:1px solid transparent; }
   .chips a:hover, .chips a:focus-visible { border-bottom-color:var(--accent); }
+  .contact { margin-top:16px; }
+  .contact .note { font-size:12px; letter-spacing:.07em; text-transform:uppercase;
+                   color:var(--ink-faint); margin-bottom:7px; }
   .mailrow { display:flex; align-items:center; gap:8px; flex-wrap:wrap;
-             margin-top:14px; font-size:14px; color:var(--ink-soft); }
+             margin-bottom:6px; font-size:14px; color:var(--ink-soft); }
+  .mailrow > span:first-child { min-width:132px; }
   .mailrow code { font-family:var(--font-ui); background:var(--accent-bg);
                   color:var(--accent); padding:3px 9px; border-radius:5px; user-select:all; }
   .mailrow button { font:inherit; font-size:12.5px; padding:4px 10px; border-radius:6px;
@@ -176,7 +186,7 @@ TEMPLATE = """<title>__NAME__</title>
     .date { order:2; }
     .wrap { padding-block:34px 60px; }
     .count { width:100%; margin-left:0; }
-    .portrait { width:84px; height:84px; }
+    .portrait { width:104px; }
   }
   @media (prefers-reduced-motion:reduce) { * { transition:none !important; } }
 </style>
@@ -299,21 +309,28 @@ TEMPLATE = """<title>__NAME__</title>
   qEl.addEventListener('input', function () { state.q = qEl.value; render(); });
   render();
 
-  var copyBtn = document.getElementById('copymail');
-  if (copyBtn) {
-    copyBtn.addEventListener('click', function () {
-      var addr = document.getElementById('mailaddr').textContent;
-      var note = document.getElementById('mailok');
-      function done() { note.textContent = 'copied'; setTimeout(function () { note.textContent = ''; }, 1800); }
+  Array.prototype.forEach.call(document.querySelectorAll('.copymail'), function (btn) {
+    btn.addEventListener('click', function () {
+      var note = btn.nextElementSibling;
+      var code = btn.previousElementSibling;
+      function done() {
+        note.textContent = 'copied';
+        setTimeout(function () { note.textContent = ''; }, 1800);
+      }
+      function selectIt() {
+        // Some app views refuse clipboard writes; selecting the text lets the
+        // reader copy it themselves rather than leaving the button dead.
+        var r = document.createRange();
+        r.selectNodeContents(code);
+        var sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(r);
+      }
       try {
-        navigator.clipboard.writeText(addr).then(done, function () {
-          var r = document.createRange();
-          r.selectNodeContents(document.getElementById('mailaddr'));
-          var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
-        });
-      } catch (e) { /* selection fallback above */ }
+        navigator.clipboard.writeText(btn.dataset.addr).then(done, selectIt);
+      } catch (e) { selectIt(); }
     });
-  }
+  });
 })();
 </script>
 """
@@ -410,12 +427,15 @@ def main():
         esc(l["url"]), esc(l["label"])) for l in PROFILE["links"] + PROFILE["socials"])
 
     contact = ""
-    if PROFILE["email"]:
-        contact = ('<div class="mailrow"><span>{}</span>'
-                   '<code id="mailaddr">{}</code>'
-                   '<button id="copymail" type="button">Copy</button>'
-                   '<span class="ok" id="mailok"></span></div>').format(
-            esc(PROFILE["email_note"]), esc(PROFILE["email"]))
+    if PROFILE["emails"]:
+        rows = "".join(
+            '<div class="mailrow"><span>{}</span><code>{}</code>'
+            '<button class="copymail" type="button" data-addr="{}">Copy</button>'
+            '<span class="ok"></span></div>'.format(
+                esc(e["label"]), esc(e["address"]), esc(e["address"]))
+            for e in PROFILE["emails"])
+        contact = '<div class="contact"><div class="note">{}</div>{}</div>'.format(
+            esc(PROFILE["email_note"]), rows)
 
     html = (TEMPLATE
             .replace("__NAME__", esc(PROFILE["name"]))
