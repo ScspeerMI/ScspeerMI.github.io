@@ -22,7 +22,8 @@ PROFILE = {
     "name": "Sean Speer",
     "tagline": "The political economy of Canada and the United States.",
     "bio": "Co-founder and editor-at-large at The Hub. Writer at the Manhattan "
-           "Institute. Former senior economic adviser to the prime minister.",
+           "Institute. Former senior economic adviser to Canadian Prime Minister "
+           "Stephen Harper.",
 
     # Leave any of these empty and the page simply omits them.
     "photo": "portrait.jpg",        # sits next to index.html in docs/
