@@ -401,6 +401,8 @@ def build_featured(items, chosen):
                 break
     if not picks:
         return ""
+    # Newest first, matching the archive below, so the whole page reads one way.
+    picks.sort(key=lambda p: p.get("date") or "", reverse=True)
     cards = []
     for p in picks:
         cards.append(
