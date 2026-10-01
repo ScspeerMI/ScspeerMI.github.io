@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30",
+  "generated": "2026-10-01",
   "cutoff_year": 2019,
   "series": [
     {
@@ -15,9 +15,9 @@
       "name": "The Hub",
       "role": "Columnist",
       "outlet": "The Hub",
-      "count": 394,
+      "count": 395,
       "first": "2021-04-16",
-      "last": "2026-09-29",
+      "last": "2026-09-30",
       "type": "article"
     },
     {
@@ -31,6 +31,17 @@
     }
   ],
   "items": [
+    {
+      "type": "article",
+      "outlet": "The Hub",
+      "title": "A statement on articles by \u201cDaniel Robson\u201d",
+      "date": "2026-09-30",
+      "url": "https://thehub.ca/2026/09/30/a-statement-on-articles-by-daniel-robson/",
+      "byline": "Rudyard Griffiths and Sean Speer",
+      "coauthored": true,
+      "series": "The Hub",
+      "role": "Columnist"
+    },
     {
       "type": "article",
       "outlet": "The Hub",
@@ -170,17 +181,6 @@
       "role": "Columnist"
     },
     {
-      "type": "article",
-      "outlet": "City Journal",
-      "series": "Manhattan Institute",
-      "role": "Writer",
-      "title": "AI Safety Doesn\u2019t Have to Start from Scratch",
-      "date": "2026-09-18",
-      "url": "https://cityjournal.substack.com/p/ai-safety-doesnt-have-to-start-from",
-      "byline": "Sean Speer",
-      "coauthored": false
-    },
-    {
       "type": "podcast",
       "outlet": "The Hub",
       "series": "Podcast appearances",
@@ -202,6 +202,17 @@
       "coauthored": false,
       "series": "Podcast appearances",
       "role": "Host, co-host, and guest"
+    },
+    {
+      "type": "article",
+      "outlet": "City Journal",
+      "series": "Manhattan Institute",
+      "role": "Writer",
+      "title": "AI Safety Doesn\u2019t Have to Start from Scratch",
+      "date": "2026-09-18",
+      "url": "https://cityjournal.substack.com/p/ai-safety-doesnt-have-to-start-from",
+      "byline": "Sean Speer",
+      "coauthored": false
     },
     {
       "type": "podcast",
