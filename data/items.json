@@ -1,23 +1,23 @@
 {
-  "generated": "2026-10-02",
+  "generated": "2026-10-03",
   "cutoff_year": 2019,
   "series": [
     {
       "name": "Podcast appearances",
       "role": "Host, co-host, and guest",
       "outlet": "The Hub",
-      "count": 955,
+      "count": 957,
       "first": "2022-01-17",
-      "last": "2026-10-01",
+      "last": "2026-10-02",
       "type": "podcast"
     },
     {
       "name": "The Hub",
       "role": "Columnist",
       "outlet": "The Hub",
-      "count": 395,
+      "count": 396,
       "first": "2021-04-16",
-      "last": "2026-09-30",
+      "last": "2026-10-02",
       "type": "article"
     },
     {
@@ -31,6 +31,41 @@
     }
   ],
   "items": [
+    {
+      "type": "article",
+      "outlet": "The Hub",
+      "title": "Liberals are finally rediscovering capitalism. Conservatives should welcome it",
+      "date": "2026-10-02",
+      "url": "https://thehub.ca/2026/10/02/liberals-are-finally-rediscovering-capitalism-conservatives-should-welcome-it/",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "The Hub",
+      "role": "Columnist"
+    },
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "title": "Has Canada's pipeline war been won?",
+      "date": "2026-10-02",
+      "url": "https://shows.acast.com/hub-podcasts/episodes/has-canadas-pipeline-war-been-won",
+      "byline": "",
+      "coauthored": false,
+      "recurring": true
+    },
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "title": "Has Canada become a one-party state?",
+      "date": "2026-10-02",
+      "url": "https://shows.acast.com/hub-podcasts/episodes/has-canada-become-a-one-party-state",
+      "byline": "",
+      "coauthored": false,
+      "recurring": true
+    },
     {
       "type": "podcast",
       "outlet": "The Hub",
