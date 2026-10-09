@@ -1,14 +1,14 @@
 {
-  "generated": "2026-10-08",
+  "generated": "2026-10-09",
   "cutoff_year": 2019,
   "series": [
     {
       "name": "Podcast appearances",
       "role": "Host, co-host, and guest",
       "outlet": "The Hub",
-      "count": 960,
+      "count": 961,
       "first": "2022-01-17",
-      "last": "2026-10-07",
+      "last": "2026-10-08",
       "type": "podcast"
     },
     {
@@ -31,6 +31,18 @@
     }
   ],
   "items": [
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "title": "Why Alberta leaving could cost workers $15,000 annually",
+      "date": "2026-10-08",
+      "url": "https://shows.acast.com/hub-podcasts/episodes/why-alberta-leaving-could-cost-workers-15000-annually",
+      "byline": "",
+      "coauthored": false,
+      "recurring": true
+    },
     {
       "type": "podcast",
       "outlet": "The Hub",
