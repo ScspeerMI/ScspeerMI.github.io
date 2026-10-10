@@ -1,23 +1,23 @@
 {
-  "generated": "2026-10-09",
+  "generated": "2026-10-10",
   "cutoff_year": 2019,
   "series": [
     {
       "name": "Podcast appearances",
       "role": "Host, co-host, and guest",
       "outlet": "The Hub",
-      "count": 961,
+      "count": 962,
       "first": "2022-01-17",
-      "last": "2026-10-08",
+      "last": "2026-10-09",
       "type": "podcast"
     },
     {
       "name": "The Hub",
       "role": "Columnist",
       "outlet": "The Hub",
-      "count": 397,
+      "count": 398,
       "first": "2021-04-16",
-      "last": "2026-10-06",
+      "last": "2026-10-09",
       "type": "article"
     },
     {
@@ -31,6 +31,29 @@
     }
   ],
   "items": [
+    {
+      "type": "article",
+      "outlet": "The Hub",
+      "title": "Rubio, Badenoch and the fight to define a conservative future",
+      "date": "2026-10-09",
+      "url": "https://thehub.ca/2026/10/09/rubio-badenoch-and-the-fight-to-define-a-conservative-future/",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "The Hub",
+      "role": "Columnist"
+    },
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "title": "Will Alberta and Quebec separatists actually strengthen Canadian democracy?",
+      "date": "2026-10-09",
+      "url": "https://shows.acast.com/hub-podcasts/episodes/will-alberta-and-quebec-separatists-actually-strengthen-cana",
+      "byline": "",
+      "coauthored": false,
+      "recurring": true
+    },
     {
       "type": "podcast",
       "outlet": "The Hub",
