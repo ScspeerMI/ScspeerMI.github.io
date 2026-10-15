@@ -1,14 +1,14 @@
 {
-  "generated": "2026-10-14",
+  "generated": "2026-10-15",
   "cutoff_year": 2019,
   "series": [
     {
       "name": "Podcast appearances",
       "role": "Host, co-host, and guest",
       "outlet": "The Hub",
-      "count": 963,
+      "count": 964,
       "first": "2022-01-17",
-      "last": "2026-10-13",
+      "last": "2026-10-14",
       "type": "podcast"
     },
     {
@@ -31,6 +31,18 @@
     }
   ],
   "items": [
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "title": "How will Mark Carney manage inflation and slow growth?",
+      "date": "2026-10-14",
+      "url": "https://shows.acast.com/hub-podcasts/episodes/how-will-mark-carney-manage-inflation-and-slow-growth",
+      "byline": "",
+      "coauthored": false,
+      "recurring": true
+    },
     {
       "type": "podcast",
       "outlet": "The Hub",
