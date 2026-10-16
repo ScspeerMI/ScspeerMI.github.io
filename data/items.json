@@ -1,14 +1,14 @@
 {
-  "generated": "2026-10-15",
+  "generated": "2026-10-16",
   "cutoff_year": 2019,
   "series": [
     {
       "name": "Podcast appearances",
       "role": "Host, co-host, and guest",
       "outlet": "The Hub",
-      "count": 964,
+      "count": 965,
       "first": "2022-01-17",
-      "last": "2026-10-14",
+      "last": "2026-10-15",
       "type": "podcast"
     },
     {
@@ -31,6 +31,18 @@
     }
   ],
   "items": [
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "title": "Trump's 51st-state threat returns\u2014how will Carney respond?",
+      "date": "2026-10-15",
+      "url": "https://shows.acast.com/hub-podcasts/episodes/trumps-51st-state-threat-returnshow-will-carney-respond",
+      "byline": "",
+      "coauthored": false,
+      "recurring": true
+    },
     {
       "type": "podcast",
       "outlet": "The Hub",
