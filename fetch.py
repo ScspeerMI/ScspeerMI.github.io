@@ -10,12 +10,14 @@ because the sources are the source of truth, not this file.
 Sources that work today:
   - The Hub          WordPress REST API, full archive, every co-author byline
   - Podcasts         Apple's public podcast index, searched by name
-  - City Journal     the Substack archive API (Substack began April 2026)
+  - City Journal     MI's search index, which also lists his MI pieces
+  - CJ Substack      the Substack archive API (Substack began April 2026)
 
 Sources needing a hand:
-  - City Journal proper, National Post, Globe and Mail all render their author
-    pages with JavaScript and expose no archive API. Add those by hand in
-    data/manual.json - see that file for the shape.
+  - National Post, Globe and Mail render their author pages with JavaScript
+    and expose no archive API. MI reposts of op-eds need their original
+    outlet named. Add those by hand in data/manual.json - see that file for
+    the shape.
 """
 
 import json
@@ -165,6 +167,66 @@ def fetch_substack(host="cityjournal.substack.com", name="speer", outlet="City J
                 "coauthored": len(bylines) > 1,
             })
         offset += 50
+        time.sleep(0.2)
+    return items
+
+
+# ------------------------------------- Manhattan Institute and City Journal
+
+MI_SEARCH = "https://search.manhattan.institute/api/mi/search/search.json"
+MI_PERSON = "46780"     # his id in MI's search index, shared by both sites
+MI_SITES = {
+    "cj": ("City Journal", "https://www.city-journal.org", "/cj"),
+    "mi": ("Manhattan Institute", "https://manhattan.institute", ""),
+}
+
+
+def fetch_mi():
+    """MI's own search service, which drives the lists on his MI profile page.
+
+    City Journal's author page is built in the browser and has no feed, but
+    the same index sits behind both sites and answers plain JSON. With
+    cross_site on, one query returns his City Journal and MI pieces together.
+
+    An MI item is often a repost of an op-ed that first ran elsewhere, and the
+    index does not say where. Those keep a manual entry, which wins on dedup.
+    """
+    items, offset = [], 0
+    while True:
+        q = urllib.parse.urlencode({"people[]": MI_PERSON, "limit": 100,
+                                    "offset": offset, "dates": "0-2147483647",
+                                    "cross_site": "true"})
+        d, _ = get_json(MI_SEARCH + "?" + q)
+        batch = d.get("items") or []
+        for it in batch:
+            site = MI_SITES.get(it.get("site"))
+            m = it.get("meta") or {}
+            # Writing only: the index also tags people on events and podcasts.
+            if not site or (it.get("types") or {}).get("name") != "Article":
+                continue
+            outlet, host, prefix = site
+            path = m.get("permalink") or ""
+            if prefix and path.startswith(prefix + "/"):
+                path = path[len(prefix):]
+            try:
+                d_ = datetime.strptime(m.get("date_formatted") or "", "%b %d %Y").strftime("%Y-%m-%d")
+            except ValueError:
+                d_ = ""
+            if d_ and int(d_[:4]) < CUTOFF:
+                continue
+            names = [a.get("name", "") for a in it.get("authors") or []]
+            items.append({
+                "type": "article",
+                "outlet": outlet,
+                "title": re.sub(r"\s+", " ", clean(m.get("title"))),
+                "date": d_,
+                "url": host + path,
+                "byline": ", ".join(names),
+                "coauthored": len(names) > 1,
+            })
+        offset += len(batch)
+        if not batch or offset >= (d.get("total") or 0):
+            break
         time.sleep(0.2)
     return items
 
@@ -373,6 +435,20 @@ def item_key(it):
                             re.sub(r"[^a-z0-9]+", " ", (it.get("title") or "").lower()).strip())
 
 
+def norm(t):
+    t = (t or "").lower()
+    t = t.replace("’", "'").replace("‘", "'")
+    t = t.replace("—", " ").replace("–", " ")
+    return re.sub(r"[^a-z0-9]+", " ", t).strip()
+
+
+def title_key(it):
+    """Scoped to the type: an episode and an article can legitimately share a
+    title and are still two different things."""
+    n = norm(it.get("title"))
+    return it.get("type", "") + "|" + n if n else ""
+
+
 def merge_previous(fresh):
     """Add back anything the previous run found that this one did not.
 
@@ -388,8 +464,12 @@ def merge_previous(fresh):
     except Exception:
         return fresh, []
 
+    # Match on title as well as URL, as the de-duplication does: a piece that
+    # now arrives under a better address is the same piece, not a lost one.
     have = {item_key(it) for it in fresh}
-    carried = [it for it in old if item_key(it) not in have]
+    have_titles = {title_key(it) for it in fresh} - {""}
+    carried = [it for it in old if item_key(it) not in have
+               and title_key(it) not in have_titles]
     return fresh + carried, carried
 
 
@@ -403,6 +483,9 @@ def main():
         ("The Hub", fetch_hub),
         ("National Post", lambda: fetch_wp_author("https://nationalpost.com", "sspeer", "National Post")),
         ("New York Post", lambda: fetch_wp_author("https://nypost.com", "sean-speer", "New York Post")),
+        # Ahead of the Substack, so a piece carried in both keeps its
+        # city-journal.org address rather than the newsletter copy.
+        ("Manhattan Institute / City Journal", fetch_mi),
         ("City Journal (Substack)", fetch_substack),
         ("Hub podcasts", fetch_hub_podcasts),
         ("Other podcasts", fetch_podcasts),
@@ -421,28 +504,18 @@ def main():
     # De-duplicate, keeping the first seen. Match on URL and, separately, on a
     # normalised title: the same piece often appears under two addresses (a
     # Substack copy and the outlet's own), and those are one item, not two.
-    def norm(t):
-        t = (t or "").lower()
-        t = t.replace("’", "'").replace("‘", "'")
-        t = t.replace("—", " ").replace("–", " ")
-        return re.sub(r"[^a-z0-9]+", " ", t).strip()
-
     seen_urls, seen_titles, deduped = set(), set(), []
     for it in all_items:
         url_key = (it.get("url") or "").split("?")[0].rstrip("/")
-        # Scope the title match to the type: an episode and an article can
-        # legitimately share a title and are still two different things.
-        title_key = it.get("type", "") + "|" + norm(it.get("title"))
-        if not norm(it.get("title")):
-            title_key = ""
+        t_key = title_key(it)
         if url_key and url_key in seen_urls:
             continue
-        if title_key and title_key in seen_titles:
+        if t_key and t_key in seen_titles:
             continue
         if url_key:
             seen_urls.add(url_key)
-        if title_key:
-            seen_titles.add(title_key)
+        if t_key:
+            seen_titles.add(t_key)
         deduped.append(it)
 
     # A published piece does not become unpublished. If a source is briefly

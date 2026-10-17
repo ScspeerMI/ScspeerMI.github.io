@@ -24,8 +24,8 @@
       "name": "Manhattan Institute",
       "role": "Writer",
       "outlet": "City Journal",
-      "count": 24,
-      "first": "2026-04-16",
+      "count": 28,
+      "first": "2022-02-09",
       "last": "2026-10-14",
       "type": "article"
     }
@@ -382,13 +382,13 @@
     {
       "type": "article",
       "outlet": "City Journal",
-      "series": "Manhattan Institute",
-      "role": "Writer",
       "title": "AI Safety Doesn\u2019t Have to Start from Scratch",
       "date": "2026-09-18",
-      "url": "https://cityjournal.substack.com/p/ai-safety-doesnt-have-to-start-from",
+      "url": "https://www.city-journal.org/article/ai-safety-doesnt-have-to-start-from-scratch",
       "byline": "Sean Speer",
-      "coauthored": false
+      "coauthored": false,
+      "series": "Manhattan Institute",
+      "role": "Writer"
     },
     {
       "type": "podcast",
@@ -796,17 +796,6 @@
     },
     {
       "type": "article",
-      "outlet": "City Journal",
-      "title": "AI Can\u2019t Replace Human Judgment",
-      "date": "2026-08-14",
-      "url": "https://www.city-journal.org/article/messy-jobs-work-ai-cannot-reach",
-      "byline": "Sean Speer",
-      "coauthored": false,
-      "series": "Manhattan Institute",
-      "role": "Writer"
-    },
-    {
-      "type": "article",
       "outlet": "The Hub",
       "title": "I was wrong about Danielle Smith",
       "date": "2026-08-14",
@@ -815,6 +804,17 @@
       "coauthored": false,
       "series": "The Hub",
       "role": "Columnist"
+    },
+    {
+      "type": "article",
+      "outlet": "City Journal",
+      "title": "AI Can\u2019t Replace Human Judgment",
+      "date": "2026-08-14",
+      "url": "https://www.city-journal.org/article/messy-jobs-work-ai-cannot-reach",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "Manhattan Institute",
+      "role": "Writer"
     },
     {
       "type": "podcast",
@@ -842,17 +842,6 @@
     },
     {
       "type": "article",
-      "outlet": "City Journal",
-      "title": "United Academic Workers",
-      "date": "2026-08-07",
-      "url": "https://www.city-journal.org/article/uaw-union-universities-politics",
-      "byline": "Sean Speer",
-      "coauthored": false,
-      "series": "Manhattan Institute",
-      "role": "Writer"
-    },
-    {
-      "type": "article",
       "outlet": "The Hub",
       "title": "Canada\u2019s hidden political centre is more normal than you think",
       "date": "2026-08-07",
@@ -861,6 +850,17 @@
       "coauthored": false,
       "series": "The Hub",
       "role": "Columnist"
+    },
+    {
+      "type": "article",
+      "outlet": "City Journal",
+      "title": "United Academic Workers",
+      "date": "2026-08-07",
+      "url": "https://www.city-journal.org/article/uaw-union-universities-politics",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "Manhattan Institute",
+      "role": "Writer"
     },
     {
       "type": "podcast",
@@ -979,17 +979,6 @@
     },
     {
       "type": "article",
-      "outlet": "City Journal",
-      "title": "Here Are the Cities Making AI Easier\u2014and Harder",
-      "date": "2026-07-24",
-      "url": "https://www.city-journal.org/article/here-are-the-cities-making-ai-easier-and-harder",
-      "byline": "Sean Speer",
-      "coauthored": false,
-      "series": "Manhattan Institute",
-      "role": "Writer"
-    },
-    {
-      "type": "article",
       "outlet": "The Hub",
       "title": "Are Canadians actually obsessed with socialism? Not so fast",
       "date": "2026-07-24",
@@ -1009,6 +998,17 @@
       "coauthored": true,
       "series": "The Hub",
       "role": "Columnist"
+    },
+    {
+      "type": "article",
+      "outlet": "City Journal",
+      "title": "Here Are the Cities Making AI Easier\u2014and Harder",
+      "date": "2026-07-24",
+      "url": "https://www.city-journal.org/article/here-are-the-cities-making-ai-easier-and-harder",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "Manhattan Institute",
+      "role": "Writer"
     },
     {
       "type": "podcast",
@@ -1138,7 +1138,7 @@
     {
       "type": "article",
       "outlet": "City Journal",
-      "title": "Building Public Support for Artificial Intelligence",
+      "title": "How to Build a Pro-AI Majority",
       "date": "2026-07-13",
       "url": "https://www.city-journal.org/article/artificial-intelligence-public-support-majority-america",
       "byline": "Jesse Arm, Sean Speer",
@@ -1531,17 +1531,6 @@
     },
     {
       "type": "article",
-      "outlet": "City Journal",
-      "title": "Piketty\u2019s Plan to Cap Prosperity",
-      "date": "2026-06-09",
-      "url": "https://www.city-journal.org/article/pikettys-plan-to-cap-prosperity",
-      "byline": "Sean Speer",
-      "coauthored": false,
-      "series": "Manhattan Institute",
-      "role": "Writer"
-    },
-    {
-      "type": "article",
       "outlet": "The Hub",
       "title": "Canada\u2019s economic problems are bigger than a technical recession",
       "date": "2026-06-09",
@@ -1550,6 +1539,17 @@
       "coauthored": true,
       "series": "The Hub",
       "role": "Columnist"
+    },
+    {
+      "type": "article",
+      "outlet": "City Journal",
+      "title": "Piketty\u2019s Plan to Cap Prosperity",
+      "date": "2026-06-09",
+      "url": "https://www.city-journal.org/article/pikettys-plan-to-cap-prosperity",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "Manhattan Institute",
+      "role": "Writer"
     },
     {
       "type": "podcast",
@@ -1659,17 +1659,6 @@
     },
     {
       "type": "article",
-      "outlet": "City Journal",
-      "title": "Elizabeth Warren\u2019s AI Tax Mistake",
-      "date": "2026-05-29",
-      "url": "https://www.city-journal.org/article/elizabeth-warrens-ai-tax-mistake",
-      "byline": "Sean Speer",
-      "coauthored": false,
-      "series": "Manhattan Institute",
-      "role": "Writer"
-    },
-    {
-      "type": "article",
       "outlet": "The Hub",
       "title": "Why First Nations should be all-in on AI data centres",
       "date": "2026-05-29",
@@ -1678,6 +1667,17 @@
       "coauthored": false,
       "series": "The Hub",
       "role": "Columnist"
+    },
+    {
+      "type": "article",
+      "outlet": "City Journal",
+      "title": "Elizabeth Warren\u2019s AI Tax Mistake",
+      "date": "2026-05-29",
+      "url": "https://www.city-journal.org/article/elizabeth-warrens-ai-tax-mistake",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "Manhattan Institute",
+      "role": "Writer"
     },
     {
       "type": "podcast",
@@ -5724,6 +5724,17 @@
       "coauthored": false,
       "series": "The Hub",
       "role": "Columnist"
+    },
+    {
+      "type": "article",
+      "outlet": "City Journal",
+      "title": "Neoliberalism Needs a Reboot, Not a Requiem",
+      "date": "2025-06-20",
+      "url": "https://www.city-journal.org/article/neoliberalism-free-trade-globalization-economic-growth",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "Manhattan Institute",
+      "role": "Writer"
     },
     {
       "type": "podcast",
@@ -15795,6 +15806,17 @@
       "role": "Columnist"
     },
     {
+      "type": "article",
+      "outlet": "City Journal",
+      "title": "Trudeau\u2019s Wedge",
+      "date": "2022-02-25",
+      "url": "https://www.city-journal.org/article/trudeaus-wedge",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "Manhattan Institute",
+      "role": "Writer"
+    },
+    {
       "type": "podcast",
       "outlet": "The Hub",
       "series": "Podcast appearances",
@@ -15843,6 +15865,17 @@
       "recurring": true
     },
     {
+      "type": "article",
+      "outlet": "City Journal",
+      "title": "Extraordinary Measures",
+      "date": "2022-02-16",
+      "url": "https://www.city-journal.org/article/extraordinary-measures",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "Manhattan Institute",
+      "role": "Writer"
+    },
+    {
       "type": "podcast",
       "outlet": "The Hub",
       "series": "Podcast appearances",
@@ -15865,6 +15898,17 @@
       "byline": "",
       "coauthored": false,
       "recurring": true
+    },
+    {
+      "type": "article",
+      "outlet": "City Journal",
+      "title": "Canada\u2019s Restless Right",
+      "date": "2022-02-09",
+      "url": "https://www.city-journal.org/article/canadas-restless-right",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "Manhattan Institute",
+      "role": "Writer"
     },
     {
       "type": "podcast",
