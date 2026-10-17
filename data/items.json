@@ -1,36 +1,59 @@
 {
-  "generated": "2026-10-16",
+  "generated": "2026-10-17",
   "cutoff_year": 2019,
   "series": [
     {
       "name": "Podcast appearances",
       "role": "Host, co-host, and guest",
       "outlet": "The Hub",
-      "count": 965,
+      "count": 966,
       "first": "2022-01-17",
-      "last": "2026-10-15",
+      "last": "2026-10-16",
       "type": "podcast"
     },
     {
       "name": "The Hub",
       "role": "Columnist",
       "outlet": "The Hub",
-      "count": 398,
+      "count": 399,
       "first": "2021-04-16",
-      "last": "2026-10-09",
+      "last": "2026-10-16",
       "type": "article"
     },
     {
       "name": "Manhattan Institute",
       "role": "Writer",
       "outlet": "City Journal",
-      "count": 23,
+      "count": 24,
       "first": "2026-04-16",
-      "last": "2026-09-24",
+      "last": "2026-10-14",
       "type": "article"
     }
   ],
   "items": [
+    {
+      "type": "article",
+      "outlet": "The Hub",
+      "title": "10 people who could shape a B.C. Conservative government",
+      "date": "2026-10-16",
+      "url": "https://thehub.ca/2026/10/16/10-people-who-could-shape-a-b-c-conservative-government/",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "The Hub",
+      "role": "Columnist"
+    },
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "title": "Is Alberta's referendum shifting Canada's political ground?",
+      "date": "2026-10-16",
+      "url": "https://shows.acast.com/hub-podcasts/episodes/is-albertas-referendum-shifting-canadas-political-ground",
+      "byline": "",
+      "coauthored": false,
+      "recurring": true
+    },
     {
       "type": "podcast",
       "outlet": "The Hub",
@@ -42,6 +65,17 @@
       "byline": "",
       "coauthored": false,
       "recurring": true
+    },
+    {
+      "type": "article",
+      "outlet": "City Journal",
+      "title": "How Superstar Cities Tax Away Top Talent",
+      "date": "2026-10-14",
+      "url": "https://www.city-journal.org/article/uk-london-billionaires-wealth-taxes",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "Manhattan Institute",
+      "role": "Writer"
     },
     {
       "type": "podcast",
@@ -346,6 +380,17 @@
       "role": "Columnist"
     },
     {
+      "type": "article",
+      "outlet": "City Journal",
+      "series": "Manhattan Institute",
+      "role": "Writer",
+      "title": "AI Safety Doesn\u2019t Have to Start from Scratch",
+      "date": "2026-09-18",
+      "url": "https://cityjournal.substack.com/p/ai-safety-doesnt-have-to-start-from",
+      "byline": "Sean Speer",
+      "coauthored": false
+    },
+    {
       "type": "podcast",
       "outlet": "The Hub",
       "series": "Podcast appearances",
@@ -367,17 +412,6 @@
       "coauthored": false,
       "series": "Podcast appearances",
       "role": "Host, co-host, and guest"
-    },
-    {
-      "type": "article",
-      "outlet": "City Journal",
-      "series": "Manhattan Institute",
-      "role": "Writer",
-      "title": "AI Safety Doesn\u2019t Have to Start from Scratch",
-      "date": "2026-09-18",
-      "url": "https://cityjournal.substack.com/p/ai-safety-doesnt-have-to-start-from",
-      "byline": "Sean Speer",
-      "coauthored": false
     },
     {
       "type": "podcast",
