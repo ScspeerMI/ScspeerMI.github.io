@@ -74,6 +74,29 @@
   .modes button + button { border-left:1px solid var(--mast-rule); }
   .modes button[aria-pressed="true"] { background:var(--mast-fg); color:var(--mast); }
   .modes button:disabled { opacity:.35; cursor:not-allowed; }
+  .deck-head { align-items:center; }
+  .deck-head > div:first-child { flex:1 1 300px; min-width:0; }
+  .clipbtn { border:1px solid var(--mast-rule); background:transparent; color:var(--mast-fg); border-radius:8px;
+             padding:7px 14px; font-size:13.5px; display:flex; gap:7px; align-items:center; flex:0 0 auto; }
+  .clipbtn:hover { border-color:var(--clip); }
+  .clipbtn[aria-pressed="true"] { background:var(--clip); border-color:var(--clip); color:#1b1206; }
+
+  /* Watching is the default; the clip tools appear only in clip mode */
+  .deck:not(.clipping) .panel, .deck:not(.clipping) .out,
+  .deck:not(.clipping) .handle, .deck:not(.clipping) .range { display:none; }
+  .deck:not(.clipping) .stage-row { grid-template-columns:1fr; }
+  /* YouTube has its own controls, so ours only matter for audio or clipping */
+  .deck.video:not(.clipping) .transport { display:none; }
+
+  .poster { position:absolute; inset:0; width:100%; height:100%; border:0; padding:0; background:#000; cursor:pointer; }
+  .poster img { width:100%; height:100%; object-fit:cover; display:block; transition:opacity .2s; }
+  .poster:hover img { opacity:.82; }
+  .poster .disc { position:absolute; left:50%; top:50%; width:76px; height:76px; margin:-38px 0 0 -38px;
+                  border-radius:50%; background:rgba(16,28,56,.82); border:2px solid rgba(241,243,248,.9);
+                  display:grid; place-items:center; transition:transform .2s; }
+  .poster:hover .disc { transform:scale(1.06); }
+  .poster .disc svg { width:26px; height:26px; fill:#f1f3f8; margin-left:4px; }
+  @media (prefers-reduced-motion:reduce) { .poster img, .poster .disc { transition:none; } }
 
   .stage-row { display:grid; grid-template-columns:minmax(0,1.55fr) minmax(0,1fr); gap:18px; }
   .stage { position:relative; aspect-ratio:16/9; background:#000; border-radius:10px; overflow:hidden; max-width:100%; }
@@ -231,7 +254,7 @@
   /* embed mode: just the player and the clip, for other sites to iframe */
   body.embed .wrap { padding:0; max-width:none; }
   body.embed .sitebar, body.embed .panel, body.embed .out, body.embed .below, body.embed footer,
-  body.embed .modes { display:none; }
+  body.embed .modes, body.embed .clipbtn { display:none; }
   body.embed .deck { border-radius:0; padding:14px; }
   body.embed .stage-row { grid-template-columns:1fr; }
   body.embed .handle { display:none; }
@@ -264,7 +287,7 @@
     </nav>
   </header>
 
-  <section class="deck" aria-label="Player and clip maker">
+  <section class="deck" id="deck" aria-label="Player and clip maker">
     <div class="deck-head">
       <div>
         <div class="eyebrow" id="eyebrow"></div>
@@ -274,11 +297,16 @@
         <button id="mVideo" aria-pressed="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M1 2h7v8H1zM8.5 5 11 3v6L8.5 7z"/></svg>Video</button>
         <button id="mAudio" aria-pressed="false"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M1 4h2l3-3v10L3 8H1zM8 3.5a3.5 3.5 0 0 1 0 5V3.5z"/></svg>Audio</button>
       </div>
+      <button class="clipbtn" id="clipBtn" aria-pressed="false"><svg width="13" height="13" viewBox="0 0 12 12" fill="currentColor"><path d="M3 1.5a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6zm0 1a.8.8 0 1 0 0 1.6.8.8 0 0 0 0-1.6zM3 6.9a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6zm0 1a.8.8 0 1 0 0 1.6.8.8 0 0 0 0-1.6zM4.4 4.3 11 1v1.2L5.3 5.6zM5.3 6.4 11 9.8V11L4.4 7.7z"/></svg>Make a clip</button>
     </div>
 
     <div class="stage-row">
       <div class="stage" id="stage">
-        <div id="yt"></div>
+        <div id="yt" hidden></div>
+        <button class="poster" id="poster" hidden aria-label="Play video">
+          <img id="posterImg" alt="">
+          <span class="disc" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.5l7.5 4.5L3 10.5z"/></svg></span>
+        </button>
         <div class="audio-card" id="audioCard" hidden>
           <img id="art" alt="">
           <div class="meta">
@@ -413,36 +441,68 @@ const round1 = t => Math.round(t * 10) / 10;
 
 /* ---------- players: YouTube and <audio> behind one interface ---------- */
 const aud = $("aud");
+// A chosen video waits behind its cover image until someone presses play, so
+// YouTube's paused-state overlays (title, logo, share buttons) never show.
 // The player is created with its first video: an empty YouTube player never
 // reports ready in some browsers.
-let yt = null, ytReady = false, ytQueue = null;
+let yt = null, ytReady = false, ytQueue = null, pending = null;
 window.onYouTubeIframeAPIReady = () => { if (ytQueue) { ytQueue(); ytQueue = null; } };
-function cueYouTube(id, start) {
-  if (yt) { if (ytReady) yt.cueVideoById({ videoId: id, startSeconds: start }); else yt.__next = [id, start]; return; }
+function startYouTube(id, start) {
+  if (yt) { if (ytReady) yt.loadVideoById({ videoId: id, startSeconds: start }); else yt.__next = [id, start]; return; }
   yt = new YT.Player("yt", {
     videoId: id,
-    playerVars: { rel: 0, playsinline: 1, modestbranding: 1, start: Math.floor(start) },
+    playerVars: { rel: 0, playsinline: 1, modestbranding: 1, autoplay: 1, start: Math.floor(start) },
     events: {
       onReady: () => {
         ytReady = true;
-        if (yt.__next) { yt.cueVideoById({ videoId: yt.__next[0], startSeconds: yt.__next[1] }); yt.__next = null; }
+        if (yt.__next) { yt.loadVideoById({ videoId: yt.__next[0], startSeconds: yt.__next[1] }); yt.__next = null; }
+        else yt.playVideo();
         drawTicks();
       },
       onStateChange: syncPlayIcon,
     },
   });
 }
+function startVideo() {
+  if (!pending) return;
+  const { id, start } = pending;
+  pending = null;
+  $("poster").hidden = true;
+  $("yt").hidden = false;
+  const go = () => startYouTube(id, start);
+  window.YT && YT.Player ? go() : (ytQueue = go);
+}
+function showPoster(id, start) {
+  pending = { id, start };
+  const img = $("posterImg");
+  // maxresdefault is missing for some uploads; YouTube then serves a 120px placeholder
+  img.onload = () => { if (img.naturalWidth <= 120) img.src = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`; };
+  img.onerror = () => { img.src = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`; };
+  img.src = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
+  $("poster").hidden = false;
+  $("yt").hidden = true;
+}
+$("poster").onclick = startVideo;
+
 const P = {
-  cur: () => st.mode === "video" ? (ytReady && yt.getCurrentTime ? yt.getCurrentTime() : 0) : aud.currentTime,
+  cur: () => st.mode === "video" ? (pending ? pending.start : ytReady && yt.getCurrentTime ? yt.getCurrentTime() : 0) : aud.currentTime,
   dur: () => {
-    const d = st.mode === "video" ? (ytReady && yt.getDuration ? yt.getDuration() : 0) : aud.duration;
+    const d = st.mode === "video" ? (!pending && ytReady && yt.getDuration ? yt.getDuration() : 0) : aud.duration;
     return d && isFinite(d) ? d : (st.item?.duration || 0);
   },
-  playing: () => st.mode === "video" ? (ytReady && yt.getPlayerState && yt.getPlayerState() === 1) : !aud.paused,
-  seek: t => { st.mode === "video" ? ytReady && yt.seekTo(t, true) : (aud.currentTime = t); },
-  play: () => { st.mode === "video" ? ytReady && yt.playVideo() : aud.play().catch(() => {}); },
+  playing: () => st.mode === "video" ? (!pending && ytReady && yt.getPlayerState && yt.getPlayerState() === 1) : !aud.paused,
+  seek: t => { st.mode === "video" ? (pending ? (pending.start = t) : ytReady && yt.seekTo(t, true)) : (aud.currentTime = t); },
+  play: () => { st.mode === "video" ? (pending ? startVideo() : ytReady && yt.playVideo()) : aud.play().catch(() => {}); },
   pause: () => { st.mode === "video" ? ytReady && yt.pauseVideo && yt.pauseVideo() : aud.pause(); },
 };
+
+// Clip tools stay out of the way until someone asks for them.
+function setClipping(on) {
+  $("deck").classList.toggle("clipping", on);
+  $("clipBtn").setAttribute("aria-pressed", on);
+  render();
+}
+$("clipBtn").onclick = () => setClipping(!$("deck").classList.contains("clipping"));
 
 function load(item, mode, s, e, title) {
   P.pause();
@@ -462,13 +522,15 @@ function load(item, mode, s, e, title) {
   $("mAudio").setAttribute("aria-pressed", st.mode === "audio");
 
   const video = st.mode === "video";
-  $("yt").hidden = !video;
+  $("deck").classList.toggle("video", video);
   $("audioCard").hidden = video;
   if (video) {
     aud.removeAttribute("src"); aud.load();
-    const go = () => cueYouTube(item.youtube, st.s);
-    window.YT && YT.Player ? go() : (ytQueue = go);
+    showPoster(item.youtube, st.s);
   } else {
+    pending = null;
+    $("poster").hidden = true;
+    $("yt").hidden = true;
     $("art").src = item.image || "";
     $("art").hidden = !item.image;
     $("aOutlet").textContent = item.series || item.outlet;
@@ -612,8 +674,8 @@ $("mAudio").onclick = () => st.mode !== "audio" && load(st.item, "audio", st.s, 
 document.addEventListener("keydown", e => {
   if (e.target.closest("input, textarea, [role=slider]") || e.metaKey || e.ctrlKey || e.altKey) return;
   const k = e.key.toLowerCase();
-  if (k === "i") setIn(P.cur());
-  else if (k === "o") setOut(P.cur());
+  if (k === "i") { setClipping(true); setIn(P.cur()); }
+  else if (k === "o") { setClipping(true); setOut(P.cur()); }
   else if (k === " " && !e.target.closest("button")) { e.preventDefault(); $("pp").click(); }
   else if (k === "arrowleft" || k === "arrowright") { P.seek(P.cur() + (k === "arrowleft" ? -5 : 5)); }
 });
@@ -661,6 +723,7 @@ function renderShelf() {
     if (!card) return;
     const c = list[+card.dataset.i];
     load(byId(c.id), c.m === "a" ? "audio" : "video", c.s, c.e, c.t);
+    setClipping(true);
     $("stage").scrollIntoView({ behavior: "smooth", block: "center" });
   };
 }
@@ -743,6 +806,7 @@ function fromHash() {
   if (!it) return false;
   if (/&embed\b/.test(h)) document.body.classList.add("embed");
   load(it, m[2] === "a" ? "audio" : "video", +m[3], +m[4], m[5]);
+  setClipping(true);
   return true;
 }
 window.addEventListener("hashchange", fromHash);
