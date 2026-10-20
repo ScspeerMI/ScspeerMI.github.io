@@ -101,6 +101,25 @@ video plays from YouTube, so clips are links to a moment, not copied files.
 - The podcast host inserts ads that can differ between listeners, so an audio
   clip can start a few seconds early or late. Video clips are exact.
 
+### Making a video for X
+
+Visit `seanspeer.com/media/#studio` once on each device you clip from. That
+turns on a **Make video for X** button in the clip tools, in that browser
+only; `#nostudio` turns it off.
+
+1. Open an episode, switch to **Audio**, click **Make a clip**, and set the in
+   and out points and title.
+2. Click **Make video for X**. GitHub opens with the clip filled in; press
+   **Submit**.
+3. In about three minutes the issue gets a reply with a download link for a
+   vertical, captioned MP4, the clip's first and last words, and a suggested
+   post. Finished videos are kept on the repository's `clips` release.
+
+`make_clip.py` does the work and `.github/workflows/clip.yml` runs it. The
+workflow ignores issues opened by anyone but the repository owner. On a laptop
+with ffmpeg and `pip install faster-whisper numpy`, the same thing runs as
+`python make_clip.py "<share link>"`, writing to `clips_out/`.
+
 ## Changing the page
 
 Everything editable by hand lives in the `PROFILE` block at the top of

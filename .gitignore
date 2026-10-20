@@ -3,3 +3,5 @@ __pycache__/
 .venv/
 # fetched source data is regenerable
 data/raw/
+# audiograms made by make_clip.py; the finished ones live on the "clips" release
+clips_out/

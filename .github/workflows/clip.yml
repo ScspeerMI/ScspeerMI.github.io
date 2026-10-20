@@ -1,0 +1,99 @@
+name: Make clip
+
+# The "Make video for X" button on seanspeer.com/media/ opens a GitHub issue
+# titled "Clip: ..." with the clip's share link in it. This turns that link
+# into an audiogram MP4, attaches it to the "clips" release, and replies on the
+# issue with a download link and the clip's first and last words.
+#
+# Only issues opened by the repository owner are acted on: anyone can open an
+# issue on a public repository, and this should not run for strangers.
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:           # also runnable by hand from the Actions tab
+    inputs:
+      link:
+        description: "Share link from seanspeer.com/media/"
+        required: true
+
+permissions:
+  contents: write              # to upload to the release
+  issues: write                # to reply on and close the issue
+
+concurrency:
+  group: make-clip
+  cancel-in-progress: false
+
+jobs:
+  clip:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.issue.user.login == github.repository_owner &&
+       startsWith(github.event.issue.title, 'Clip'))
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      # Passed through the environment, never pasted into a script: issue text
+      # is untrusted input.
+      LINK: ${{ github.event.issue.body || inputs.link }}
+      ISSUE: ${{ github.event.issue.number }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install ffmpeg and fonts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-ibm-plex
+
+      - name: Install Whisper
+        run: pip install -q faster-whisper numpy
+
+      # The speech model is about 500 MB; keep it between runs.
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: whisper-small.en
+
+      - name: Make the audiogram
+        run: python make_clip.py "$LINK"
+
+      - name: Attach it to the clips release
+        run: |
+          FILE=$(python -c "import json;print(json.load(open('clips_out/summary.json'))['file'])")
+          gh release view clips >/dev/null 2>&1 || \
+            gh release create clips --title "Clips" \
+              --notes "Audiograms made from seanspeer.com/media/ with the Make video for X button."
+          gh release upload clips "$FILE" --clobber
+
+      - name: Reply with the download link
+        if: env.ISSUE != ''
+        run: |
+          python - <<'EOF' > reply.md
+          import json, os, re
+          s = json.load(open("clips_out/summary.json", encoding="utf-8"))
+          url = "https://github.com/{}/releases/download/clips/{}".format(os.environ["GITHUB_REPOSITORY"], s["name"])
+          share = (re.search(r"https://\S+#clip=\S+", os.environ["LINK"]) or [""])[0]
+          m = lambda t: "{}:{:02d}".format(int(t // 60), int(t % 60))
+          print("**Your video is ready:** [{}]({})  ({} MB)\n".format(s["name"], url, s["size_mb"]))
+          print("{} · {} → {}\n".format(s["episode"], m(s["start"]), m(s["end"])))
+          print("**Check the cut before posting.** The podcast host's ads can shift the timing by a few seconds.\n")
+          print("- Just before the clip: …{}".format(s["before"] or "(start of episode)"))
+          print("- **Starts:** {}".format(s["first"]))
+          print("- **Ends:** {}".format(s["last"]))
+          print("- Just after: {}…\n".format(s["after"] or "(end of episode)"))
+          print("If it starts or ends mid-sentence, adjust the in and out points on the site and press **Make video for X** again.\n")
+          print("**Suggested post**\n")
+          print("> {}\n>\n> Full episode: {}\n".format(s["title"], s["episode_url"] or share))
+          print("<details><summary>Captions</summary>\n\n{}\n\n</details>".format(s["transcript"]))
+          EOF
+          gh issue comment "$ISSUE" --body-file reply.md
+          gh issue close "$ISSUE"
+
+      - name: Say so if it failed
+        if: failure() && env.ISSUE != ''
+        run: |
+          gh issue comment "$ISSUE" --body "Making this clip failed. The details are in the [run log](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}). The most common cause is an episode that was published today and isn't on the site until tomorrow morning's update."

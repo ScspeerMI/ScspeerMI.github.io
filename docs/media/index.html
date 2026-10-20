@@ -346,6 +346,7 @@
         <div class="actions">
           <button class="btn clip" id="playClip"><svg viewBox="0 0 12 12"><path d="M2 1l9 5-9 5z"/></svg>Play clip</button>
           <button class="btn alt" id="saveClip">Save to shelf</button>
+          <a class="btn alt" id="makeVideo" hidden target="_blank" rel="noopener">Make video for X</a>
         </div>
       </div>
     </div>
@@ -595,6 +596,7 @@ function render() {
     $("srcLabel").textContent = "Full episode";
     $("srcLink").textContent = st.item.url || st.item.audio;
   }
+  syncMakeVideo();
 }
 
 function drawTicks() {
@@ -692,6 +694,36 @@ function toast(msg) { const t = $("toast"); t.textContent = msg; t.hidden = fals
 /* ---------- the shelf ---------- */
 function loadSaved() { try { return JSON.parse(localStorage.getItem("ss-clips") || "[]"); } catch { return []; } }
 function storeSaved(v) { try { localStorage.setItem("ss-clips", JSON.stringify(v)); } catch {} }
+
+/* ---------- make a video for X (the owner's devices only) ---------- */
+// Visiting /media/#studio once turns the button on in that browser, and
+// /media/#nostudio turns it off. It opens a GitHub issue holding the share
+// link; .github/workflows/clip.yml renders the audiogram and replies there.
+const REPO = "https://github.com/ScspeerMI/ScspeerMI.github.io";
+function studio(on) {
+  try {
+    if (on != null) on ? localStorage.setItem("ss-studio", "1") : localStorage.removeItem("ss-studio");
+    return localStorage.getItem("ss-studio") === "1";
+  } catch { return false; }
+}
+function syncMakeVideo() {
+  const b = $("makeVideo");
+  b.hidden = !studio() || !st.item || st.item.adhoc || !st.item.audio;
+  if (b.hidden) return;
+  const title = $("clipTitle").value.trim() || st.item.title;
+  const link = base() + "#" + clipKey();
+  b.href = REPO + "/issues/new?" + new URLSearchParams({
+    title: "Clip: " + title,
+    body: link + "\n\nPress Submit. A reply with the video arrives here in about three minutes.",
+  });
+}
+$("makeVideo").addEventListener("click", e => {
+  // Audiograms use the podcast audio, whose timeline differs from YouTube's.
+  if (st.mode === "video") {
+    e.preventDefault();
+    toast("Switch to Audio and set the in and out points there first");
+  }
+});
 
 $("saveClip").onclick = () => {
   if (st.item.adhoc) { toast("Pasted links can be shared but not saved yet"); return; }
@@ -797,6 +829,12 @@ $("paste").addEventListener("submit", e => {
 /* ---------- boot: a shared clip in the hash, or the latest episode ---------- */
 function fromHash() {
   const h = decodeURIComponent(location.hash.slice(1));
+  if (h === "studio" || h === "nostudio") {
+    toast(studio(h === "studio") ? "Make video for X is on in this browser" : "Make video for X is off");
+    history.replaceState(null, "", location.pathname);
+    syncMakeVideo();
+    return false;
+  }
   const m = h.match(/^clip=([^~]+)~([va])~([\d.]+)~([\d.]+)~?([^&]*)/);
   if (!m) return false;
   let it = byId(m[1]);
