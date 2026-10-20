@@ -53,11 +53,13 @@ PROFILE = {
     ],
 }
 
-# Recurring work is shown as a role, and its individual episodes are kept out of
-# the archive list: 950 near-identical rows would bury everything else.
+# Recurring work is shown as a role, and its individual episodes are left out of
+# the default archive view: 950 near-identical rows would bury everything else.
+# They appear once a reader picks Podcasts, an outlet, or searches.
 COLLAPSE_SERIES_OF_TYPE = {"podcast"}
 
-TEMPLATE = """<title>__NAME__</title>
+TEMPLATE = """<meta charset="utf-8">
+<title>__NAME__</title>
 <style>
   /* Layout: a masthead and roles above a filterable, year-banded archive */
   :root {
@@ -176,6 +178,9 @@ TEMPLATE = """<title>__NAME__</title>
   .tag { font-size:11px; letter-spacing:.06em; text-transform:uppercase; padding:2px 7px;
          border-radius:4px; background:var(--accent-bg); color:var(--accent); white-space:nowrap; }
   .with { color:var(--ink-faint); font-style:italic; }
+  .play { font-size:12.5px; font-weight:500; color:var(--accent); text-decoration:none;
+          border:1px solid var(--rule); border-radius:5px; padding:1px 8px; white-space:nowrap; }
+  .play:hover, .play:focus-visible { border-color:var(--accent); background:var(--accent-bg); }
   .empty { padding:44px 0; text-align:center; color:var(--ink-faint); }
   footer { margin-top:46px; padding-top:18px; border-top:1px solid var(--rule);
            font-size:12.5px; color:var(--ink-faint); display:flex; flex-wrap:wrap; gap:12px; }
@@ -260,7 +265,9 @@ TEMPLATE = """<title>__NAME__</title>
 
   function render() {
     var q = state.q.trim().toLowerCase();
+    var browsing = !state.type && !state.outlet && !q;
     var shown = items.filter(function (it) {
+      if (browsing && it.folded) return false;
       if (state.type && it.type !== state.type) return false;
       if (state.outlet && it.outlet !== state.outlet) return false;
       if (q && (it.title || '').toLowerCase().indexOf(q) === -1 &&
@@ -291,7 +298,9 @@ TEMPLATE = """<title>__NAME__</title>
                         : '<span class="title nolink">' + esc(it.title) + '</span>') +
                 '<div class="meta"><span class="tag t-' + esc(it.type) + '">' +
                     (LABEL[it.type] || 'Item') + '</span>' +
-                  '<span>' + esc(it.outlet) + '</span>' + withWhom + '</div>' +
+                  '<span>' + esc(it.outlet) + '</span>' + withWhom +
+                  (it.play ? '<a class="play" href="media/#ep=' + esc(it.play) + '">&#9654; Play</a>' : '') +
+                '</div>' +
               '</div></li>';
     });
     listEl.innerHTML = html + '</ol>';
@@ -467,9 +476,21 @@ def main():
     series = payload.get("series", [])
     PUBLIC.mkdir(parents=True, exist_ok=True)
 
-    # Recurring episodes are represented by their series card, not as rows.
+    # Recurring episodes are represented by their series card in the default
+    # view; the list carries them flagged as folded, for the Podcasts filter
+    # and search.
     archive = [i for i in all_items
                if not (i.get("recurring") and i.get("type") in COLLAPSE_SERIES_OF_TYPE)]
+    listed = []
+    for i in all_items:
+        # Empty fields are dropped: across 1,400 rows they add up.
+        row = {k: i[k] for k in ("type", "outlet", "title", "date", "url", "byline", "coauthored") if i.get(k)}
+        if i.get("recurring") and i.get("type") in COLLAPSE_SERIES_OF_TYPE:
+            row["folded"] = True
+        # Anything the media page can play gets a Play link to it.
+        if i.get("audio") or i.get("youtube") or youtube_id(i.get("url")):
+            row["play"] = media_id(i)
+        listed.append(row)
 
     years = sorted({(i.get("date") or "")[:4] for i in archive if i.get("date")})
     rng = "{}–{}".format(years[0], years[-1]) if years else "no dated items"
@@ -477,10 +498,8 @@ def main():
     portrait = ('<img class="portrait" src="{}" alt="{}">'.format(
         esc(PROFILE["photo"]), esc(PROFILE["name"])) if PROFILE["photo"] else "")
 
-    # The media page is part of this site, so it opens in place.
-    chips = '<a href="media/">Watch &amp; Listen</a> ' + " ".join(
-        '<a href="{}" target="_blank" rel="noopener">{}</a>'.format(
-            esc(l["url"]), esc(l["label"])) for l in PROFILE["links"] + PROFILE["socials"])
+    chips = " ".join('<a href="{}" target="_blank" rel="noopener">{}</a>'.format(
+        esc(l["url"]), esc(l["label"])) for l in PROFILE["links"] + PROFILE["socials"])
 
     contact = ""
     if PROFILE["emails"]:
@@ -502,10 +521,10 @@ def main():
             .replace("__CONTACT__", contact)
             .replace("__ROLES__", build_roles(series))
             .replace("__FEATURED__", build_featured(archive, PROFILE["featured"]))
-            .replace("__TOTAL__", str(len(archive)))
+            .replace("__TOTAL__", str(len(listed)))
             .replace("__RANGE__", rng)
             .replace("__GENERATED__", stamp())
-            .replace("__DATA__", json.dumps(archive, ensure_ascii=False)))
+            .replace("__DATA__", json.dumps(listed, ensure_ascii=False)))
 
     out = PUBLIC / "index.html"
     out.write_text(html, encoding="utf-8")

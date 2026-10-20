@@ -80,7 +80,9 @@ a wrong title or outlet.
 ## Watch & Listen
 
 `docs/media/` (seanspeer.com/media/) lists every episode or talk that can be
-played, with a clip maker. Audio streams from each show's own podcast host and
+played, with a clip maker. There is no menu link to it: on the homepage, the
+Podcasts and Talks filters and search list every episode, and each one's
+**Play** link opens it here (`media/#ep=<id>`). Audio streams from each show's own podcast host and
 video plays from YouTube, so clips are links to a moment, not copied files.
 
 - Hub episodes get their video by matching headlines against The Hub's YouTube

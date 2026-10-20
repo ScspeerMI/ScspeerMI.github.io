@@ -282,8 +282,7 @@
   <header class="sitebar">
     <a class="name" href="/">Sean Speer</a>
     <nav aria-label="Site">
-      <a href="/">Writing</a>
-      <a href="/media/" aria-current="page">Watch &amp; Listen</a>
+      <a href="/">&larr; All work</a>
     </nav>
   </header>
 
@@ -834,6 +833,14 @@ function fromHash() {
     history.replaceState(null, "", location.pathname);
     syncMakeVideo();
     return false;
+  }
+  // Play links in the homepage list open an episode, not a clip.
+  const ep = h.match(/^ep=([\w-]+)/);
+  if (ep && byId(ep[1])) {
+    const it = byId(ep[1]);
+    load(it, it.youtube ? "video" : "audio");
+    setClipping(false);
+    return true;
   }
   const m = h.match(/^clip=([^~]+)~([va])~([\d.]+)~([\d.]+)~?([^&]*)/);
   if (!m) return false;
