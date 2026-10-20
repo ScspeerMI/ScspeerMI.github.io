@@ -336,6 +336,7 @@ def fetch_hub_podcasts():
             "{http://www.itunes.com/dtds/podcast-1.0.dtd}summary") or "")
         return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", d))
 
+    ITUNES = "{http://www.itunes.com/dtds/podcast-1.0.dtd}"
     out = []
     for it in items:
         title = clean(it.findtext("title"))
@@ -354,13 +355,61 @@ def fetch_hub_podcasts():
             # the writing appearing again rather than a separate appearance.
             if low.startswith("hub headlines") or "hub headlines features audio versions" in text.lower():
                 continue
+        # The audio file, length and artwork feed the Watch & Listen page.
+        enc = it.find("enclosure")
+        img = it.find(ITUNES + "image")
         out.append({
             "type": "podcast", "outlet": "The Hub", "series": series, "role": role,
             "title": title, "date": parse_rss_date(it.findtext("pubDate")),
             "url": it.findtext("link") or "", "byline": "", "coauthored": False,
             "recurring": True,
+            "audio": enc.get("url", "") if enc is not None else "",
+            "duration": parse_duration(it.findtext(ITUNES + "duration")),
+            "image": img.get("href", "") if img is not None else "",
+            "summary": text.strip()[:220],
         })
     return out
+
+
+def parse_duration(s):
+    """iTunes durations come as seconds or as h:mm:ss."""
+    s = (s or "").strip()
+    try:
+        secs = 0
+        for part in s.split(":"):
+            secs = secs * 60 + int(float(part))
+        return secs
+    except ValueError:
+        return 0
+
+
+# The Hub posts most episodes to YouTube as well. The channel feed lists only
+# the latest 15 videos, so ids are kept in data/videos.json and added to each
+# day. The file was seeded once with the channel's last 100 uploads.
+HUB_YOUTUBE = "https://www.youtube.com/feeds/videos.xml?channel_id=UC52ln4mWFbs3hOL85_iA9Ww"
+
+
+def fetch_hub_videos():
+    import xml.etree.ElementTree as ET
+
+    path = DATA / "videos.json"
+    known = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
+    have = {v["id"] for v in known}
+    ns = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
+    try:
+        body, _ = get(HUB_YOUTUBE)
+    except Exception as e:
+        # The ids already on file still pair; only today's new videos wait.
+        print("  YouTube feed failed: {}".format(type(e).__name__), file=sys.stderr)
+        return known
+    fresh = []
+    for e in ET.fromstring(body).findall("a:entry", ns):
+        vid = e.findtext("yt:videoId", namespaces=ns)
+        if vid and vid not in have:
+            fresh.append({"id": vid, "title": e.findtext("a:title", namespaces=ns) or ""})
+    known = fresh + known
+    path.write_text(json.dumps(known, ensure_ascii=False, indent=1), encoding="utf-8")
+    return known
 
 
 def fetch_podcasts(term="sean speer"):
@@ -395,6 +444,10 @@ def fetch_podcasts(term="sean speer"):
             "url": r.get("trackViewUrl") or r.get("episodeUrl"),
             "byline": "",
             "coauthored": False,
+            "audio": r.get("episodeUrl") or "",
+            "duration": int((r.get("trackTimeMillis") or 0) / 1000),
+            "image": r.get("artworkUrl600") or r.get("artworkUrl160") or "",
+            "summary": clean(r.get("description") or "")[:220],
         })
     return items
 
@@ -532,6 +585,21 @@ def main():
     # on a masthead full of writers and redundant on his own site.
     for it in deduped:
         it["title"] = re.sub(r"^Sean Speer:\s*", "", it.get("title") or "")
+
+    # Pair Hub episodes with their YouTube video. The two share a headline; the
+    # feed and the channel are the only link between them.
+    try:
+        videos = {norm(v["title"]): v["id"] for v in fetch_hub_videos()}
+        paired = 0
+        for it in deduped:
+            if it.get("type") == "podcast" and it.get("outlet") == "The Hub":
+                vid = videos.get(norm(it["title"]))
+                if vid:
+                    it["youtube"] = vid
+                    paired += 1
+        print("\nPaired {} Hub episodes with YouTube videos".format(paired))
+    except Exception as e:
+        print("\nYouTube pairing FAILED: {}: {}".format(type(e).__name__, e), file=sys.stderr)
 
     # Group recurring work the way a reader thinks about it - where it was
     # published - rather than by internal series names. "Hub Dialogues" versus

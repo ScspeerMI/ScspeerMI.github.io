@@ -77,6 +77,30 @@ item without one is shown as plain text rather than a link.
 anything a feed returns for the same piece, so they are also the way to correct
 a wrong title or outlet.
 
+## Watch & Listen
+
+`docs/media/` (seanspeer.com/media/) lists every episode or talk that can be
+played, with a clip maker. Audio streams from each show's own podcast host and
+video plays from YouTube, so clips are links to a moment, not copied files.
+
+- Hub episodes get their video by matching headlines against The Hub's YouTube
+  channel. Its feed lists only the latest 15 videos, so ids accumulate in
+  `data/videos.json`. It was seeded on 20 October 2026 with the last 100
+  uploads; older episodes are audio only.
+- To feature a clip for every visitor, make it on the page, copy its share
+  link, and add it to `data/clips.json`:
+
+```json
+[
+  { "title": "Why Alberta leaving would cost workers",
+    "link": "https://seanspeer.com/media/#clip=1a2b3c4d5e~v~312~371~..." }
+]
+```
+
+  "Save to shelf" on the page keeps a clip only in that browser.
+- The podcast host inserts ads that can differ between listeners, so an audio
+  clip can start a few seconds early or late. Video clips are exact.
+
 ## Changing the page
 
 Everything editable by hand lives in the `PROFILE` block at the top of

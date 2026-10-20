@@ -8,7 +8,9 @@ GitHub Pages, or published as an artifact. No build step, no server, no deps.
 Everything you would want to change by hand is in PROFILE below.
 """
 
+import hashlib
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -406,6 +408,59 @@ def build_featured(items, chosen):
     return '<h2>Selected work</h2><div class="feat">' + "".join(cards) + "</div>"
 
 
+def media_id(it):
+    """A short id that stays the same from day to day, because shared clip
+    links carry it."""
+    return hashlib.md5((it.get("url") or it.get("title") or "").encode("utf-8")).hexdigest()[:10]
+
+
+def youtube_id(url):
+    m = re.search(r"(?:youtu\.be/|v=|/embed/)([\w-]{11})", url or "")
+    return m.group(1) if m else ""
+
+
+def build_media(all_items):
+    """docs/media/index.html: every episode or talk that can be played, with
+    the clip maker. The page lives in media_template.html."""
+    lib = []
+    for it in all_items:
+        yt = it.get("youtube") or (youtube_id(it.get("url")) if it.get("type") == "video" else "")
+        if not (yt or it.get("audio")):
+            continue
+        lib.append({
+            "id": media_id(it), "title": it.get("title", ""), "date": it.get("date", ""),
+            "outlet": it.get("outlet", ""), "series": "", "duration": it.get("duration", 0),
+            "audio": it.get("audio", ""), "youtube": yt, "url": it.get("url", ""),
+            "image": it.get("image", ""), "summary": it.get("summary", ""),
+        })
+
+    # Featured clips are pasted share links; the link already says which
+    # episode, which format and which seconds.
+    clips = []
+    p = DATA / "clips.json"
+    if p.exists():
+        ids = {x["id"] for x in lib}
+        for c in json.loads(p.read_text(encoding="utf-8")):
+            m = re.search(r"#clip=([^~]+)~([va])~([\d.]+)~([\d.]+)", c.get("link", ""))
+            if not m or m.group(1) not in ids:
+                print("  clips.json: skipped a clip that no longer matches an episode:", c.get("title"))
+                continue
+            clips.append({"id": m.group(1), "m": m.group(2), "s": float(m.group(3)),
+                          "e": float(m.group(4)), "t": c.get("title", "")})
+
+    blob = lambda v: json.dumps(v, ensure_ascii=False).replace("</", "<\\/")
+    html = ((ROOT / "media_template.html").read_text(encoding="utf-8")
+            .replace("__DATA__", blob(lib))
+            .replace("__CLIPS__", blob(clips))
+            .replace("__ASOF__", stamp()))
+    out = PUBLIC / "media" / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(html, encoding="utf-8")
+    print("Wrote {}  ({:.0f} KB)".format(out, out.stat().st_size / 1024))
+    print("  {} playable, {} with video, {} featured clips".format(
+        len(lib), sum(1 for x in lib if x["youtube"]), len(clips)))
+
+
 def main():
     payload = json.loads((DATA / "items.json").read_text(encoding="utf-8"))
     all_items = payload["items"]
@@ -422,8 +477,10 @@ def main():
     portrait = ('<img class="portrait" src="{}" alt="{}">'.format(
         esc(PROFILE["photo"]), esc(PROFILE["name"])) if PROFILE["photo"] else "")
 
-    chips = " ".join('<a href="{}" target="_blank" rel="noopener">{}</a>'.format(
-        esc(l["url"]), esc(l["label"])) for l in PROFILE["links"] + PROFILE["socials"])
+    # The media page is part of this site, so it opens in place.
+    chips = '<a href="media/">Watch &amp; Listen</a> ' + " ".join(
+        '<a href="{}" target="_blank" rel="noopener">{}</a>'.format(
+            esc(l["url"]), esc(l["label"])) for l in PROFILE["links"] + PROFILE["socials"])
 
     contact = ""
     if PROFILE["emails"]:
@@ -455,6 +512,8 @@ def main():
     print("Wrote {}  ({:.0f} KB)".format(out, out.stat().st_size / 1024))
     print("  {} archive rows, {} recurring episodes folded into {} series".format(
         len(archive), len(all_items) - len(archive), len(series)))
+
+    build_media(all_items)
 
 
 if __name__ == "__main__":
