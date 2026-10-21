@@ -58,8 +58,13 @@ PROFILE = {
 # They appear once a reader picks Podcasts, an outlet, or searches.
 COLLAPSE_SERIES_OF_TYPE = {"podcast"}
 
-TEMPLATE = """<meta charset="utf-8">
+TEMPLATE = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>__NAME__</title>
+<meta name="description" content="Writing, podcasts and talks by Sean Speer on the political economy of Canada and the United States.">
 <style>
   /* Layout: a masthead and roles above a filterable, year-banded archive */
   :root {
@@ -191,12 +196,18 @@ TEMPLATE = """<meta charset="utf-8">
     .wrap { padding-block:34px 60px; }
     .count { width:100%; margin-left:0; }
     .portrait { width:104px; }
+    /* contact: the outlet sits above its address, so address and Copy share a line */
+    .mast { padding:26px 20px; }
+    .mailrow { margin-bottom:12px; }
+    .mailrow > span:first-child { flex-basis:100%; min-width:0; }
+    .mailrow code { font-size:13px; }
   }
   @media (prefers-reduced-motion:reduce) { * { transition:none !important; } }
 </style>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500&display=swap">
-
+</head>
+<body>
 <div class="wrap">
   <div class="mast">
     __PORTRAIT__
@@ -341,6 +352,8 @@ TEMPLATE = """<meta charset="utf-8">
   });
 })();
 </script>
+</body>
+</html>
 """
 
 
