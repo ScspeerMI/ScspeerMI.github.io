@@ -153,6 +153,8 @@ TEMPLATE = """<!doctype html>
   .feat { display:grid; grid-template-columns:repeat(auto-fit,minmax(255px,1fr)); gap:16px; }
   /* auto-fill keeps a lone tool card at the width of the cards above it */
   .feat.tools { grid-template-columns:repeat(auto-fill,minmax(255px,1fr)); }
+  /* a tool's description follows its name, rather than sinking to the bottom like a date */
+  .feat.tools .fcard .d { margin-top:0; }
   .fcard { background:var(--card); border:1px solid var(--rule); border-radius:10px;
            padding:16px 17px; display:flex; flex-direction:column; gap:7px; min-width:0; }
   .fcard .o { font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--accent); }
