@@ -51,6 +51,13 @@ PROFILE = {
         "https://thehub.ca/2026/06/26/the-politics-of-transgression-versus-the-politics-of-normalcy/",
         "https://thehub.ca/2025/08/09/sean-speer-two-cheers-for-neoliberalism-and-none-for-economic-nationalism/",
     ],
+
+    # Tools hosted on this domain. Each lives in its own repository and is
+    # served under seanspeer.com/<repo> by GitHub Pages.
+    "tools": [
+        {"name": "Back of the Envelope", "kind": "Federal tax costing tool", "url": "/tax/",
+         "note": "What a change to Canada's federal income tax would cost, and who it touches."},
+    ],
 }
 
 # Recurring work is shown as a role, and its individual episodes are left out of
@@ -142,6 +149,8 @@ TEMPLATE = """<!doctype html>
 
   /* featured */
   .feat { display:grid; grid-template-columns:repeat(auto-fit,minmax(255px,1fr)); gap:16px; }
+  /* auto-fill keeps a lone tool card at the width of the cards above it */
+  .feat.tools { grid-template-columns:repeat(auto-fill,minmax(255px,1fr)); }
   .fcard { background:var(--card); border:1px solid var(--rule); border-radius:10px;
            padding:16px 17px; display:flex; flex-direction:column; gap:7px; min-width:0; }
   .fcard .o { font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--accent); }
@@ -222,6 +231,7 @@ TEMPLATE = """<!doctype html>
 
   __ROLES__
   __FEATURED__
+  __TOOLS__
 
   <h2>Archive</h2>
   <div class="controls">
@@ -430,6 +440,20 @@ def build_featured(items, chosen):
     return '<h2>Selected work</h2><div class="feat">' + "".join(cards) + "</div>"
 
 
+def build_tools(tools):
+    """The Tools row: same cards as Selected work, linking within the site."""
+    if not tools:
+        return ""
+    cards = []
+    for t in tools:
+        cards.append(
+            '<div class="fcard"><span class="o">{}</span>'
+            '<a href="{}">{}</a>'
+            '<span class="d">{}</span></div>'.format(
+                esc(t["kind"]), esc(t["url"]), esc(t["name"]), esc(t["note"])))
+    return '<h2>Tools</h2><div class="feat tools">' + "".join(cards) + "</div>"
+
+
 def media_id(it):
     """A short id that stays the same from day to day, because shared clip
     links carry it."""
@@ -534,6 +558,7 @@ def main():
             .replace("__CONTACT__", contact)
             .replace("__ROLES__", build_roles(series))
             .replace("__FEATURED__", build_featured(archive, PROFILE["featured"]))
+            .replace("__TOOLS__", build_tools(PROFILE.get("tools")))
             .replace("__TOTAL__", str(len(listed)))
             .replace("__RANGE__", rng)
             .replace("__GENERATED__", stamp())
