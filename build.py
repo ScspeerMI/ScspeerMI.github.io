@@ -57,6 +57,8 @@ PROFILE = {
     "tools": [
         {"name": "Back of the Envelope", "kind": "Federal tax costing tool", "url": "/tax/",
          "note": "Estimated costs and distributional effects of Canadian income tax changes."},
+        {"name": "The Prosperity Gap", "kind": "Canada vs. the US", "url": "/prosperity/",
+         "note": "GDP per person in Canada and the United States, nationally and by province and state."},
     ],
 }
 
