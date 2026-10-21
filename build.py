@@ -56,7 +56,7 @@ PROFILE = {
     # served under seanspeer.com/<repo> by GitHub Pages.
     "tools": [
         {"name": "Back of the Envelope", "kind": "Federal tax costing tool", "url": "/tax/",
-         "note": "What a change to Canada's federal income tax would cost, and who it touches."},
+         "note": "What a change to Canada's federal income tax would cost, and who it affects."},
     ],
 }
 
