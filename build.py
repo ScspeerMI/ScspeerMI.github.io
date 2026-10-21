@@ -56,7 +56,7 @@ PROFILE = {
     # served under seanspeer.com/<repo> by GitHub Pages.
     "tools": [
         {"name": "Back of the Envelope", "kind": "Federal tax costing tool", "url": "/tax/",
-         "note": "The costs and distributional effects of Canadian income tax changes."},
+         "note": "Estimated costs and distributional effects of Canadian income tax changes."},
     ],
 }
 
