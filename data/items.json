@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23",
+  "generated": "2026-10-24",
   "cutoff_year": 2019,
   "series": [
     {
@@ -15,22 +15,55 @@
       "name": "The Hub",
       "role": "Columnist",
       "outlet": "The Hub",
-      "count": 399,
+      "count": 400,
       "first": "2021-04-16",
-      "last": "2026-10-16",
+      "last": "2026-10-23",
       "type": "article"
     },
     {
       "name": "Manhattan Institute",
       "role": "Writer",
       "outlet": "City Journal",
-      "count": 29,
+      "count": 31,
       "first": "2022-02-09",
-      "last": "2026-10-20",
+      "last": "2026-10-23",
       "type": "article"
     }
   ],
   "items": [
+    {
+      "type": "article",
+      "outlet": "The Hub",
+      "title": "David Eby\u2019s misbegotten election is a generational opportunity for B.C. conservatives",
+      "date": "2026-10-23",
+      "url": "https://thehub.ca/2026/10/23/david-ebys-misbegotten-election-is-a-generational-opportunity-for-b-c-conservatives/",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "The Hub",
+      "role": "Columnist"
+    },
+    {
+      "type": "article",
+      "outlet": "Manhattan Institute",
+      "title": "An American Answer to China\u2019s Open SI Models: A Safe Harbor for Open Weights",
+      "date": "2026-10-23",
+      "url": "https://manhattan.institute/article/an-american-answer-to-chinas-open-si-models-a-safe-harbor-for-open-weights",
+      "byline": "Arpit Gupta, Brandon Fuller, Sean Speer",
+      "coauthored": true,
+      "series": "Manhattan Institute",
+      "role": "Writer"
+    },
+    {
+      "type": "article",
+      "outlet": "Manhattan Institute",
+      "title": "An American Answer to China\u2019s Open AI Models: A Safe Harbor for Open Weights",
+      "date": "2026-10-23",
+      "url": "https://manhattan.institute/article/an-american-answer-to-chinas-open-ai-models-a-safe-harbor-for-open-weights",
+      "byline": "Arpit Gupta, Brandon Fuller, Sean Speer",
+      "coauthored": true,
+      "series": "Manhattan Institute",
+      "role": "Writer"
+    },
     {
       "type": "podcast",
       "outlet": "The Hub",
