@@ -581,6 +581,22 @@ def main():
         for it in carried[:8]:
             print("  {} | {} | {}".format(it.get("date"), it.get("outlet"), (it.get("title") or "")[:52]))
 
+    # A Hub episode missing from Acast can be added by hand, marked
+    # stand_in_until_acast. Acast titles differ from the website's, so neither
+    # dedup above catches it when it arrives; the series and date do, since
+    # each series runs at most once a week.
+    def acast_has(it):
+        d = datetime.fromisoformat(it["date"])
+        return any("acast.com" in f.get("audio", "") and f.get("series") == it.get("series")
+                   and abs((datetime.fromisoformat(f["date"]) - d).days) <= 3
+                   for f in deduped if f.get("type") == "podcast" and f.get("date"))
+    stale = [it for it in deduped if it.get("stand_in_until_acast") and acast_has(it)]
+    if stale:
+        deduped = [it for it in deduped if it not in stale]
+        print("\nAcast now has these hand-added episodes; remove them from data/manual.json:")
+        for it in stale:
+            print("  {} | {}".format(it.get("date"), (it.get("title") or "")[:60]))
+
     # The Hub prefixes many headlines with the author's name, which is useful
     # on a masthead full of writers and redundant on his own site.
     for it in deduped:

@@ -57,5 +57,20 @@
     "url": "https://manhattan.institute/article/how-to-build-a-pro-ai-majority-before-we-squander-americas-future",
     "byline": "Jesse Arm, Sean Speer",
     "coauthored": true
+  },
+  {
+    "type": "podcast",
+    "outlet": "The Hub",
+    "series": "Hub Roundtable",
+    "role": "Co-host",
+    "recurring": true,
+    "stand_in_until_acast": true,
+    "title": "‘What are we doing?’: The Roundtable reacts to Carney’s bizarre foreign policy pivot",
+    "date": "2026-10-23",
+    "url": "https://thehub.ca/podcast/audio/what-are-we-doing-the-roundtable-reacts-to-carneys-bizarre-foreign-policy-pivot/",
+    "audio": "https://podcasts.helloaudio.fm/download/Kn1zuaffBa/1e442220-8d45-48b1-baa3-66d2fd139079.mp3",
+    "duration": 2123,
+    "image": "https://thehub.ca/wp-content/uploads/2026/10/CP176590736-960x540.jpg",
+    "summary": "Rudyard Griffiths and Sean Speer examine Prime Minister Carney’s foreign policy strategy, questioning Canada’s pursuit of closer ties with Turkey despite its human rights record and authoritarian leadership."
   }
 ]

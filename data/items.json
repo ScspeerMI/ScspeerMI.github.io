@@ -6,9 +6,9 @@
       "name": "Podcast appearances",
       "role": "Host, co-host, and guest",
       "outlet": "The Hub",
-      "count": 971,
+      "count": 972,
       "first": "2022-01-17",
-      "last": "2026-10-22",
+      "last": "2026-10-23",
       "type": "podcast"
     },
     {
@@ -31,6 +31,23 @@
     }
   ],
   "items": [
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "recurring": true,
+      "stand_in_until_acast": true,
+      "title": "\u2018What are we doing?\u2019: The Roundtable reacts to Carney\u2019s bizarre foreign policy pivot",
+      "date": "2026-10-23",
+      "url": "https://thehub.ca/podcast/audio/what-are-we-doing-the-roundtable-reacts-to-carneys-bizarre-foreign-policy-pivot/",
+      "audio": "https://podcasts.helloaudio.fm/download/Kn1zuaffBa/1e442220-8d45-48b1-baa3-66d2fd139079.mp3",
+      "duration": 2123,
+      "image": "https://thehub.ca/wp-content/uploads/2026/10/CP176590736-960x540.jpg",
+      "summary": "Rudyard Griffiths and Sean Speer examine Prime Minister Carney\u2019s foreign policy strategy, questioning Canada\u2019s pursuit of closer ties with Turkey despite its human rights record and authoritarian leadership.",
+      "byline": "",
+      "coauthored": false
+    },
     {
       "type": "article",
       "outlet": "The Hub",
