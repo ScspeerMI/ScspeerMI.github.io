@@ -24,8 +24,8 @@
       "name": "Manhattan Institute",
       "role": "Writer",
       "outlet": "City Journal",
-      "count": 31,
-      "first": "2022-02-09",
+      "count": 27,
+      "first": "2026-04-16",
       "last": "2026-10-23",
       "type": "article"
     }
@@ -7224,9 +7224,7 @@
       "date": "2025-06-20",
       "url": "https://www.city-journal.org/article/neoliberalism-free-trade-globalization-economic-growth",
       "byline": "Sean Speer",
-      "coauthored": false,
-      "series": "Manhattan Institute",
-      "role": "Writer"
+      "coauthored": false
     },
     {
       "type": "podcast",
@@ -19808,9 +19806,7 @@
       "date": "2022-02-25",
       "url": "https://www.city-journal.org/article/trudeaus-wedge",
       "byline": "Sean Speer",
-      "coauthored": false,
-      "series": "Manhattan Institute",
-      "role": "Writer"
+      "coauthored": false
     },
     {
       "type": "podcast",
@@ -19883,9 +19879,7 @@
       "date": "2022-02-16",
       "url": "https://www.city-journal.org/article/extraordinary-measures",
       "byline": "Sean Speer",
-      "coauthored": false,
-      "series": "Manhattan Institute",
-      "role": "Writer"
+      "coauthored": false
     },
     {
       "type": "podcast",
@@ -19926,9 +19920,7 @@
       "date": "2022-02-09",
       "url": "https://www.city-journal.org/article/canadas-restless-right",
       "byline": "Sean Speer",
-      "coauthored": false,
-      "series": "Manhattan Institute",
-      "role": "Writer"
+      "coauthored": false
     },
     {
       "type": "podcast",

@@ -42,6 +42,7 @@ UA = {
 
 YEARS = 7
 CUTOFF = datetime.now(timezone.utc).year - YEARS
+MI_ROLE_START = "2026-04"
 
 
 def get(url, timeout=40, attempts=3):
@@ -628,7 +629,11 @@ def main():
         if it.get("type") == "article":
             if it.get("outlet") == "The Hub":
                 return "The Hub", "Columnist"
-            if it.get("outlet") in ("City Journal", "Manhattan Institute"):
+            # The role dates from April 2026, when he joined close to full
+            # time. Earlier City Journal pieces stay in the archive as
+            # ordinary articles rather than counting toward the role.
+            if it.get("outlet") in ("City Journal", "Manhattan Institute") and \
+               (it.get("date") or "") >= MI_ROLE_START:
                 return "Manhattan Institute", "Writer"
         return None, None
 
