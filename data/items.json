@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-24",
+  "generated": "2026-10-25",
   "cutoff_year": 2019,
   "series": [
     {
@@ -31,6 +31,15 @@
     }
   ],
   "items": [
+    {
+      "type": "article",
+      "outlet": "New York Post",
+      "title": "Even a socialist like Mamdani can improve New York \u2014 here\u2019s how",
+      "date": "2026-10-24",
+      "url": "https://nypost.com/2026/10/24/opinion/even-a-socialist-like-mamdani-can-improve-new-york-heres-how/",
+      "byline": "",
+      "coauthored": false
+    },
     {
       "type": "podcast",
       "outlet": "The Hub",
