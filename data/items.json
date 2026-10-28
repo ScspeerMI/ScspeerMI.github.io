@@ -1,14 +1,14 @@
 {
-  "generated": "2026-10-27",
+  "generated": "2026-10-28",
   "cutoff_year": 2019,
   "series": [
     {
       "name": "Podcast appearances",
       "role": "Host, co-host, and guest",
       "outlet": "The Hub",
-      "count": 973,
+      "count": 975,
       "first": "2022-01-17",
-      "last": "2026-10-26",
+      "last": "2026-10-27",
       "type": "podcast"
     },
     {
@@ -31,6 +31,38 @@
     }
   ],
   "items": [
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "title": "Is Carney rushing a trade deal before the U.S. midterms?",
+      "date": "2026-10-27",
+      "url": "https://shows.acast.com/hub-podcasts/episodes/is-carney-rushing-a-trade-deal-before-us-midterms",
+      "byline": "",
+      "coauthored": false,
+      "recurring": true,
+      "audio": "https://sphinx.acast.com/p/open/s/69cc1a3992d007a7658eee4e/e/6ae0ff13ccb71448283c457b/media.mp3",
+      "duration": 1140,
+      "image": "https://assets.pippa.io/shows/69cc1a3992d007a7658eee4e/1793132368248-c1cf76af-1e68-4749-994c-588953f65d3c.jpeg",
+      "summary": "Rudyard Griffiths and Sean Speer analyze the possibility of a Canada-U.S. trade deal before the upcoming American midterm elections. They examine recent signals from Prime Minister Mark Carney and ongoing negotiations, q",
+      "youtube": "nJsAnZH3HYc"
+    },
+    {
+      "type": "podcast",
+      "outlet": "No Nonsense with Pamela Wallin",
+      "title": "Searching For Signals Amidst the Noise  with Sean Speer",
+      "date": "2026-10-27",
+      "url": "https://podcasts.apple.com/ca/podcast/searching-for-signals-amidst-the-noise-with-sean-speer/id1518184025?i=1000798303884&uo=4",
+      "byline": "",
+      "coauthored": false,
+      "audio": "https://sphinx.acast.com/p/open/s/6aa2f3067d9d1b1678dbde01/e/6ae037356df230781158229c/media.mp3",
+      "duration": 2537,
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/73/d8/e3/73d8e33a-a4a7-1616-98cb-ca61d11895b4/mza_16705998114564205641.jpeg/600x600bb.jpg",
+      "summary": "A blue wave in BC, talking trade quietly, an alliance with the EU facing resistance and a fiscal danger zone on the eve of the budget. The Hub's Sean Speer joins us for a 360 of the political landscape. Hosted on Acast. ",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest"
+    },
     {
       "type": "podcast",
       "outlet": "The Hub",
