@@ -1,14 +1,14 @@
 {
-  "generated": "2026-10-28",
+  "generated": "2026-10-29",
   "cutoff_year": 2019,
   "series": [
     {
       "name": "Podcast appearances",
       "role": "Host, co-host, and guest",
       "outlet": "The Hub",
-      "count": 975,
+      "count": 976,
       "first": "2022-01-17",
-      "last": "2026-10-27",
+      "last": "2026-10-28",
       "type": "podcast"
     },
     {
@@ -31,6 +31,23 @@
     }
   ],
   "items": [
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "title": "Why the Bank of Canada raised rates\u2014and what it means for you",
+      "date": "2026-10-28",
+      "url": "https://shows.acast.com/hub-podcasts/episodes/why-the-bank-of-canada-raised-ratesand-what-it-means-for-you",
+      "byline": "",
+      "coauthored": false,
+      "recurring": true,
+      "audio": "https://sphinx.acast.com/p/open/s/69cc1a3992d007a7658eee4e/e/6ae22ca2be850961b983eced/media.mp3",
+      "duration": 1450,
+      "image": "https://assets.pippa.io/shows/69cc1a3992d007a7658eee4e/1793208930365-be1e2113-153f-489f-8539-eb6fb8025964.jpeg",
+      "summary": "Rudyard Griffiths and Sean Speer analyze the Bank of Canada&#39;s unexpected decision to raise interest rates amid sluggish economic growth. They discuss the central bank&#39;s choice to prioritize inflation control over",
+      "youtube": "CXtAu-fHbZ8"
+    },
     {
       "type": "podcast",
       "outlet": "The Hub",
