@@ -1,23 +1,23 @@
 {
-  "generated": "2026-10-30",
+  "generated": "2026-10-31",
   "cutoff_year": 2019,
   "series": [
     {
       "name": "Podcast appearances",
       "role": "Host, co-host, and guest",
       "outlet": "The Hub",
-      "count": 977,
+      "count": 978,
       "first": "2022-01-17",
-      "last": "2026-10-29",
+      "last": "2026-10-30",
       "type": "podcast"
     },
     {
       "name": "The Hub",
       "role": "Columnist",
       "outlet": "The Hub",
-      "count": 400,
+      "count": 401,
       "first": "2021-04-16",
-      "last": "2026-10-23",
+      "last": "2026-10-30",
       "type": "article"
     },
     {
@@ -31,6 +31,33 @@
     }
   ],
   "items": [
+    {
+      "type": "article",
+      "outlet": "The Hub",
+      "title": "What Chow\u2019s re-election signals to the rest of Canada\u2014and why Alberta should be worried",
+      "date": "2026-10-30",
+      "url": "https://thehub.ca/2026/10/30/what-chows-re-election-signals-to-the-rest-of-canada-and-why-alberta-should-be-worried/",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "The Hub",
+      "role": "Columnist"
+    },
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "title": "How Mark Carney's imperial premiership is reshaping Canada",
+      "date": "2026-10-30",
+      "url": "https://shows.acast.com/hub-podcasts/episodes/how-mark-carneys-imperial-premiership-is-reshaping-canada",
+      "byline": "",
+      "coauthored": false,
+      "recurring": true,
+      "audio": "https://sphinx.acast.com/p/open/s/69cc1a3992d007a7658eee4e/e/6ae5021f93b4f000a215f672/media.mp3",
+      "duration": 35,
+      "image": "https://assets.pippa.io/shows/69cc1a3992d007a7658eee4e/1793393197656-c5bc2b04-be41-400c-adb3-b2a1d7210121.jpeg",
+      "summary": "In this paid subscriber-only edition of The Roundtable, Rudyard Griffiths and Sean Speer examine Prime Minister Mark Carney&#39;s recent policy decisions, arguing they reveal a coordinated effort to fundamentally reshape"
+    },
     {
       "type": "podcast",
       "outlet": "The Hub",
@@ -18766,15 +18793,6 @@
       "summary": "Hub Dialogues (part of The Hub, Canada's daily information source for public policy \u2013 https://www.thehub.ca ) are in-depth conversations about big ideas from the worlds of business, economics, geopolitics, public policy,"
     },
     {
-      "type": "article",
-      "outlet": "National Post",
-      "title": "Finally some pushback against the out-of-touch radical left",
-      "date": "2022-06-20",
-      "url": "https://nationalpost.com/opinion/sean-speer-finally-some-pushback-against-the-out-of-touch-radical-left",
-      "byline": "",
-      "coauthored": false
-    },
-    {
       "type": "podcast",
       "outlet": "The Hub",
       "series": "Podcast appearances",
@@ -18805,6 +18823,15 @@
       "duration": 1701,
       "image": "https://assets.pippa.io/shows/69cc1a3992d007a7658eee4e/104555d4fdd8aa38ba444626a305492a.jpeg",
       "summary": "Hub Dialogues (part of The Hub, Canada's daily information source for public policy \u2013 https://www.thehub.ca ) are in-depth conversations about big ideas from the worlds of business, economics, geopolitics, public policy,"
+    },
+    {
+      "type": "article",
+      "outlet": "National Post",
+      "title": "Finally some pushback against the out-of-touch radical left",
+      "date": "2022-06-20",
+      "url": "https://nationalpost.com/opinion/sean-speer-finally-some-pushback-against-the-out-of-touch-radical-left",
+      "byline": "",
+      "coauthored": false
     },
     {
       "type": "podcast",
@@ -19225,15 +19252,6 @@
       "summary": "Hub Dialogues (part of The Hub, Canada's daily information source for public policy \u2013 https://www.thehub.ca ) are in-depth conversations about big ideas from the worlds of business, economics, geopolitics, public policy,"
     },
     {
-      "type": "article",
-      "outlet": "National Post",
-      "title": "Jason Kenney\u2019s critics are wrong. Alberta is the only place conservatism is winning",
-      "date": "2022-05-02",
-      "url": "https://nationalpost.com/opinion/sean-speer-jason-kenneys-critics-are-wrong-alberta-is-the-only-place-conservatism-is-winning",
-      "byline": "",
-      "coauthored": false
-    },
-    {
       "type": "podcast",
       "outlet": "The Hub",
       "series": "Podcast appearances",
@@ -19248,6 +19266,15 @@
       "duration": 2306,
       "image": "https://assets.pippa.io/shows/69cc1a3992d007a7658eee4e/cc458358739e667953a1f9e91c7d1397.jpeg",
       "summary": "Hub Dialogues (part of The Hub, Canada's daily information source for public policy \u2013 https://www.thehub.ca ) are in-depth conversations about big ideas from the worlds of business, economics, geopolitics, public policy,"
+    },
+    {
+      "type": "article",
+      "outlet": "National Post",
+      "title": "Jason Kenney\u2019s critics are wrong. Alberta is the only place conservatism is winning",
+      "date": "2022-05-02",
+      "url": "https://nationalpost.com/opinion/sean-speer-jason-kenneys-critics-are-wrong-alberta-is-the-only-place-conservatism-is-winning",
+      "byline": "",
+      "coauthored": false
     },
     {
       "type": "podcast",
@@ -19620,15 +19647,6 @@
       "role": "Columnist"
     },
     {
-      "type": "article",
-      "outlet": "National Post",
-      "title": "Charest against Poilievre is a proxy for boomers against millennials",
-      "date": "2022-03-23",
-      "url": "https://nationalpost.com/opinion/sean-speer-charest-against-poilievre-is-a-proxy-for-boomers-against-millennials",
-      "byline": "",
-      "coauthored": false
-    },
-    {
       "type": "podcast",
       "outlet": "The Hub",
       "series": "Podcast appearances",
@@ -19643,6 +19661,15 @@
       "duration": 2410,
       "image": "https://assets.pippa.io/shows/69cc1a3992d007a7658eee4e/9fa9774785fe932742d7c41681bb42c7.jpeg",
       "summary": "Hub Dialogues (part of The Hub, Canada's daily information source for public policy \u2013 https://www.thehub.ca ) are in-depth conversations about big ideas from the worlds of business, economics, geopolitics, public policy,"
+    },
+    {
+      "type": "article",
+      "outlet": "National Post",
+      "title": "Charest against Poilievre is a proxy for boomers against millennials",
+      "date": "2022-03-23",
+      "url": "https://nationalpost.com/opinion/sean-speer-charest-against-poilievre-is-a-proxy-for-boomers-against-millennials",
+      "byline": "",
+      "coauthored": false
     },
     {
       "type": "article",
@@ -20203,15 +20230,6 @@
       "summary": "Hub Dialogues (part of The Hub, Canada's daily information source for public policy \u2013 www.thehub.ca ) are in-depth conversations about big ideas from the worlds of business, economics, geopolitics, public policy, and tec"
     },
     {
-      "type": "article",
-      "outlet": "National Post",
-      "title": "U.S. needs confident, reality based conservatives who can respond to left wing overreach",
-      "date": "2022-01-17",
-      "url": "https://nationalpost.com/opinion/sean-speer-u-s-needs-confident-reality-based-conservatives-who-can-respond-to-left-wing-overreach",
-      "byline": "",
-      "coauthored": false
-    },
-    {
       "type": "podcast",
       "outlet": "The Hub",
       "series": "Podcast appearances",
@@ -20226,6 +20244,15 @@
       "duration": 2194,
       "image": "https://assets.pippa.io/shows/69cc1a3992d007a7658eee4e/3ef897a28a6b6ddc7f638e6ea91aae0e.jpeg",
       "summary": "Hub Dialogues (part of The Hub, Canada's daily information source for public policy \u2013 www.thehub.ca ) are in-depth conversations about big ideas from the worlds of business, economics, geopolitics, public policy, and tec"
+    },
+    {
+      "type": "article",
+      "outlet": "National Post",
+      "title": "U.S. needs confident, reality based conservatives who can respond to left wing overreach",
+      "date": "2022-01-17",
+      "url": "https://nationalpost.com/opinion/sean-speer-u-s-needs-confident-reality-based-conservatives-who-can-respond-to-left-wing-overreach",
+      "byline": "",
+      "coauthored": false
     },
     {
       "type": "article",
