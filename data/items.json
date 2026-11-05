@@ -1,14 +1,14 @@
 {
-  "generated": "2026-11-04",
+  "generated": "2026-11-05",
   "cutoff_year": 2019,
   "series": [
     {
       "name": "Podcast appearances",
       "role": "Host, co-host, and guest",
       "outlet": "The Hub",
-      "count": 978,
+      "count": 980,
       "first": "2022-01-17",
-      "last": "2026-10-30",
+      "last": "2026-11-04",
       "type": "podcast"
     },
     {
@@ -31,6 +31,38 @@
     }
   ],
   "items": [
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "title": "What Trump's big midterm losses mean for Canada",
+      "date": "2026-11-04",
+      "url": "https://shows.acast.com/hub-podcasts/episodes/what-trumps-big-midterm-losses-mean-for-canada",
+      "byline": "",
+      "coauthored": false,
+      "recurring": true,
+      "audio": "https://sphinx.acast.com/p/open/s/69cc1a3992d007a7658eee4e/e/6aeb93ce6bc20884a4cfbcf2/media.mp3",
+      "duration": 1194,
+      "image": "https://assets.pippa.io/shows/69cc1a3992d007a7658eee4e/1793824116631-1eaa523f-81d6-4823-8c43-e9b7fa6a38dc.jpeg",
+      "summary": "Rudyard Griffiths and Sean Speer analyze the implications of a sweeping Democratic victory in the 2026 U.S. midterm elections for Canada. They discuss how the Democrats&#39; gains in traditional Republican strongholds co",
+      "youtube": "S_FvCP3vY4c"
+    },
+    {
+      "type": "podcast",
+      "outlet": "The Curious Task",
+      "title": "Sean Speer \u2014 Is Politics Going Back to Normal?",
+      "date": "2026-11-04",
+      "url": "https://podcasts.apple.com/ca/podcast/sean-speer-is-politics-going-back-to-normal/id1474563073?i=1000799793263&uo=4",
+      "byline": "",
+      "coauthored": false,
+      "audio": "https://mcdn.podbean.com/mf/web/xuyjinywz4j7p62z/Matt_and_Sean_2026_17dwbj.mp3",
+      "duration": 4357,
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts123/v4/ff/d0/e3/ffd0e38f-eeca-58ec-175f-278fcf3dc556/mza_6736171489461282358.jpg/600x600bb.jpg",
+      "summary": "Matt Bufton speaks with Sean Speer about the observed return to \"normie politics,\" and whether it's a trend that will stick.\n\nReferences:\n\n\n\nThe politics of transgression versus the politics of normalcy by Sean Speer\n\n\n\n",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest"
+    },
     {
       "type": "article",
       "outlet": "The Hub",
