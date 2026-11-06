@@ -1,14 +1,14 @@
 {
-  "generated": "2026-11-05",
+  "generated": "2026-11-06",
   "cutoff_year": 2019,
   "series": [
     {
       "name": "Podcast appearances",
       "role": "Host, co-host, and guest",
       "outlet": "The Hub",
-      "count": 980,
+      "count": 981,
       "first": "2022-01-17",
-      "last": "2026-11-04",
+      "last": "2026-11-05",
       "type": "podcast"
     },
     {
@@ -31,6 +31,23 @@
     }
   ],
   "items": [
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "title": "Does Carney\u2019s big budget fail to meet the moment?",
+      "date": "2026-11-05",
+      "url": "https://shows.acast.com/hub-podcasts/episodes/does-carneys-big-budget-fail-to-meet-the-moment",
+      "byline": "",
+      "coauthored": false,
+      "recurring": true,
+      "audio": "https://sphinx.acast.com/p/open/s/69cc1a3992d007a7658eee4e/e/6aed10623b05570a35de174b/media.mp3",
+      "duration": 1830,
+      "image": "https://assets.pippa.io/shows/69cc1a3992d007a7658eee4e/1793922432905-c672b0db-eb6e-42aa-8b02-1eceaee5e2bb.jpeg",
+      "summary": "Rudyard Griffiths and Sean Speer analyze the 2026 federal budget, examining whether Prime Minister Mark Carney has distinguished himself from his predecessor\u2019s big-spending record. They discuss the continued growth in go",
+      "youtube": "N00v6Ttw5lU"
+    },
     {
       "type": "podcast",
       "outlet": "The Hub",
