@@ -1,28 +1,28 @@
 {
-  "generated": "2026-11-20",
+  "generated": "2026-11-21",
   "cutoff_year": 2019,
   "series": [
     {
       "name": "Podcast appearances",
       "role": "Host, co-host, and guest",
       "outlet": "The Hub",
-      "count": 985,
+      "count": 986,
       "first": "2022-01-17",
-      "last": "2026-11-15",
+      "last": "2026-11-20",
       "type": "podcast"
     },
     {
       "name": "The Hub",
       "role": "Columnist",
       "outlet": "The Hub",
-      "count": 403,
+      "count": 404,
       "first": "2021-04-16",
-      "last": "2026-11-13",
+      "last": "2026-11-20",
       "type": "article"
     },
     {
       "name": "Manhattan Institute",
-      "role": "Writer",
+      "role": "Senior Fellow",
       "outlet": "City Journal",
       "count": 28,
       "first": "2026-04-16",
@@ -31,6 +31,33 @@
     }
   ],
   "items": [
+    {
+      "type": "article",
+      "outlet": "The Hub",
+      "title": "The lesson of Stephen Harper: Boring isn\u2019t so bad",
+      "date": "2026-11-20",
+      "url": "https://thehub.ca/2026/11/20/the-lesson-of-stephen-harper-boring-isnt-so-bad/",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "The Hub",
+      "role": "Columnist"
+    },
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "title": "What the proposed Quebecor-Telus deal says about Canada\u2019s economy",
+      "date": "2026-11-20",
+      "url": "https://shows.acast.com/hub-podcasts/episodes/what-the-proposed-quebecor-telus-deal-says-about-canadas-eco",
+      "byline": "",
+      "coauthored": false,
+      "recurring": true,
+      "audio": "https://sphinx.acast.com/p/open/s/69cc1a3992d007a7658eee4e/e/6b00bece58595ef74f1d0881/media.mp3",
+      "duration": 35,
+      "image": "https://assets.pippa.io/shows/69cc1a3992d007a7658eee4e/1795210980448-7a158ee4-12bf-48f0-871e-bacdcf6f4cee.jpeg",
+      "summary": "In this paid subscriber-only edition of The Roundtable, Rudyard Griffiths and Sean Speer examine Quebecor\u2019s proposed takeover of Telus and what it reveals about Canada\u2019s economic model. They trace the history of the \u201cfou"
+    },
     {
       "type": "podcast",
       "outlet": "The Hub",
@@ -112,7 +139,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -335,7 +362,7 @@
       "byline": "Arpit Gupta, Brandon Fuller, Sean Speer",
       "coauthored": true,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "article",
@@ -346,7 +373,7 @@
       "byline": "Arpit Gupta, Brandon Fuller, Sean Speer",
       "coauthored": true,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -391,7 +418,7 @@
       "byline": "John Ketcham, Sean Speer",
       "coauthored": true,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -497,7 +524,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -824,7 +851,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -863,7 +890,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "article",
@@ -885,7 +912,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -1025,7 +1052,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -1098,7 +1125,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -1415,7 +1442,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -1470,7 +1497,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -1558,7 +1585,7 @@
       "byline": "Jesse Arm, Sean Speer",
       "coauthored": true,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "article",
@@ -1597,7 +1624,7 @@
       "byline": "Jesse Arm, Sean Speer",
       "coauthored": true,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "article",
@@ -1641,7 +1668,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -1695,7 +1722,7 @@
       "byline": "Shawn Regan, Sean Speer",
       "coauthored": true,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -1783,7 +1810,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -1811,7 +1838,7 @@
       "byline": "Jesse Arm, Sean Speer",
       "coauthored": true,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -1995,7 +2022,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "article",
@@ -2006,7 +2033,7 @@
       "byline": "Jesse Arm, Sean Speer",
       "coauthored": true,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -2051,7 +2078,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -2124,7 +2151,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -2312,7 +2339,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -2468,7 +2495,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -2586,7 +2613,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -2640,7 +2667,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -2753,7 +2780,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
@@ -2920,7 +2947,7 @@
       "byline": "Sean Speer",
       "coauthored": false,
       "series": "Manhattan Institute",
-      "role": "Writer"
+      "role": "Senior Fellow"
     },
     {
       "type": "podcast",
