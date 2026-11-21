@@ -634,7 +634,7 @@ def main():
             # ordinary articles rather than counting toward the role.
             if it.get("outlet") in ("City Journal", "Manhattan Institute") and \
                (it.get("date") or "") >= MI_ROLE_START:
-                return "Manhattan Institute", "Writer"
+                return "Manhattan Institute", "Senior Fellow"
         return None, None
 
     for it in deduped:

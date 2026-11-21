@@ -23,7 +23,7 @@ PUBLIC = ROOT / "docs"
 PROFILE = {
     "name": "Sean Speer",
     "tagline": "The political economy of Canada and the United States.",
-    "bio": "Co-founder and editor-at-large at The Hub. Writer at the Manhattan "
+    "bio": "Co-founder and editor-at-large at The Hub. Senior Fellow at the Manhattan "
            "Institute. Former senior economic adviser to Canadian Prime Minister "
            "Stephen Harper.",
 
