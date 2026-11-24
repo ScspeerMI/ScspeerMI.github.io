@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-23",
+  "generated": "2026-11-24",
   "cutoff_year": 2019,
   "series": [
     {
@@ -24,13 +24,24 @@
       "name": "Manhattan Institute",
       "role": "Senior Fellow",
       "outlet": "City Journal",
-      "count": 28,
+      "count": 29,
       "first": "2026-04-16",
-      "last": "2026-11-06",
+      "last": "2026-11-24",
       "type": "article"
     }
   ],
   "items": [
+    {
+      "type": "article",
+      "outlet": "City Journal",
+      "title": "Could AI Anxiety Be Contagious?",
+      "date": "2026-11-24",
+      "url": "https://www.city-journal.org/article/ai-opposition-panic-policy-outcomes",
+      "byline": "Sean Speer, Carolyn D. Gorman",
+      "coauthored": true,
+      "series": "Manhattan Institute",
+      "role": "Senior Fellow"
+    },
     {
       "type": "podcast",
       "outlet": "The Hub",
