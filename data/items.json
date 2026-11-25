@@ -1,23 +1,23 @@
 {
-  "generated": "2026-11-24",
+  "generated": "2026-11-25",
   "cutoff_year": 2019,
   "series": [
     {
       "name": "Podcast appearances",
       "role": "Host, co-host, and guest",
       "outlet": "The Hub",
-      "count": 987,
+      "count": 989,
       "first": "2022-01-17",
-      "last": "2026-11-23",
+      "last": "2026-11-25",
       "type": "podcast"
     },
     {
       "name": "The Hub",
       "role": "Columnist",
       "outlet": "The Hub",
-      "count": 404,
+      "count": 405,
       "first": "2021-04-16",
-      "last": "2026-11-20",
+      "last": "2026-11-25",
       "type": "article"
     },
     {
@@ -31,6 +31,51 @@
     }
   ],
   "items": [
+    {
+      "type": "article",
+      "outlet": "The Hub",
+      "title": "Let the market work: The biggest lesson from the proposed Quebecor-Telus takeover",
+      "date": "2026-11-25",
+      "url": "https://thehub.ca/2026/11/25/let-the-market-work-the-biggest-lesson-from-the-proposed-quebecor-telus-takeover/",
+      "byline": "Sean Speer",
+      "coauthored": false,
+      "series": "The Hub",
+      "role": "Columnist"
+    },
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "title": "Stephen Harper on faith and finding your way as a leader",
+      "date": "2026-11-25",
+      "url": "https://shows.acast.com/hub-podcasts/episodes/stephen-harper-on-faith-and-finding-your-way-as-a-leader",
+      "byline": "",
+      "coauthored": false,
+      "recurring": true,
+      "audio": "https://sphinx.acast.com/p/open/s/69cc1a3992d007a7658eee4e/e/6b07119f013f37d8a6bfa39f/media.mp3",
+      "duration": 2472,
+      "image": "https://assets.pippa.io/shows/69cc1a3992d007a7658eee4e/1795625388030-5de2f1e8-40bb-47ed-b91f-334c70db3bd1.jpeg",
+      "summary": "In part two of this exclusive Hub interview, former prime minister Stephen Harper discusses his memoir, Here for Canada, with Hub editor-at-large Sean Speer, exploring the challenges of governing Canada\u2019s largest organiz",
+      "youtube": "vU7OXBTF_5U"
+    },
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "title": "What\u2019s still missing for Alberta\u2019s oil and gas expansion",
+      "date": "2026-11-25",
+      "url": "https://shows.acast.com/hub-podcasts/episodes/whats-still-missing-for-albertas-oil-and-gas-expansion",
+      "byline": "",
+      "coauthored": false,
+      "recurring": true,
+      "audio": "https://sphinx.acast.com/p/open/s/69cc1a3992d007a7658eee4e/e/6b05ee487f45ad8799f99ce7/media.mp3",
+      "duration": 2510,
+      "image": "https://assets.pippa.io/shows/69cc1a3992d007a7658eee4e/1795550817523-5713259e-060e-4a55-9884-9ba8b611d04b.jpeg",
+      "summary": "Sean Speer speaks with Alicia Planincic and Mike Holden from the Business Council of Alberta about their latest economic report. They discuss Alberta\u2019s economic outperformance relative to the rest of Canada, driven by po",
+      "youtube": "cW__8P4aOZE"
+    },
     {
       "type": "article",
       "outlet": "City Journal",
