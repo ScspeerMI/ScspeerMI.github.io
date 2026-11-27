@@ -1,14 +1,14 @@
 {
-  "generated": "2026-11-26",
+  "generated": "2026-11-27",
   "cutoff_year": 2019,
   "series": [
     {
       "name": "Podcast appearances",
       "role": "Host, co-host, and guest",
       "outlet": "The Hub",
-      "count": 989,
+      "count": 990,
       "first": "2022-01-17",
-      "last": "2026-11-25",
+      "last": "2026-11-27",
       "type": "podcast"
     },
     {
@@ -31,6 +31,22 @@
     }
   ],
   "items": [
+    {
+      "type": "podcast",
+      "outlet": "The Hub",
+      "series": "Podcast appearances",
+      "role": "Host, co-host, and guest",
+      "title": "The Hunter Prize 2026 finalists on fixing Canada\u2019s declining entrepreneurship rates",
+      "date": "2026-11-27",
+      "url": "https://shows.acast.com/hub-podcasts/episodes/the-hunter-prize-2026-finalists-on-fixing-canadas-declining",
+      "byline": "",
+      "coauthored": false,
+      "recurring": true,
+      "audio": "https://sphinx.acast.com/p/open/s/69cc1a3992d007a7658eee4e/e/6b09b2db476431bd7a7e898f/media.mp3",
+      "duration": 1167,
+      "image": "https://assets.pippa.io/shows/69cc1a3992d007a7658eee4e/1795798462957-2a2aeba7-ce19-483d-9539-ee80bcb469b9.jpeg",
+      "summary": "In this special episode, Sean Speer speaks with the 2026 Hunter Prize for Public Policy winner and runner-up. Colin McMahon, an intern at the Legislative Assembly of Manitoba, discusses his winning proposal to help young"
+    },
     {
       "type": "article",
       "outlet": "The Hub",
